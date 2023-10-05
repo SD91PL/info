@@ -14,3 +14,15 @@
 body {
 	font-family: 'Montserrat', sans-serif;
 }
+
+//NAV
+
+.navbar{
+	&__logotype {
+		display: inline-block;
+		transition: transform .33s;
+	}
+	&__logotype:hover {
+		transform: rotate(-3deg) scale(1.05);
+	}
+}
