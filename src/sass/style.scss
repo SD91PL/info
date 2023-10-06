@@ -22,6 +22,7 @@ body {
 .navbar {
 	&__logotype {
 		display: inline-block;
+		transform-origin: bottom left;
 		transition: transform 0.33s;
 		&--small {
 			transition: color 0.67s;
@@ -29,10 +30,23 @@ body {
 	}
 	&__logotype:hover {
 		transform: scale(1.05);
-		& + span {
+		& + p {
 			color: $txt-2;
 		}
 	}
+}
+
+.navbar-toggler {
+	padding: 1rem 0 1rem 1rem;
+	border: transparent;
+}
+.navbar-toggler:hover,
+.navbar-toggler:focus {
+	box-shadow: none;
+}
+.navbar-toggler-icon {
+	height: 3rem;
+	width: 3rem;
 }
 
 //FOOTER
@@ -45,11 +59,16 @@ body {
 /* MEDIA QUERIES  */
 
 @media (min-width: 576px) {
+	.navbar {
+		&__logotype {
+			display: inline-block;
+			transform-origin: center;
+		}
+	}
 	.footer {
 		font-size: 1.1rem;
 	}
 }
-
 
 @media (min-width: 992px) {
 	.footer {
