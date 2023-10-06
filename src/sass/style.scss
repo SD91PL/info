@@ -18,8 +18,14 @@ body {
 	background-color: $main-color;
 }
 
-//NAV
+// TEST
+.icon-bs {
+	width: 200px;
+	background-color: #6f2cf3;
+}
 
+
+//NAV
 .navbar {
 	&__logotype {
 		display: inline-block;
@@ -34,11 +40,6 @@ body {
 			color: $txt-2;
 		}
 	}
-}
-
-.icon-bs {
-	width: 200px;
-	background-color: #6f2cf3;
 }
 
 //FOOTER
