@@ -1,3 +1,5 @@
+@use 'utilities' as *;
+
 *,
 *::before,
 *::after {
@@ -13,17 +15,24 @@
 
 body {
 	font-family: 'Montserrat', sans-serif;
+	background-color: $main-color;
 }
 
 //NAV
 
-.navbar{
+.navbar {
 	&__logotype {
 		display: inline-block;
-		transition: transform .33s;
+		transition: transform 0.33s;
+		&--small {
+			transition: color 0.67s;
+		}
 	}
 	&__logotype:hover {
 		transform: scale(1.05);
+		& + span {
+			color: $txt-2;
+		}
 	}
 }
 
@@ -31,13 +40,20 @@ body {
 
 .footer {
 	font-size: 1rem;
+	color: $txt-2;
 }
 
 /* MEDIA QUERIES  */
 
-@media(min-width: 992px) {
+@media (min-width: 576px) {
+	.footer {
+		font-size: 1.1rem;
+	}
+}
 
-	.footer{
+
+@media (min-width: 992px) {
+	.footer {
 		font-size: 1.2rem;
 	}
 }
