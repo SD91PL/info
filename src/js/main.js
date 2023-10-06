@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
+	//footer
 	const footerYear = document.querySelector('.footer__year')
 
 	const handleCurrentYear = () => {
