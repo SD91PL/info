@@ -70,8 +70,12 @@ header {
 
 //NAV
 .navbar {
-	// box-shadow: 0px -3rem 6rem $nav-box-shadow;
 	border-bottom: 1px solid #495057;
+	transition: box-shadow 2.67s;
+	// transition: box-shadow .33s;
+	&:hover {
+		box-shadow: 0px -3rem 6rem $nav-box-shadow;
+	}
 
 	&__logotype {
 		display: inline-block;
