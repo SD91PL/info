@@ -44,36 +44,40 @@ body {
 	text-transform: uppercase;
 }
 
+
 //HEADER
 header {
 	font-size: 2rem;
-}
-.carousel-item {
-	position: relative;
-	height: 30vh;
-	background-position: center;
-	background-size: cover;
-	z-index: 0;
-}
-.carousel-img-one {
-	background-color: $bg-2;
-	background-image: linear-gradient(60deg, $bg-1 25%, $bg-2 74%);
-}
-.carousel-img-two {
-	background-color: $bg-1;
-	background-image: linear-gradient(60deg, $bg-2 25%, $bg-3 74%);
-}
-.carousel-img-three {
-	background-color: $bg-1;
-	background-image: linear-gradient(60deg, $bg-3 25%, $bg-1 74%);
+	.carousel-item {
+		position: relative;
+		height: 160px;
+		background-position: center;
+		background-size: cover;
+		z-index: 0;
+	}
+	.carousel-img-one {
+		background-color: $bg-2;
+		background-image: linear-gradient(60deg, $bg-1 25%, $bg-2 74%);
+	}
+	.carousel-img-two {
+		background-color: $bg-1;
+		background-image: linear-gradient(60deg, $bg-2 25%, $bg-3 74%);
+	}
+	.carousel-img-three {
+		background-color: $bg-1;
+		background-image: linear-gradient(60deg, $bg-3 25%, $bg-1 74%);
+	}
+	.sd-logotype-underline {
+		width: 50%;
+		height: 0.2rem;
+		background-image: linear-gradient(319deg, #00000000 0%, $txt-2 37%, #00000000 100%);
+	}	
 }
 
 //NAV
 .navbar {
 	border-bottom: 1px solid #495057;
-	// transition: box-shadow 2.67s;
 	transition: box-shadow 1.67s;
-	// transition: box-shadow .33s;
 	&:hover {
 		box-shadow: 0px -3rem 6rem $nav-box-shadow;
 	}
@@ -122,8 +126,13 @@ header {
 /* MEDIA QUERIES  */
 
 @media (min-width: 576px) {
-	.carousel-item {
-		height: 35vh;
+	header {
+		.carousel-item {
+			height: 240px;
+		}
+		// .sd-logotype {
+		// 	font-weight: bold;
+		// }
 	}
 
 	.navbar {
@@ -138,9 +147,19 @@ header {
 	}
 }
 
+@media (min-width: 768px) {
+	header {
+		.carousel-item {
+			height: 240px;
+		}
+	}
+}
+
 @media (min-width: 992px) {
-	.carousel-item {
-		height: 40vh;
+	header {
+		.carousel-item {
+			height: 370px;
+		}
 	}
 
 	.nav-link {
@@ -170,17 +189,42 @@ header {
 	}
 }
 
+@media (min-width: 1200px) {
+	header {
+		.sd-logotype {
+			font-size: 7rem;
+		}
+		.carousel-item{
+			.display-3 {
+				font-size: 5rem;
+			}
+			.carousel-caption{
+				.fs-3 {
+					font-size: 2rem!important;
+				}
+			}
+		}
+	}
+
+}
+
 @media (min-width: 1400px) {
-	.carousel-img-one {
-		background-color: $bg-2;
-		background-image: linear-gradient(45deg, $bg-1 25%, $bg-2 74%);
-	}
-	.carousel-img-two {
-		background-color: $bg-1;
-		background-image: linear-gradient(45deg, $bg-2 25%, $bg-3 74%);
-	}
-	.carousel-img-three {
-		background-color: $bg-1;
-		background-image: linear-gradient(45deg, $bg-3 25%, $bg-1 74%);
+	header {
+		.carousel-img-one {
+			background-color: $bg-2;
+			background-image: linear-gradient(45deg, $bg-1 25%, $bg-2 74%);
+		}
+		.carousel-img-two {
+			background-color: $bg-1;
+			background-image: linear-gradient(45deg, $bg-2 25%, $bg-3 74%);
+		}
+		.carousel-img-three {
+			background-color: $bg-1;
+			background-image: linear-gradient(45deg, $bg-3 25%, $bg-1 74%);
+		}
+		.maxwidth-header-btns {
+			position: relative;
+			top: -185px; //half of .carousel-item height
+		}
 	}
 }
