@@ -44,7 +44,6 @@ body {
 	text-transform: uppercase;
 }
 
-
 //HEADER
 header {
 	font-size: 2rem;
@@ -117,7 +116,6 @@ header {
 }
 
 //FOOTER
-
 .footer {
 	font-size: 1rem;
 	color: $txt-2;
@@ -130,9 +128,6 @@ header {
 		.carousel-item {
 			height: 240px;
 		}
-		// .sd-logotype {
-		// 	font-weight: bold;
-		// }
 	}
 
 	.navbar {
@@ -224,7 +219,7 @@ header {
 		}
 		.maxwidth-header-btns {
 			position: relative;
-			top: -185px; //half of .carousel-item height
+			top: -185px; //half of .carousel-item height from 992px breakpoint
 		}
 	}
 }
