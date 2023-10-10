@@ -1,0 +1,102 @@
+@font-face {
+	font-family: 'icostack';
+	// src: url('../../../dist/');
+	src: url('../../../dist/fonts/icostack.eot?2t0564');
+	src: url('../../../dist/fonts/icostack.eot?2t0564#iefix') format('embedded-opentype'),
+		url('../../../dist/fonts/icostack.ttf?2t0564') format('truetype'),
+		url('../../../dist/fonts/icostack.woff?2t0564') format('woff'),
+		url('../../../dist/fonts/icostack.svg?2t0564#icostack') format('svg');
+	font-weight: normal;
+	font-style: normal;
+	font-display: block;
+}
+
+[class^='icon-'],
+[class*=' icon-'] {
+	/* use !important to prevent issues with browser extensions that change fonts */
+	font-family: 'icostack' !important;
+	// speak: never;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-bootstrap:before {
+	content: '\e900';
+}
+.icon-css3-alt:before {
+	content: '\e901';
+}
+.icon-figma:before {
+	content: '\e902';
+}
+.icon-gimp:before {
+	content: '\e903';
+}
+.icon-github:before {
+	content: '\e904';
+}
+.icon-gulp:before {
+	content: '\e905';
+}
+.icon-html5:before {
+	content: '\e906';
+}
+.icon-js:before {
+	content: '\e907';
+}
+.icon-magnifying-glass-arrow-right-solid:before {
+	content: '\e908';
+}
+.icon-magnifying-glass-solid:before {
+	content: '\e909';
+}
+.icon-node:before {
+	content: '\e90a';
+}
+.icon-node-js:before {
+	content: '\e90b';
+}
+.icon-photoshop:before {
+	content: '\e90c';
+}
+.icon-php:before {
+	content: '\e90d';
+}
+.icon-react:before {
+	content: '\e90e';
+}
+.icon-sass:before {
+	content: '\e90f';
+}
+.icon-searchengin:before {
+	content: '\e910';
+}
+.icon-tailwind:before {
+	content: '\e911';
+}
+.icon-tailwindcss-wordmark:before {
+	content: '\e912';
+}
+.icon-visual-studio-code:before {
+	content: '\e913';
+}
+.icon-visualstudio-wordmark:before {
+	content: '\e914';
+}
+.icon-wordpress:before {
+	content: '\e916';
+}
+.icon-wordpress-simple:before {
+	content: '\e915';
+}
+
+.ico-op {
+	opacity: 0.3;
+}
