@@ -214,6 +214,7 @@ header {
 
 @media (min-width: 1200px) {
 	.section-header::after {
+		// display: none;
 		width: 15%;
 	}
 
