@@ -54,6 +54,23 @@ body {
 	text-transform: uppercase;
 }
 
+.section-header {
+	position: relative;
+	top: 0;
+	left: 0;
+}
+.section-header::after {
+	content: '';
+	position: absolute;
+	bottom: 20%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 30%;
+	height: 0.1rem;
+	background-image: linear-gradient(319deg, #00000000 0%, $txt-2 37%, #00000000 100%);
+}
+
 //HEADER
 header {
 	font-size: 2rem;
@@ -196,6 +213,10 @@ header {
 }
 
 @media (min-width: 1200px) {
+	.section-header::after {
+		width: 15%;
+	}
+
 	header {
 		.sd-logotype {
 			font-size: 7rem;
