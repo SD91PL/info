@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', function () {
-	
 	//hiding nav
 	const nav = document.querySelector('.navbar-collapse')
 	document.addEventListener('click', () => {
@@ -7,6 +6,10 @@ document.addEventListener('DOMContentLoaded', function () {
 			nav.classList.remove('show')
 		}
 	})
+
+	//bootstrap tooltips
+	const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+	const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
 
 	//footer
 	const footerYear = document.querySelector('.footer__year')
