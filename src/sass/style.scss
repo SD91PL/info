@@ -145,14 +145,17 @@ header {
 
 //ABOUT
 .about-myphoto {
-	width: 100%;
-	border-radius: 8px;
-	filter: grayscale(80%) drop-shadow(16px 16px 20px $bg-3);
-	transition: filter .33s;
+	max-width: 80%;
+	max-height: 414px;
+	border-radius: 5%;
+	border: 3px solid $txt-2;
+	transform: scale(.96);
+	filter: grayscale(80%) drop-shadow(8px 8px 10px $bg-3);
+	transition: filter .33s, transform .33s;
 }
-
 .about-myphoto:hover {
-	filter: grayscale(20%) drop-shadow(8px 8px 10px $bg-3);
+	filter: grayscale(40%) drop-shadow(16px 16px 20px $bg-3);
+	transform: scale(.98);
 }
 
 //TECH-STACK
