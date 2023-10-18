@@ -143,6 +143,15 @@ header {
 	width: 3rem;
 }
 
+//ABOUT
+.about-myphoto {
+	width: 100%;
+	border-radius: 8px;
+	filter: grayscale(80%) drop-shadow(16px 16px 20px $bg-3);
+	// box-shadow: 16px 16px 20px $bg-3;
+}
+
+
 //TECH-STACK
 
 //FOOTER
