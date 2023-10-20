@@ -19,6 +19,10 @@ body {
 	background-color: $main-color;
 }
 
+section {
+	overflow: hidden;
+}
+
 .bg-1 {
 	background-color: $bg-1;
 }
@@ -146,15 +150,15 @@ header {
 //ABOUT
 .about-myphoto {
 	max-width: 80%;
-	max-height: 414px;
+	max-height: 350px;
 	border-radius: 5%;
 	border: 3px solid $txt-2;
 	transform: scale(.96);
-	filter: grayscale(80%) drop-shadow(8px 8px 10px $bg-3);
+	filter: grayscale(80%) drop-shadow(0px 8px 10px $bg-3) brightness(0.7);
 	transition: filter .33s, transform .33s;
 }
 .about-myphoto:hover {
-	filter: grayscale(40%) drop-shadow(16px 16px 20px $bg-3);
+	filter: grayscale(40%) drop-shadow(0px 16px 20px $bg-3) brightness(0.8);
 	transform: scale(.98);
 }
 
