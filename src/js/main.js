@@ -15,8 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
 		let bodyHeight = document.body.offsetHeight
 		let fullScroll = bodyHeight - viewportHeight
 		let scrollbarWidth
-		// scrollbarWidth = ((scroll / fullScroll) - 0.25) * 150  // 0.25 value to change, when website become higher - maybe to 0.15
-		scrollbarWidth = (scroll / fullScroll) * 100
+		scrollbarWidth = ((scroll / fullScroll) - 0.25) * 150  // 0.25 value to change, when website become higher - maybe to 0.15
 		scrollbarWidth = scrollbarWidth.toFixed(3)
 		root.style.setProperty('--scroll-width', `${scrollbarWidth}%`)
 	}
