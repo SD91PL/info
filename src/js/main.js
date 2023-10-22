@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function () {
 		let fullScroll = bodyHeight - viewportHeight
 		let scrollbarWidth
 
-		scrollbarWidth = (scroll / fullScroll) * 100
+		scrollbarWidth = ((scroll / fullScroll) - 0.25) * 150
 		scrollbarWidth = scrollbarWidth.toFixed(3)
 		root.style.setProperty('--scroll-width', `${scrollbarWidth}%`)
 	}
