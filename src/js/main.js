@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
 		let bodyHeight = document.body.offsetHeight
 		let header = document.getElementById('header')
 		let headerHeight = header.offsetHeight
-		let scroll = window.scrollY - headerHeight
+		let scroll = window.scrollY - headerHeight - 5
 		let fullScroll = bodyHeight - viewportHeight - headerHeight
 		let scrollbarWidth
 		scrollbarWidth = (scroll / fullScroll) * 100
