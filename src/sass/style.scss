@@ -149,15 +149,11 @@ header {
 
 //SCROLL-BAR
 .scroll-bar {
-	position: relative;
-	top: 0;
-	/* left: 0;  */ /* from left to right */
-	height: 0.3rem;
-	width: 100%;
-	// width: var(--scroll-width);
+	height: 0.1rem;
+	width: var(--scroll-width);
 	// background-color: $txt-2;
-	background-image: linear-gradient(319deg, #00000000 0%, $txt-2 50%, #00000000 100%);
-	z-index: 200;
+	// background-image: linear-gradient(90deg, #00000000 0%, #495057 40%, #495057 60%, #00000000 100%);
+	background-image: linear-gradient(90deg, #00000000 0%, $txt-2 40%, $txt-2 60%, #00000000 100%);
 }
 
 //ABOUT

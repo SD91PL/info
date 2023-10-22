@@ -7,6 +7,21 @@ document.addEventListener('DOMContentLoaded', function () {
 		}
 	})
 
+	//scroll-bar
+	let root = document.querySelector(':root')
+	const handleScrollbar = () => {
+		let scroll = window.scrollY
+		let viewportHeight = window.innerHeight
+		let bodyHeight = document.body.offsetHeight
+		let fullScroll = bodyHeight - viewportHeight
+		let scrollbarWidth
+
+		scrollbarWidth = (scroll / fullScroll) * 100
+		scrollbarWidth = scrollbarWidth.toFixed(3)
+		root.style.setProperty('--scroll-width', `${scrollbarWidth}%`)
+	}
+	window.addEventListener('scroll', handleScrollbar)
+
 	//bootstrap tooltips
 	const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
 	const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
