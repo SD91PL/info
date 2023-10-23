@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
 		}
 	})
 
-	// navbar-height - maybe to write later
+	// navbar-height changing by scrollY - maybe to write later
 	// const navbarHeight = () => {
 	// 	let viewportWidth = window.innerWidth
 	// 	let viewportHeight = window.innerHeight
