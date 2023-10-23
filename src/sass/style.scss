@@ -109,7 +109,7 @@ header {
 
 //NAV
 .nav-box {
-	height: 0;  // Fixes a bug of bouncing scroll caused by sticky-top class on nav-box element
+	height: 80px;  // Fixes a bug of bouncing scroll caused by sticky-top class on nav-box
 }
 .navbar {
 	border-bottom: 1px solid $nav-border;
@@ -222,6 +222,9 @@ header {
 		.carousel-item {
 			height: 370px;
 		}
+	}
+	.nav-box {
+		height: 63px;  // Fixes a bug of bouncing scroll caused by sticky-top class on nav-box
 	}
 
 	.nav-link {
