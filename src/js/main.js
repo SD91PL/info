@@ -7,6 +7,12 @@ document.addEventListener('DOMContentLoaded', function () {
 		}
 	})
 
+	// navbar-height - maybe to write later
+	// const navbarHeight = () => {
+	// 	let viewportWidth = window.innerWidth
+	// 	let viewportHeight = window.innerHeight
+	// }
+
 	//scroll-bar
 	let root = document.querySelector(':root')
 	const handleScrollbar = () => {
@@ -17,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function () {
 		let scroll = window.scrollY - headerHeight - 5
 		let fullScroll = bodyHeight - viewportHeight - headerHeight
 		let scrollbarWidth
-		scrollbarWidth = (scroll / fullScroll) * 100
+		scrollbarWidth = (scroll / fullScroll) * 95
 		scrollbarWidth = scrollbarWidth.toFixed(3)
 		root.style.setProperty('--scroll-width', `${scrollbarWidth}%`)
 	}
