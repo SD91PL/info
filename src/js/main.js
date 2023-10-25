@@ -19,6 +19,12 @@ document.addEventListener('DOMContentLoaded', function () {
 			} else {
 				navbar.classList.remove('nav-bg')
 			}
+		} else if (viewportWidth >576) {
+			if (scrollY > viewportHeight * 0.15) {
+				navbar.classList.add('bg-sm-dark')
+			} else {
+				navbar.classList.remove('bg-sm-dark')
+			}
 		}
 	}
 	window.addEventListener('scroll', navbarChange)
