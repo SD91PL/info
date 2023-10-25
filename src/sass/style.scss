@@ -118,7 +118,7 @@ header {
 }
 .navbar {
 	border-bottom: 1px solid $nav-border;
-	transition: box-shadow 1.67s;
+	transition: box-shadow 1.67s, background-color .67s; //bgc changing in main.js
 	// &:hover {
 	// 	box-shadow: 0px -3rem 6rem $nav-box-shadow;
 	// }
@@ -154,6 +154,9 @@ header {
 	height: 3rem;
 	width: 3rem;
 }
+.nav-bg {
+	background-color: $nav-bg;
+} // navbarChange in main.js
 
 //SCROLL-BAR
 .scroll-bar {

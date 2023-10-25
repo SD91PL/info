@@ -7,11 +7,21 @@ document.addEventListener('DOMContentLoaded', function () {
 		}
 	})
 
-	// navbar-height changing by scrollY - maybe to write later
-	// const navbarHeight = () => {
-	// 	let viewportWidth = window.innerWidth
-	// 	let viewportHeight = window.innerHeight
-	// }
+	// navbar changing background-color by scrollY
+	const navbar = document.querySelector('.navbar')
+	const navbarChange = () => {
+		let viewportWidth = window.innerWidth
+		let viewportHeight = window.innerHeight
+		let scrollY = window.scrollY
+		if (viewportWidth <= 576) {
+			if (scrollY > viewportHeight * 0.4) {
+				navbar.classList.add('nav-bg')
+			} else {
+				navbar.classList.remove('nav-bg')
+			}
+		}
+	}
+	window.addEventListener('scroll', navbarChange)
 
 	//scroll-bar
 	let root = document.querySelector(':root')
