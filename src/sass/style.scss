@@ -219,9 +219,6 @@ header {
 
 //TECH-STACK
 //STACK-EDU
-// .accordion-button {
-// 	padding: 1em;
-// }
 .accordion-button:not(.collapsed) {
 	color: $txt-2;
 	background-color: $bg-1;
@@ -236,10 +233,20 @@ header {
 	box-shadow: none;
 }
 
+.accordion {
+	border-radius: 8px;
+	border-bottom: 2px solid $bg-1;
+	overflow: hidden;
+}
+.accordion-item {
+	background: none;
+	// background-color: transparent;
+}
 .accordion-body {
 	// height: 180px;
 	padding: 0;
 	margin: 0;
+	background-color: $bg-3;
 }
 
 .accordion-body__img {
@@ -252,6 +259,13 @@ header {
 	&--one {
 		background-image: url(https://img-c.udemycdn.com/course/480x270/2355682_dee0_4.jpg);
 	}
+	&--two {
+		background-image: url(https://img-c.udemycdn.com/course/480x270/2428430_1b96_7.jpg);
+	}
+}
+
+.accordion-item {
+	border: none;
 }
 
 // .accordion-body__info {
