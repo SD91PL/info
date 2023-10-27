@@ -266,10 +266,20 @@ header {
 	&--three {
 		background-image: url(https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://www.filepicker.io/api/file/zS0jlA8SaaSkgXEfWHEe);
 	}
+	&--four {
+		background-image: url(https://img-c.udemycdn.com/course/480x270/2532868_291d_3.jpg);
+	}
+	&--five {
+		background-image: url(https://img-c.udemycdn.com/course/480x270/2823135_2421_2.jpg);
+	}
+	&--six {
+		background-image: url(https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://www.filepicker.io/api/file/Zf75jraiQduFz2883ODx);
+	}
 }
 
 .accordion-item {
 	border: none;
+	// border-bottom: 1px solid $bg-3;
 }
 
 // .accordion-body__info {
