@@ -257,7 +257,6 @@ header {
 	min-width: 100%;
 	background-position: center;
 	background-size: cover;
-	// border-radius: 4px;
 	&--one {
 		background-image: url('https://img-c.udemycdn.com/course/480x270/2355682_dee0_4.jpg');
 	}
@@ -281,6 +280,17 @@ header {
 	}
 	&--eight {
 		background-image: url('https://img-c.udemycdn.com/course/480x270/2755534_0573_2.jpg');
+	}
+
+	&--one-plus {
+		background-image: url('https://img-c.udemycdn.com/course/480x270/2620050_c52d_3.jpg');
+	}
+	&--two-plus {
+		background-image: url('https://img-c.udemycdn.com/course/480x270/5399296_4699_3.jpg');
+	}
+
+	&--one-lang {
+		background-image: url('https://pwr.edu.pl/fcp/4GBUKOQtTKlQhbx08SlkTUhZeUTgtCgg9ACFDC0RFTm9PFRYqCl5tDXdAGHoV/1/public/news_team/sjo/sjo_2021.jpg');
 	}
 }
 
