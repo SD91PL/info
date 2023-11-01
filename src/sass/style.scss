@@ -251,7 +251,7 @@ header {
 }
 
 .accordion-body__img {
-	// height: 100%;
+	height: 100%;
 	width: 100%;
 	min-height: 200px;
 	min-width: 100%;
@@ -287,6 +287,13 @@ header {
 	}
 	&--two-plus {
 		background-image: url('https://img-c.udemycdn.com/course/480x270/5399296_4699_3.jpg');
+	}
+
+	&--one-learn {
+		background-image: url('https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://cdn.filestackcontent.com/qzIVXDuQC6Kps20hOcw6');
+	}
+	&--two-learn {
+		background-image: url('https://img-c.udemycdn.com/course/480x270/1362070_b9a1_2.jpg');
 	}
 
 	&--one-lang {
