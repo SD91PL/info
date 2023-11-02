@@ -169,7 +169,7 @@ header {
 .home {
 	position: relative;
 	top: 0;
-	height: calc(100vh - 241px);
+	height: calc(100vh - 240px);
 	background-color: $bg-1;
 	background-image: url('../../dist/img/avatar.png');
 	background-size: cover;
@@ -315,6 +315,11 @@ header {
 		background-color: #212529;
 	}
 
+	.home {
+		height: calc(100vh - 311px);
+		background-image: url('../../dist/img/avatar-bg-tablets.png');
+	}
+
 	.footer {
 		font-size: 1.1rem;
 	}
@@ -361,6 +366,11 @@ header {
 	}
 	.nav-link:hover::after {
 		transform: scale(1);
+	}
+
+	.home {
+		height: calc(100vh - 427px);
+		// background-image: url('../../dist/img/avatar-bg-tablets.png');
 	}
 
 	.footer {
