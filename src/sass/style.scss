@@ -313,7 +313,6 @@ header {
 
 	.home {
 		height: calc(100vh - 311px);
-		background-image: url('../../dist/img/avatar-bg-tablets.png');
 	}
 
 	.accordion-body__img {
@@ -344,7 +343,8 @@ header {
 	}
 	.nav-box {
 		height: 63px;  // Fixes a bug of bouncing scroll caused by sticky-top class on nav-box
-		transform: translateY(-1px); // TESTED - Fixes bug when tablet screen is horizontal
+		transform: translateY(-2.5px);
+		// TESTED - Fixes bug when tablet screen is horizontal
 	}
 
 	.nav-link {
