@@ -1,4 +1,20 @@
 document.addEventListener('DOMContentLoaded', function () {
+	//hiding home section
+	const homeHiding = () => {
+		const home = document.querySelector('.home')
+		const header = document.querySelector('#header')
+		let headerHeight = header.offsetHeight
+		let viewportHeight = window.innerHeight
+		if (headerHeight > viewportHeight / 2.5) {
+			home.classList.add('d-none')
+		} else {
+			home.classList.remove('d-none')
+		}
+	}
+	window.addEventListener('load', homeHiding)
+	window.addEventListener('resize', homeHiding)
+	// window.addEventListener('orientationchange', homeHiding)
+
 	//hiding nav
 	const nav = document.querySelector('.navbar-collapse')
 	document.addEventListener('click', () => {
@@ -22,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function () {
 				navbar.classList.remove('nav-bg')
 				navLogoSm.classList.add('txt-2')
 			}
-		} else if (viewportWidth >576) {
+		} else if (viewportWidth > 576) {
 			if (scrollY > viewportHeight * 0.15) {
 				navbar.classList.add('bg-sm-dark')
 				navLogoSm.classList.remove('txt-2')
