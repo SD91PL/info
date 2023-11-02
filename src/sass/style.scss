@@ -119,6 +119,7 @@ header {
 //NAV
 .nav-box {
 	height: 80px;  // Fixes a bug of bouncing scroll caused by sticky-top class on nav-box
+	box-shadow: 0em -1em 2em 0.5em rgba(0, 0, 0, 0.2);
 }
 .navbar {
 	border-bottom: 1px solid $nav-border;
@@ -223,6 +224,7 @@ header {
 }
 .accordion-item {
 	background: none;
+	border: none;
 }
 .accordion-body {
 	padding: 0;
@@ -280,10 +282,6 @@ header {
 	&--one-lang {
 		background-image: url('https://cdn.pixabay.com/photo/2014/07/11/17/12/dictionary-390055_640.jpg');
 	}
-}
-
-.accordion-item {
-	border: none;
 }
 
 //FOOTER
@@ -346,8 +344,6 @@ header {
 	}
 	.nav-box {
 		height: 63px;  // Fixes a bug of bouncing scroll caused by sticky-top class on nav-box
-		transform: translateY(-2.5px);
-		// TESTED - Fixes bug when tablet screen is horizontal
 	}
 
 	.nav-link {
