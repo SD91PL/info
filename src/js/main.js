@@ -13,7 +13,6 @@ document.addEventListener('DOMContentLoaded', function () {
 	}
 	window.addEventListener('load', homeHiding)
 	window.addEventListener('resize', homeHiding)
-	// window.addEventListener('orientationchange', homeHiding)
 
 	//hiding nav
 	const nav = document.querySelector('.navbar-collapse')
