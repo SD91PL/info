@@ -16,7 +16,6 @@
 
 body {
 	font-family: 'Montserrat', sans-serif;
-	// background-color: $main-color;
 	background-color: $bg-1;
 }
 
@@ -46,7 +45,6 @@ section {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	// background-color: rgba(0, 0, 0, 0);
 	z-index: -1;
 }
 
@@ -124,11 +122,7 @@ header {
 }
 .navbar {
 	border-bottom: 1px solid $nav-border;
-	transition: box-shadow 1.67s, background-color .67s; //bgc changing in main.js
-	// &:hover {
-	// 	box-shadow: 0px -3rem 6rem $nav-box-shadow;
-	// }
-
+	transition: background-color .67s; //bgc changing in main.js
 	&__logotype {
 		display: inline-block;
 		transform-origin: bottom left;
@@ -168,12 +162,7 @@ header {
 .scroll-bar {
 	height: 0.1rem;
 	width: var(--scroll-width);
-	// start
-	// background-image: linear-gradient(90deg, $scrollbar 0%, $scrollbar 20%, $scrollbar 60%, #00000000 100%);
-	// center
 	background-image: linear-gradient(90deg, #00000000 0%, $scrollbar 40%, $scrollbar 60%, #00000000 100%);
-	// end
-	// background-image: linear-gradient(90deg, #00000000 0%, $scrollbar 40%, $scrollbar 60%, $scrollbar 100%);
 }
 
 //HOME
@@ -198,9 +187,6 @@ header {
 		text-transform: uppercase;
 	}
 }
-
-
-
 
 //ABOUT
 .about-myphoto {
@@ -235,19 +221,13 @@ header {
 
 .accordion {
 	border-radius: 8px;
-	// border: 1px solid $bg-3;
-	// border: 1px solid $txt-2;
-	// border: 1px solid rgba(255, 255, 255, 0.5)
-	// box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.4);
 	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
 	overflow: hidden;
 }
 .accordion-item {
 	background: none;
-	// background-color: transparent;
 }
 .accordion-body {
-	// height: 180px;
 	padding: 0;
 	margin: 0;
 	background-color: $bg-3;
@@ -306,12 +286,8 @@ header {
 
 .accordion-item {
 	border: none;
-	// border-bottom: 1px solid $bg-3;
 }
 
-// .accordion-body__info {
-// 	height: 100%;
-// }
 
 //FOOTER
 .footer {
@@ -396,7 +372,6 @@ header {
 		scroll-padding-top: 62px;
 	}
 	.section-header::after {
-		// display: none;
 		width: 15%;
 	}
 
