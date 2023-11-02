@@ -241,6 +241,7 @@ header {
 	min-width: 100%;
 	background-position: center;
 	background-size: cover;
+	border-radius: 4px;
 	&--one {
 		background-image: url('https://img-c.udemycdn.com/course/480x270/2355682_dee0_4.jpg');
 	}
@@ -318,6 +319,10 @@ header {
 	.home {
 		height: calc(100vh - 311px);
 		background-image: url('../../dist/img/avatar-bg-tablets.png');
+	}
+
+	.accordion-body__img {
+		border-radius: 0px;
 	}
 
 	.footer {
