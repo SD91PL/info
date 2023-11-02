@@ -133,9 +133,9 @@ header {
 	}
 	&__logotype:hover {
 		transform: scale(1.05);
-		& + p {
-			color: $txt-2;
-		}
+		// & + p {
+		// 	color: $txt-2;
+		// }
 	}
 }
 .navbar-toggler {

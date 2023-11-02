@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 	// navbar changing background-color by scrollY
 	const navbar = document.querySelector('.navbar')
+	const navLogoSm = document.querySelector('.navbar__logotype--small')
 	const navbarChange = () => {
 		let viewportWidth = window.innerWidth
 		let viewportHeight = window.innerHeight
@@ -16,14 +17,18 @@ document.addEventListener('DOMContentLoaded', function () {
 		if (viewportWidth <= 576) {
 			if (scrollY > viewportHeight * 0.4) {
 				navbar.classList.add('nav-bg')
+				navLogoSm.classList.remove('txt-2')
 			} else {
 				navbar.classList.remove('nav-bg')
+				navLogoSm.classList.add('txt-2')
 			}
 		} else if (viewportWidth >576) {
 			if (scrollY > viewportHeight * 0.15) {
 				navbar.classList.add('bg-sm-dark')
+				navLogoSm.classList.remove('txt-2')
 			} else {
 				navbar.classList.remove('bg-sm-dark')
+				navLogoSm.classList.add('txt-2')
 			}
 		}
 	}
