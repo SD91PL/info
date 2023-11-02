@@ -133,9 +133,6 @@ header {
 	}
 	&__logotype:hover {
 		transform: scale(1.05);
-		// & + p {
-		// 	color: $txt-2;
-		// }
 	}
 }
 .navbar-toggler {
@@ -349,6 +346,7 @@ header {
 	}
 	.nav-box {
 		height: 63px;  // Fixes a bug of bouncing scroll caused by sticky-top class on nav-box
+		transform: translateY(-1px); // TESTED - Fixes bug when tablet screen is horizontal
 	}
 
 	.nav-link {
