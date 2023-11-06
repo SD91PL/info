@@ -156,6 +156,10 @@ header {
 	background-color: $nav-bg;
 } // navbarChange in main.js
 
+.nav-link {
+	transition: color .67s !important;
+}
+
 //SCROLL-BAR
 .scroll-bar {
 	height: 0.1rem;
@@ -240,6 +244,7 @@ header {
 	background-position: center;
 	background-size: cover;
 	border-radius: 4px;
+	// opacity: 0.8;
 	&--one {
 		background-image: url('https://img-c.udemycdn.com/course/480x270/2355682_dee0_4.jpg');
 	}
