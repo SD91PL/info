@@ -118,12 +118,12 @@ header {
 
 //NAV
 .nav-box {
-	height: 80px;  // Fixes a bug of bouncing scroll caused by sticky-top class on nav-box
+	height: 80px; // Fixes a bug of bouncing scroll caused by sticky-top class on nav-box
 	box-shadow: 0em -1em 2em 0.5em rgba(0, 0, 0, 0.2);
 }
 .navbar {
 	border-bottom: 1px solid $nav-border;
-	transition: background-color .67s; //bgc changing in main.js
+	transition: background-color 0.67s; //bgc changing in main.js
 	&__logotype {
 		display: inline-block;
 		transform-origin: bottom left;
@@ -157,7 +157,7 @@ header {
 } // navbarChange in main.js
 
 .nav-link {
-	transition: color .67s !important;
+	transition: color 0.67s !important;
 }
 
 //SCROLL-BAR
@@ -181,7 +181,7 @@ header {
 		background-color: $bg-1;
 		background-image: linear-gradient(60deg, $bg-3 25%, $bg-2 75%);
 
-		opacity: .8;
+		opacity: 0.8;
 	}
 	.btn {
 		padding: 1em 2em;
@@ -212,7 +212,8 @@ header {
 	background-color: $bg-1;
 	box-shadow: none;
 }
-.accordion-button:not(.collapsed)::after, .accordion-button::after  {
+.accordion-button:not(.collapsed)::after,
+.accordion-button::after {
 	background-image: url('../../dist/img/chevron-down-solid.svg');
 }
 .accordion-button:focus {
@@ -293,20 +294,18 @@ header {
 .contact {
 	&__card {
 		width: 150px;
-		transition: text-shadow .33s;
+		transition: text-shadow 0.33s;
 		.icon {
 			cursor: pointer;
 		}
 		.op {
-			opacity: 0;
-			transition: opacity .33s, transform .67s;
+			opacity: 1;
+			transition: opacity 0.33s, transform 0.67s;
 		}
-		&:hover{
+		&:hover {
 			text-shadow: 0px 0px 10px $bg-3;
 			.op {
 				text-shadow: none;
-				transform: scale(1.2);
-				opacity: 1;
 			}
 		}
 	}
@@ -371,7 +370,7 @@ header {
 		}
 	}
 	.nav-box {
-		height: 63px;  // Fixes a bug of bouncing scroll caused by sticky-top class on nav-box
+		height: 63px; // Fixes a bug of bouncing scroll caused by sticky-top class on nav-box
 	}
 
 	.nav-link {
@@ -398,6 +397,20 @@ header {
 
 	.home {
 		height: calc(100vh - 427px);
+	}
+
+	.contact {
+		&__card {
+			.op {
+				opacity: 0;
+			}
+			&:hover {
+				.op {
+					transform: scale(1.2);
+					opacity: 1;
+				}
+			}
+		}
 	}
 
 	.footer {
