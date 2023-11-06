@@ -295,9 +295,6 @@ header {
 	&__card {
 		width: 150px;
 		transition: text-shadow 0.33s;
-		.icon {
-			cursor: pointer;
-		}
 		.op {
 			opacity: 1;
 			transition: opacity 0.33s, transform 0.67s;
