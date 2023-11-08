@@ -344,6 +344,12 @@ header {
 			}
 		}
 	}
+	.back-links {
+		position: relative;
+		top: -500px;
+		left: 0%;
+		transition: top .67s;
+	} // click protection from the front
 	.back-rotate {
 		transform: rotateX(-180deg); // -180
 	}
@@ -355,6 +361,9 @@ header {
 		.front-rotate {
 			transform: rotateX(180deg);
 			opacity: 0;
+		}
+		.back-links {
+			top: 0px;
 		}
 	}
 }
