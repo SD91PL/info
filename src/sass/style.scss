@@ -299,10 +299,6 @@ header {
 		width: 100%;
 		height: 350px;
 		perspective: 1000px;
-		h3 {
-			margin-top: 150px;
-			margin-bottom: 20px;
-		}
 	}
 	.front {
 		width: 100%;
@@ -318,6 +314,7 @@ header {
 		background-image: linear-gradient(315deg, $bg-2 0%, $bg-3 74%);
 	}
 	.back {
+		// display: none;
 		position: absolute;
 		top: 0;
 		left: 0;
@@ -326,16 +323,29 @@ header {
 		padding: 30px;
 		border-radius: 8px;
 		text-align: center;
-		opacity: 0;
+		opacity: 0; // 0
 		box-shadow: 0px 12px 16px rgba(0, 0, 0, 0.2);
 		overflow: hidden;
 		transition: 0.67s;
 		&--one {
-			background-image: linear-gradient(315deg, $bg-1 0%, $bg-2 74%);
+			// background-image: linear-gradient(315deg, $bg-1 0%, $bg-2 74%);
+			background-image: linear-gradient(60deg, #000000d5 0%, #00000081 100%),
+				linear-gradient(319deg, #dcf26e81 0%, #61fa7386 37%, #1cfdd786 100%),
+				url('https://cdn.pixabay.com/photo/2014/10/10/10/49/forest-483207_1280.jpg');
+			background-position: center;
+			background-size: cover;
+		}
+		a {
+			text-decoration: none;
+			color: $txt-1;
+			transition: transform .33s;
+			&:hover {
+				transform: scale(1.04);
+			}
 		}
 	}
 	.back-rotate {
-		transform: rotateX(-180deg);
+		transform: rotateX(-180deg); // -180
 	}
 	&__card:hover {
 		.back {
