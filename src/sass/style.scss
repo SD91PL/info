@@ -318,7 +318,6 @@ header {
 		&--about {
 			position: relative;
 			background-image: url('../../dist/img/avatar-bg-tablet.png');
-			background-size: cover;
 			background-position: 50% 20%;
 			z-index: 0;
 			.hero-shadow {
@@ -343,6 +342,9 @@ header {
 		box-shadow: 0px 12px 16px rgba(0, 0, 0, 0.2);
 		overflow: hidden;
 		transition: 0.67s;
+		&--about {
+			background-color: $bg-2;
+		}
 		&--forest {
 			background-image: linear-gradient(60deg, #000000d5 0%, #00000081 100%),
 				linear-gradient(319deg, #dcf26e81 0%, #61fa7386 37%, #1cfdd786 100%),
