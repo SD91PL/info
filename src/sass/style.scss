@@ -180,7 +180,6 @@ header {
 	.hero-shadow {
 		background-color: $bg-1;
 		background-image: linear-gradient(60deg, $bg-3 25%, $bg-2 75%);
-
 		opacity: 0.8;
 	}
 	.btn {
@@ -316,6 +315,18 @@ header {
 	}
 	.front-rotate {
 		background-image: linear-gradient(315deg, $bg-2 0%, $bg-3 74%);
+		&--about {
+			position: relative;
+			background-image: url('../../dist/img/avatar-bg-tablet.png');
+			background-size: cover;
+			background-position: 50% 20%;
+			z-index: 0;
+			.hero-shadow {
+				background-color: $bg-1;
+				background-image: linear-gradient(60deg, $bg-3 25%, $bg-2 75%);
+				opacity: 0.8;
+			}
+		}
 	}
 	.back {
 		position: absolute;
