@@ -37,8 +37,16 @@ document.addEventListener('DOMContentLoaded', function () {
 				navbar.classList.remove('nav-bg')
 				navLogoSm.classList.add('txt-2')
 			}
-		} else if (viewportWidth > 576) {
+		} else if (viewportWidth > 576 && viewportWidth < 992) {
 			if (scrollY > viewportHeight * 0.15) {
+				navbar.classList.add('bg-sm-dark')
+				navLogoSm.classList.remove('txt-2')
+			} else {
+				navbar.classList.remove('bg-sm-dark')
+				navLogoSm.classList.add('txt-2')
+			}
+		} else if (viewportWidth >= 992) {
+			if (scrollY > viewportHeight * 0.35) {
 				navbar.classList.add('bg-sm-dark')
 				navLogoSm.classList.remove('txt-2')
 			} else {
