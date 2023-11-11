@@ -120,6 +120,7 @@ header {
 .nav-box {
 	height: 80px; // Fixes a bug of bouncing scroll caused by sticky-top class on nav-box
 	box-shadow: 0em -1em 2em 0.5em rgba(0, 0, 0, 0.2);
+	z-index: 10000; //tooltips z-index is 1080
 }
 .navbar {
 	border-bottom: 1px solid $nav-border;
