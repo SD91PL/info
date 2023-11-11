@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
 		const header = document.querySelector('#header')
 		let headerHeight = header.offsetHeight
 		let viewportHeight = window.innerHeight
-		if (headerHeight > viewportHeight / 2.5) {
+		if (headerHeight > viewportHeight / 2) {
 			home.classList.add('d-none')
 		} else {
 			home.classList.remove('d-none')
