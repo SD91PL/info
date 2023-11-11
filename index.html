@@ -1,0 +1,1307 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>SD91PL</title>
+		<meta name="description" content="SD91PL - Front-End Web Developer" />
+		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="./dist/css/style.min.css">
+	</head>
+	<body data-bs-spy="scroll" data-bs-target="#navId">
+		<header id="header">
+	<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+		<div class="carousel-indicators">
+			<button
+				type="button"
+				data-bs-target="#carouselExampleCaptions"
+				data-bs-slide-to="0"
+				class="active"
+				aria-current="true"
+				aria-label="Slide 1"></button>
+			<button
+				type="button"
+				data-bs-target="#carouselExampleCaptions"
+				data-bs-slide-to="1"
+				aria-label="Slide 2"></button>
+			<button
+				type="button"
+				data-bs-target="#carouselExampleCaptions"
+				data-bs-slide-to="2"
+				aria-label="Slide 3"></button>
+		</div>
+
+		<div class="carousel-inner text-light text-center">
+			<div class="carousel-item carousel-img-one active">
+				<div
+					class="carousel-caption h-100 pb-5 pb-sm-3 d-flex flex-column justify-content-end justify-content-sm-center align-items-center">
+					<p class="display-1 mb-3 fw-bold m-sm-0 sd-logotype">
+						<span class="icon-code-solid d-sm-none"></span>
+						<span class="d-none d-sm-inline">SD91PL</span>
+					</p>
+					<div class="sd-logotype-underline d-none d-sm-block mb-3 mb-sm-1"></div>
+					<p class="d-none d-sm-block m-0 fs-4 mt-2">Front-End Web Developer</p>
+				</div>
+				<div class="hero-shadow"></div>
+			</div>
+			<div class="carousel-item carousel-img-two">
+				<div
+					class="carousel-caption h-100 pb-5 p-sm-3 d-flex flex-column justify-content-end justify-content-sm-center align-items-center">
+					<p class="display-3 m-sm-0 m-md-3">Front-End</p>
+					<div class="sd-logotype-underline d-md-none mt-1 mt-sm-2 mb-3 mb-sm-1"></div>
+					<p class="d-none d-md-block m-0 fs-3">HTML CSS JavaScript SASS SCSS Bootstrap Gulp</p>
+				</div>
+				<div class="hero-shadow"></div>
+			</div>
+			<div class="carousel-item carousel-img-three">
+				<div
+					class="carousel-caption h-100 pb-5 p-sm-3 d-flex flex-column justify-content-end justify-content-sm-center align-items-center">
+					<p class="display-3 m-sm-0 m-md-3">Web Developer</p>
+					<div class="sd-logotype-underline d-md-none mt-1 mt-sm-2 mb-3 mb-sm-1"></div>
+					<p class="d-none d-md-block m-0 fs-3">Responsive Web Design, UX/UI Web Design, SEO</p>
+				</div>
+				<div class="hero-shadow"></div>
+			</div>
+		</div>
+
+		<div class="container maxwidth-header-btns">
+			<button
+				class="carousel-control-prev d-none d-sm-inline-block"
+				type="button"
+				data-bs-target="#carouselExampleCaptions"
+				data-bs-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Previous</span>
+			</button>
+			<button
+				class="carousel-control-next d-none d-sm-inline-block"
+				type="button"
+				data-bs-target="#carouselExampleCaptions "
+				data-bs-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Next</span>
+			</button>
+		</div>
+	</div>
+</header>
+
+		<div id="navBox" class="nav-box w-100 sticky-top d-flex flex-column justify-content-lg-center">
+    <nav id="navId" class="navbar navbar-expand-lg bg-3 p-4 fs-4" data-bs-theme="dark">
+        <div class="container">
+            <a class="navbar-brand m-0 fs-3 fw-bold d-flex flex-column flex-sm-row justify-content-center align-items-baseline px-lg-4" href="#"><p class="navbar__logotype m-0 pe-3">SD91PL</p><p class="navbar__logotype--small m-0 fs-5 txt-2">Front-End Web Developer</p></a>
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-link px-lg-4 py-3 py-lg-2 pt-4 active" href="#about">O mnie</a>
+                    <a class="nav-link px-lg-4 py-3 py-lg-2" href="#stack">TechStack</a>
+                    <a class="nav-link px-lg-4 py-3 py-lg-2" href="#stack-edu">Praktyka</a>
+                    <a class="nav-link px-lg-4 py-3 py-lg-2" href="#projects">Projekty</a>
+                    <a class="nav-link px-lg-4 py-3 py-lg-2" href="#contact">Kontakt</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="d-flex justify-content-center w-100">
+        <div class="scroll-bar"></div>
+    </div>
+</div>
+		<main>
+			<section id="home" class="home d-xl-none">
+    <div class="container h-100 d-flex flex-column justify-content-center align-items-center text-light text-center">
+        <p class="my-5"></p>
+        <p class="my-5"></p>
+        <p class="fs-1 mt-4">Tworzenie stron internetowych</p>
+        <a href="#about" class="btn btn-outline-light mt-4 position-relative"><div class="btn btn-outline-light h-100 w-100 position-absolute top-0 start-0 p-0 m-0 ping"></div>przedstawienie</a>
+        <div class="hero-shadow"></div>
+    </div>
+</section>
+			<section id="about" class="text-light text-center bg-1 pb-5">
+	<div class="container pt-5">
+		<h1 class="section-header mt-sm-5 d-flex justify-content-center align-items-center p-5 fw-bold display-4">
+			O mnie
+		</h1>
+	</div>
+	<div class="container pt-3 pt-xl-4 pb-5 mb-5 fs-4 d-xl-none">
+		<div class="row p-3">
+			<div class="col-12 d-flex flex-column justify-content-center text-start">
+				<p class="p-3">
+					Od początku 2023 roku uczę się programowania Front-End. Moim głównym celem jest ciągły rozwój umiejętności w
+					tym zakresie. Poznaję przy tym nowe technologie i narzędzia. W przyszłości planuję nauczyć się technologii
+					MERN (MongoDB, Express.js, React.js, Node.js).
+				</p>
+				<p class="p-3">
+					Przy tworzeniu stron internetowych bardzo dużą uwagę poświęcam kwestiom designu i przyjaznego interfejsu. Dbam
+					o to, aby moje strony były estetyczne, funkcjonalne i dostosowane do różnych urządzeń, a takie pojęcia jak
+					<strong>Responsive&nbsp;Web&nbsp;Design</strong> czy <strong>UX/UI&nbsp;Design</strong> nie są mi obce.
+				</p>
+				<p class="p-3 m-0">
+					Poza programowaniem lubię zajmować się grafiką 2D i beatmakingiem. Zdarza mi się również uprawiać sporty
+					ekstremalne. To moje hobby, które pozwalają mi rozwijać kreatywność.
+				</p>
+			</div>
+		</div>
+	</div>
+	<div class="container pt-3 pb-5 mb-5 fs-4 d-none d-xl-block">
+		<div class="animated animated__cards mx-2">
+			<div class="animated__card">
+				<div class="front front-rotate front-rotate--about p-5">
+					<h2 class="mb-3 fs-1">Tworzę strony internetowe</h2>
+					<div class="btn btn-outline-light mt-4 position-relative">
+						<div class="btn btn-outline-light h-100 w-100 position-absolute top-0 start-0 p-0 m-0 ping"></div>
+						<p class="m-0 p-2 fs-5">Sprawdź więcej</p>
+					</div>
+					<div class="hero-shadow"></div>
+				</div>
+				<div class="back back-rotate back--about text-start">
+					<div class="col-12 d-flex flex-column justify-content-center text-start p-4">
+						<p class="p-2 p-xxl-3">
+							Od początku 2023 roku uczę się programowania Front-End. <br />
+							Moim głównym celem jest ciągły rozwój umiejętności w tym zakresie. <br />
+							Poznaję przy tym nowe technologie i narzędzia. W przyszłości planuję nauczyć się technologii MERN
+							(MongoDB, Express.js, React.js, Node.js).
+						</p>
+						<p class="p-2 p-xxl-3">
+							Przy tworzeniu stron internetowych bardzo dużą uwagę poświęcam kwestiom designu i przyjaznego interfejsu.
+							Dbam o to, aby moje strony były estetyczne, funkcjonalne i dostosowane do różnych urządzeń, a takie
+							pojęcia jak
+							<strong>Responsive&nbsp;Web&nbsp;Design</strong> czy <strong>UX/UI&nbsp;Design</strong> nie są mi obce.
+						</p>
+						<p class="p-2 p-xxl-3 m-0">
+							Poza programowaniem lubię zajmować się grafiką 2D i produkcją muzyczną. Zdarza mi się również uprawiać
+							sporty ekstremalne. <br />
+							To moje hobby, które przy okazji pozwalają mi rozwijać kreatywność.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+			<section id="stack" class="text-light text-center bg-3 pb-5">
+	<div class="container pt-5 pb-4 mb-5">
+		<h1 class="section-header mt-sm-5 d-flex justify-content-center align-items-center p-5 fw-bold display-4 mb-5">
+			TechStack
+		</h1>
+		<h2 class="mt-5 pt-3 pb-2 d-flex justify-content-center align-items-center">Web Development</h2>
+		<p class="d-flex flex-wrap justify-content-center align-items-center display-1 py-5 px-5 px-sm-0">
+			<span class="px-4 px-sm-5 py-4 py-sm-3 icon-html5" data-bs-toggle="tooltip"
+			data-bs-placement="bottom"
+			data-bs-custom-class="custom-tooltip"
+			data-bs-title="HTML"></span>
+			<span class="px-4 px-sm-5 py-4 py-sm-3 icon-css3-alt" data-bs-toggle="tooltip"
+			data-bs-placement="bottom"
+			data-bs-custom-class="custom-tooltip"
+			data-bs-title="CSS"></span>
+			<span class="px-4 px-sm-5 py-4 py-sm-3 icon-sass" data-bs-toggle="tooltip"
+			data-bs-placement="bottom"
+			data-bs-custom-class="custom-tooltip"
+			data-bs-title="SASS / SCSS"></span>
+			<span class="px-4 px-sm-5 py-4 py-sm-3 icon-js" data-bs-toggle="tooltip"
+			data-bs-placement="bottom"
+			data-bs-custom-class="custom-tooltip"
+			data-bs-title="JavaScript"></span>
+			<span class="px-4 px-sm-5 py-4 py-sm-3 icon-bootstrap" data-bs-toggle="tooltip"
+			data-bs-placement="bottom"
+			data-bs-custom-class="custom-tooltip"
+			data-bs-title="Bootstrap"></span>
+			<span class="px-4 px-sm-5 py-4 py-sm-3 icon-gulp" data-bs-toggle="tooltip"
+			data-bs-placement="bottom"
+			data-bs-custom-class="custom-tooltip"
+			data-bs-title="Gulp.js"></span>
+			<span class="px-4 px-sm-5 py-4 py-sm-3 icon-github" data-bs-toggle="tooltip"
+			data-bs-placement="bottom"
+			data-bs-custom-class="custom-tooltip"
+			data-bs-title="GitHub"></span>
+		</p>
+		<h2 class="mt-5 d-flex justify-content-center align-items-center">Web Development -&nbsp;w&nbsp;planach</h2>
+		<p class="d-flex flex-wrap justify-content-center align-items-center display-1 py-5">
+			<span class="px-5 py-3 icon-tailwind ico-op" data-bs-toggle="tooltip"
+			data-bs-placement="bottom"
+			data-bs-custom-class="custom-tooltip"
+			data-bs-title="Tailwind CSS"></span>
+			<span class="px-5 py-3 icon-react ico-op" data-bs-toggle="tooltip"
+			data-bs-placement="bottom"
+			data-bs-custom-class="custom-tooltip"
+			data-bs-title="React.js"></span>
+			<span class="px-5 py-3 icon-node-js ico-op" data-bs-toggle="tooltip"
+			data-bs-placement="bottom"
+			data-bs-custom-class="custom-tooltip"
+			data-bs-title="Node.js"></span>
+		</p>
+		<div class="row mt-5 mx-auto">
+			<div class="col-xl-2"></div>
+			<div class="col-12 col-xl-4">
+				<h2 class="d-flex justify-content-center align-items-center">Software skills</h2>
+				<p class="d-flex flex-wrap justify-content-center align-items-center display-1 py-5">
+					<span class="px-5 py-3 icon-visual-studio-code" data-bs-toggle="tooltip"
+                    data-bs-placement="bottom"
+                    data-bs-custom-class="custom-tooltip"
+                    data-bs-title="Visual Studio Code"></span>
+					<span class="px-5 py-3 icon-photoshop" data-bs-toggle="tooltip"
+                    data-bs-placement="bottom"
+                    data-bs-custom-class="custom-tooltip"
+                    data-bs-title="Adobe Photoshop"></span>
+				</p>
+			</div>
+			<div class="col-12 col-xl-4 mt-5 mt-xl-0">
+				<h2 class="d-flex justify-content-center align-items-center">UX/UI Design -&nbsp;w&nbsp;planach</h2>
+				<p class="d-flex flex-wrap justify-content-center align-items-center display-1 py-5">
+					<span class="px-5 py-3 icon-figma ico-op" data-bs-toggle="tooltip"
+                    data-bs-placement="bottom"
+                    data-bs-custom-class="custom-tooltip"
+                    data-bs-title="Figma"></span>
+					<span class="px-5 py-3 icon-adobexd ico-op" data-bs-toggle="tooltip"
+                    data-bs-placement="bottom"
+                    data-bs-custom-class="custom-tooltip"
+                    data-bs-title="Adobe XD"></span>
+				</p>
+			</div>
+			<div class="col-xl-2"></div>
+		</div>
+	</div>
+</section>
+			<section id="stack-edu" class="text-light text-center bg-3 pb-5">
+	<div class="container pt-5 pb-4 mb-5">
+		<h1 class="section-header mt-sm-5 d-flex justify-content-center align-items-center p-5 fw-bold display-4 mb-5">
+			Praktyka
+		</h1>
+		<h2 class="pb-5 d-flex justify-content-center align-items-center">Ukończone kursy</h2>
+		<div class="container pt-3 pb-5 mb-5 fs-4">
+
+			<div class="accordion accordion-flush" id="accordionFlushExample">
+				<div class="accordion-item">
+					<h2 class="accordion-header">
+						<button
+							class="accordion-button collapsed p-4 fs-4 bg-1 text-light"
+							type="button"
+							data-bs-toggle="collapse"
+							data-bs-target="#flush-collapseOne"
+							aria-expanded="false"
+							aria-controls="flush-collapseOne">
+							Kurs Tworzenia Stron WWW cz. I - HTML, CSS, RWD
+						</button>
+					</h2>
+					<div
+						id="flush-collapseOne"
+						class="accordion-collapse collapse fs-5 bg-3 text-light"
+						data-bs-parent="#accordionFlushExample">
+						<div class="accordion-body">
+							<div class="container">
+								<div class="row">
+									<div class="col-12 col-sm-4 p-4 pb-0 p-sm-0">
+										<div class="accordion-body__img accordion-body__img--one"></div>
+									</div>
+									<div
+										class="col-12 col-sm-8 accordion-body__info d-flex flex-column justify-content-between px-2 pt-5 pb-5 p-sm-4 p-lg-5 pe-lg-3 pb-lg-3 text-start">
+										<p class="accordion-body__txt px-4 p-sm-2 py-lg-0">
+											Podstawy HTML, CSS, semantyka, dobre praktyki pisania kodu i RWD, czyli responsywne strony internetowe.
+										</p>
+										<div
+											class="accordion-body__btns d-flex flex-wrap justify-content-end align-items-baseline pe-2 fs-5">
+											<div class="accordion-body__btn d-none d-xl-flex align-items-baseline m-2 mx-lg-3 txt-2">
+												<p>Platforma:</p>
+												<a
+													href="https://www.udemy.com/"
+													target="_blank"
+													rel="noopener"
+													class="btn btn-outline-light fs-5 mx-1 border-0"
+													>Udemy</a
+												>
+											</div>
+											<div class="accordion-body__btn d-none d-lg-flex align-items-baseline m-2 mx-lg-3 txt-2">
+												<p>Instruktor:</p>
+												<a
+													href="https://www.udemy.com/user/majek-2/"
+													target="_blank"
+													rel="noopener"
+													class="btn btn-outline-light fs-5 mx-1 border-0"
+													>Mateusz Maj</a
+												>
+											</div>
+											<div class="accordion-body__btn d-flex align-items-baseline m-2 mx-lg-3 txt-2">
+												<p>Certyfikat:</p>
+												<a
+													href="https://www.udemy.com/certificate/UC-6831e1c9-522f-4b6a-80e9-34301802d85a/"
+													target="_blank"
+													rel="noopener"
+													class="btn btn-outline-light fs-5 mx-1 border-0"
+													>13 lutego 2023</a
+												>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="accordion-item">
+					<h2 class="accordion-header">
+						<button
+							class="accordion-button collapsed p-4 fs-4 bg-1 text-light"
+							type="button"
+							data-bs-toggle="collapse"
+							data-bs-target="#flush-collapseTwo"
+							aria-expanded="false"
+							aria-controls="flush-collapseTwo">
+							Kurs Tworzenia Stron WWW cz. II - SASS, JS, Bootstrap
+						</button>
+					</h2>
+					<div
+						id="flush-collapseTwo"
+						class="accordion-collapse collapse fs-5 bg-3 text-light"
+						data-bs-parent="#accordionFlushExample">
+						<div class="accordion-body">
+							<div class="container">
+								<div class="row">
+									<div class="col-12 col-sm-4 p-4 pb-0 p-sm-0">
+										<div class="accordion-body__img accordion-body__img--two"></div>
+									</div>
+									<div
+										class="col-12 col-sm-8 accordion-body__info d-flex flex-column justify-content-between px-2 pt-5 pb-5 p-sm-4 p-lg-5 pe-lg-3 pb-lg-3 text-start">
+										<p class="accordion-body__txt px-4 p-sm-2 py-lg-0">
+											Preprocesor SASS, pseudoklasy, pseudoelementy i atrybuty, animacje, Flexbox, podstawy JavaScript, Bootstrap.
+										</p>
+										<div
+											class="accordion-body__btns d-flex flex-wrap justify-content-end align-items-baseline pe-2 fs-5">
+											<div class="accordion-body__btn d-none d-xl-flex align-items-baseline m-2 mx-lg-3 txt-2">
+												<p>Platforma:</p>
+												<a
+													href="https://www.udemy.com/"
+													target="_blank"
+													rel="noopener"
+													class="btn btn-outline-light fs-5 mx-1 border-0"
+													>Udemy</a
+												>
+											</div>
+											<div class="accordion-body__btn d-none d-lg-flex align-items-baseline m-2 mx-lg-3 txt-2">
+												<p>Instruktor:</p>
+												<a
+													href="https://www.udemy.com/user/majek-2/"
+													target="_blank"
+													rel="noopener"
+													class="btn btn-outline-light fs-5 mx-1 border-0"
+													>Mateusz Maj</a
+												>
+											</div>
+											<div class="accordion-body__btn d-flex align-items-baseline m-2 mx-lg-3 txt-2">
+												<p>Certyfikat:</p>
+												<a
+													href="https://www.udemy.com/certificate/UC-ff402562-9de5-468e-bbe4-0e63e2bbd6a7/"
+													target="_blank"
+													rel="noopener"
+													class="btn btn-outline-light fs-5 mx-1 border-0"
+													>22 marca 2023</a
+												>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="accordion-item">
+					<h2 class="accordion-header">
+						<button
+							class="accordion-button collapsed p-4 fs-4 bg-1 text-light"
+							type="button"
+							data-bs-toggle="collapse"
+							data-bs-target="#flush-collapseThree"
+							aria-expanded="false"
+							aria-controls="flush-collapseThree">
+							Kurs Tworzenia Stron WWW cz. 3
+						</button>
+					</h2>
+					<div
+						id="flush-collapseThree"
+						class="accordion-collapse collapse fs-5 bg-3 text-light"
+						data-bs-parent="#accordionFlushExample">
+						<div class="accordion-body">
+							<div class="container">
+								<div class="row">
+									<div class="col-12 col-sm-4 p-4 pb-0 p-sm-0">
+										<div class="accordion-body__img accordion-body__img--three"></div>
+									</div>
+									<div
+										class="col-12 col-sm-8 accordion-body__info d-flex flex-column justify-content-between px-2 pt-5 pb-5 p-sm-4 p-lg-5 pe-lg-3 pb-lg-3 text-start">
+										<p class="accordion-body__txt px-4 p-sm-2 py-lg-0">
+											Animowane karty, linki, przyciski, menu, tooltipy, inputy, Git & GitHub, BEM & SASS, UI/UX Design, Flexbox, CSS Grid.
+										</p>
+										<div
+											class="accordion-body__btns d-flex flex-wrap justify-content-end align-items-baseline pe-2 fs-5">
+											<div class="accordion-body__btn d-none d-xl-flex align-items-baseline m-2 mx-lg-3 txt-2">
+												<p>Platforma:</p>
+												<a
+													href="https://teachable.com/"
+													target="_blank"
+													rel="noopener"
+													class="btn btn-outline-light fs-5 mx-1 border-0"
+													>teach:able</a
+												>
+											</div>
+											<div class="accordion-body__btn d-none d-lg-flex align-items-baseline m-2 mx-lg-3 txt-2">
+												<p>Instruktor:</p>
+												<a
+													href="https://mmcschool.teachable.com/"
+													target="_blank"
+													rel="noopener"
+													class="btn btn-outline-light fs-5 mx-1 border-0"
+													>Mateusz Maj</a
+												>
+											</div>
+											<div class="accordion-body__btn d-flex align-items-baseline m-2 mx-lg-3 txt-2">
+												<p>Certyfikat:</p>
+												<a
+													href="./download/certificate-of-completion-for-kurs-tworzenia-stron-www-cz-3.pdf"
+													target="_blank"
+													rel="noopener"
+													class="btn btn-outline-light fs-5 mx-1 border-0"
+													>2023-04-22</a
+												>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="accordion-item">
+					<h2 class="accordion-header">
+						<button
+							class="accordion-button collapsed p-4 fs-4 bg-1 text-light"
+							type="button"
+							data-bs-toggle="collapse"
+							data-bs-target="#flush-collapseFour"
+							aria-expanded="false"
+							aria-controls="flush-collapseFour">
+							JavaScript - Jedyny Kurs, Którego Potrzebujesz!
+						</button>
+					</h2>
+					<div
+						id="flush-collapseFour"
+						class="accordion-collapse collapse fs-5 bg-3 text-light"
+						data-bs-parent="#accordionFlushExample">
+						<div class="accordion-body">
+							<div class="container">
+								<div class="row">
+									<div class="col-12 col-sm-4 p-4 pb-0 p-sm-0">
+										<div class="accordion-body__img accordion-body__img--four"></div>
+									</div>
+									<div
+										class="col-12 col-sm-8 accordion-body__info d-flex flex-column justify-content-between px-2 pt-5 pb-5 p-sm-4 p-lg-5 pe-lg-3 pb-lg-3 text-start">
+										<p class="accordion-body__txt px-4 p-sm-2 py-lg-0">
+											Typy danych, operatory, instrukcje warunkowe, pętle, tablice, funkcje, metody, atrybuty, DOM, obiekty, JSON, AJAX, API.
+										</p>
+										<div
+											class="accordion-body__btns d-flex flex-wrap justify-content-end align-items-baseline pe-2 fs-5">
+											<div class="accordion-body__btn d-none d-xl-flex align-items-baseline m-2 mx-lg-3 txt-2">
+												<p>Platforma:</p>
+												<a
+													href="https://www.udemy.com/"
+													target="_blank"
+													rel="noopener"
+													class="btn btn-outline-light fs-5 mx-1 border-0"
+													>Udemy</a
+												>
+											</div>
+											<div class="accordion-body__btn d-none d-lg-flex align-items-baseline m-2 mx-lg-3 txt-2">
+												<p>Instruktor:</p>
+												<a
+													href="https://www.udemy.com/user/majek-2/"
+													target="_blank"
+													rel="noopener"
+													class="btn btn-outline-light fs-5 mx-1 border-0"
+													>Mateusz Maj</a
+												>
+											</div>
+											<div class="accordion-body__btn d-flex align-items-baseline m-2 mx-lg-3 txt-2">
+												<p>Certyfikat:</p>
+												<a
+													href="https://www.udemy.com/certificate/UC-f7f1ba5e-c141-43d4-8583-f6ceb1818b43/"
+													target="_blank"
+													rel="noopener"
+													class="btn btn-outline-light fs-5 mx-1 border-0"
+													>30 maja 2023</a
+												>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="accordion-item">
+					<h2 class="accordion-header">
+						<button
+							class="accordion-button collapsed p-4 fs-4 bg-1 text-light"
+							type="button"
+							data-bs-toggle="collapse"
+							data-bs-target="#flush-collapseFive"
+							aria-expanded="false"
+							aria-controls="flush-collapseFive">
+							10 projektów w czystym JavaScript
+						</button>
+					</h2>
+					<div
+						id="flush-collapseFive"
+						class="accordion-collapse collapse fs-5 bg-3 text-light"
+						data-bs-parent="#accordionFlushExample">
+						<div class="accordion-body">
+							<div class="container">
+								<div class="row">
+									<div class="col-12 col-sm-4 p-4 pb-0 p-sm-0">
+										<div class="accordion-body__img accordion-body__img--five"></div>
+									</div>
+									<div
+										class="col-12 col-sm-8 accordion-body__info d-flex flex-column justify-content-between px-2 pt-5 pb-5 p-sm-4 p-lg-5 pe-lg-3 pb-lg-3 text-start">
+										<p class="accordion-body__txt px-4 p-sm-2 py-lg-0">
+											Praktyczne wykorzystanie HTML, CSS i JS w realizacji określonych projektów.
+										</p>
+										<div
+											class="accordion-body__btns d-flex flex-wrap justify-content-end align-items-baseline pe-2 fs-5">
+											<div class="accordion-body__btn d-none d-xl-flex align-items-baseline m-2 mx-lg-3 txt-2">
+												<p>Platforma:</p>
+												<a
+													href="https://www.udemy.com/"
+													target="_blank"
+													rel="noopener"
+													class="btn btn-outline-light fs-5 mx-1 border-0"
+													>Udemy</a
+												>
+											</div>
+											<div class="accordion-body__btn d-none d-lg-flex align-items-baseline m-2 mx-lg-3 txt-2">
+												<p>Instruktor:</p>
+												<a
+													href="https://www.udemy.com/user/majek-2/"
+													target="_blank"
+													rel="noopener"
+													class="btn btn-outline-light fs-5 mx-1 border-0"
+													>Mateusz Maj</a
+												>
+											</div>
+											<div class="accordion-body__btn d-flex align-items-baseline m-2 mx-lg-3 txt-2">
+												<p>Certyfikat:</p>
+												<a
+													href="https://www.udemy.com/certificate/UC-ef4abfb2-fabd-4e41-9521-8006dbed80cf/"
+													target="_blank"
+													rel="noopener"
+													class="btn btn-outline-light fs-5 mx-1 border-0"
+													>11 czerwca 2023</a
+												>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="accordion-item">
+					<h2 class="accordion-header">
+						<button
+							class="accordion-button collapsed p-4 fs-4 bg-1 text-light"
+							type="button"
+							data-bs-toggle="collapse"
+							data-bs-target="#flush-collapseSix"
+							aria-expanded="false"
+							aria-controls="flush-collapseSix">
+							Kurs Tworzenia Stron WWW cz. 4
+						</button>
+					</h2>
+					<div
+						id="flush-collapseSix"
+						class="accordion-collapse collapse fs-5 bg-3 text-light"
+						data-bs-parent="#accordionFlushExample">
+						<div class="accordion-body">
+							<div class="container">
+								<div class="row">
+									<div class="col-12 col-sm-4 p-4 pb-0 p-sm-0">
+										<div class="accordion-body__img accordion-body__img--six"></div>
+									</div>
+									<div
+										class="col-12 col-sm-8 accordion-body__info d-flex flex-column justify-content-between px-2 pt-5 pb-5 p-sm-4 p-lg-5 pe-lg-3 pb-lg-3 text-start">
+										<p class="accordion-body__txt px-4 p-sm-2 py-lg-0">
+											npm, Gulp.js, Hosting (domena, SSL itd.), SEO dla deweloperów
+										</p>
+										<div
+											class="accordion-body__btns d-flex flex-wrap justify-content-end align-items-baseline pe-2 fs-5">
+											<div class="accordion-body__btn d-none d-xl-flex align-items-baseline m-2 mx-lg-3 txt-2">
+												<p>Platforma:</p>
+												<a
+													href="https://teachable.com/"
+													target="_blank"
+													rel="noopener"
+													class="btn btn-outline-light fs-5 mx-1 border-0"
+													>teach:able</a
+												>
+											</div>
+											<div class="accordion-body__btn d-none d-lg-flex align-items-baseline m-2 mx-lg-3 txt-2">
+												<p>Instruktor:</p>
+												<a
+													href="https://mmcschool.teachable.com/"
+													target="_blank"
+													rel="noopener"
+													class="btn btn-outline-light fs-5 mx-1 border-0"
+													>Mateusz Maj</a
+												>
+											</div>
+											<div class="accordion-body__btn d-flex align-items-baseline m-2 mx-lg-3 txt-2">
+												<p>Certyfikat:</p>
+												<a
+													href="./download/certificate-of-completion-for-kurs-tworzenia-stron-www-cz-4.pdf"
+													target="_blank"
+													rel="noopener"
+													class="btn btn-outline-light fs-5 mx-1 border-0"
+													>2023-07-22</a
+												>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="accordion-item">
+					<h2 class="accordion-header">
+						<button
+							class="accordion-button collapsed p-4 fs-4 bg-1 text-light"
+							type="button"
+							data-bs-toggle="collapse"
+							data-bs-target="#flush-collapseSeven"
+							aria-expanded="false"
+							aria-controls="flush-collapseSeven">
+							15 Komponentów Na Strony WWW!
+						</button>
+					</h2>
+					<div
+						id="flush-collapseSeven"
+						class="accordion-collapse collapse fs-5 bg-3 text-light"
+						data-bs-parent="#accordionFlushExample">
+						<div class="accordion-body">
+							<div class="container">
+								<div class="row">
+									<div class="col-12 col-sm-4 p-4 pb-0 p-sm-0">
+										<div class="accordion-body__img accordion-body__img--seven"></div>
+									</div>
+									<div
+										class="col-12 col-sm-8 accordion-body__info d-flex flex-column justify-content-between px-2 pt-5 pb-5 p-sm-4 p-lg-5 pe-lg-3 pb-lg-3 text-start">
+										<p class="accordion-body__txt px-4 p-sm-2 py-lg-0">
+											Praktyczne zastosowanie HTML, CSS i JS w tworzeniu konkretnych elementów stron internetowych.
+										</p>
+										<div
+											class="accordion-body__btns d-flex flex-wrap justify-content-end align-items-baseline pe-2 fs-5">
+											<div class="accordion-body__btn d-none d-xl-flex align-items-baseline m-2 mx-lg-3 txt-2">
+												<p>Platforma:</p>
+												<a
+													href="https://www.udemy.com/"
+													target="_blank"
+													rel="noopener"
+													class="btn btn-outline-light fs-5 mx-1 border-0"
+													>Udemy</a
+												>
+											</div>
+											<div class="accordion-body__btn d-none d-lg-flex align-items-baseline m-2 mx-lg-3 txt-2">
+												<p>Instruktor:</p>
+												<a
+													href="https://www.udemy.com/user/majek-2/"
+													target="_blank"
+													rel="noopener"
+													class="btn btn-outline-light fs-5 mx-1 border-0"
+													>Mateusz Maj</a
+												>
+											</div>
+											<div class="accordion-body__btn d-flex align-items-baseline m-2 mx-lg-3 txt-2">
+												<p>Certyfikat:</p>
+												<a
+													href="https://www.udemy.com/certificate/UC-172205d7-4223-4b1a-b5c2-1fea381dbf29/"
+													target="_blank"
+													rel="noopener"
+													class="btn btn-outline-light fs-5 mx-1 border-0"
+													>28 sierpnia 2023</a
+												>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="accordion-item">
+					<h2 class="accordion-header">
+						<button
+							class="accordion-button collapsed p-4 fs-4 bg-1 text-light"
+							type="button"
+							data-bs-toggle="collapse"
+							data-bs-target="#flush-collapseEight"
+							aria-expanded="false"
+							aria-controls="flush-collapseEight">
+							Bootstrap Od Podstaw - Stwórz 4 Wyjątkowe strony WWW!
+						</button>
+					</h2>
+					<div
+						id="flush-collapseEight"
+						class="accordion-collapse collapse fs-5 bg-3 text-light"
+						data-bs-parent="#accordionFlushExample">
+						<div class="accordion-body">
+							<div class="container">
+								<div class="row">
+									<div class="col-12 col-sm-4 p-4 pb-0 p-sm-0">
+										<div class="accordion-body__img accordion-body__img--eight"></div>
+									</div>
+									<div
+										class="col-12 col-sm-8 accordion-body__info d-flex flex-column justify-content-between px-2 pt-5 pb-5 p-sm-4 p-lg-5 pe-lg-3 pb-lg-3 text-start">
+										<p class="accordion-body__txt px-4 p-sm-2 py-lg-0">
+											Bootstrap to framework do szybkiego tworzenia responsywnych stron internetowych. Oferuje wiele gotowych rozwiązań, takich jak predefiniowane style, klasy pomocnicze, moduły Sass i skrypty JavaScript.
+
+										</p>
+										<div
+											class="accordion-body__btns d-flex flex-wrap justify-content-end align-items-baseline pe-2 fs-5">
+											<div class="accordion-body__btn d-none d-xl-flex align-items-baseline m-2 mx-lg-3 txt-2">
+												<p>Platforma:</p>
+												<a
+													href="https://www.udemy.com/"
+													target="_blank"
+													rel="noopener"
+													class="btn btn-outline-light fs-5 mx-1 border-0"
+													>Udemy</a
+												>
+											</div>
+											<div class="accordion-body__btn d-none d-lg-flex align-items-baseline m-2 mx-lg-3 txt-2">
+												<p>Instruktor:</p>
+												<a
+													href="https://www.udemy.com/user/majek-2/"
+													target="_blank"
+													rel="noopener"
+													class="btn btn-outline-light fs-5 mx-1 border-0"
+													>Mateusz Maj</a
+												>
+											</div>
+											<div class="accordion-body__btn d-flex align-items-baseline m-2 mx-lg-3 txt-2">
+												<p>Certyfikat:</p>
+												<a
+													href="https://www.udemy.com/certificate/UC-8ee4dce7-6653-42b2-90f9-4eeaec53feca/"
+													target="_blank"
+													rel="noopener"
+													class="btn btn-outline-light fs-5 mx-1 border-0"
+													>30 września 2023</a
+												>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<h2 class="pb-5 d-flex justify-content-center align-items-center">Ukończone dodatkowe kursy</h2>
+		<div class="container pt-3 pb-5 mb-5 fs-4">
+
+			<div class="accordion accordion-flush" id="accordionFlushPlus">
+				<div class="accordion-item">
+					<h2 class="accordion-header">
+						<button
+							class="accordion-button collapsed p-4 fs-4 bg-1 text-light"
+							type="button"
+							data-bs-toggle="collapse"
+							data-bs-target="#flush-collapsePlusOne"
+							aria-expanded="false"
+							aria-controls="flush-collapsePlusOne">
+							Emmet: Pisz Szybszy i Wydajniejszy Kod HTML i CSS!
+						</button>
+					</h2>
+					<div
+						id="flush-collapsePlusOne"
+						class="accordion-collapse collapse fs-5 bg-3 text-light"
+						data-bs-parent="#accordionFlushPlus">
+						<div class="accordion-body">
+							<div class="container">
+								<div class="row">
+									<div class="col-12 col-sm-4 p-4 pb-0 p-sm-0">
+										<div class="accordion-body__img accordion-body__img--one-plus"></div>
+									</div>
+									<div
+										class="col-12 col-sm-8 accordion-body__info d-flex flex-column justify-content-between px-2 pt-5 pb-5 p-sm-4 p-lg-5 pe-lg-3 pb-lg-3 text-start">
+										<p class="accordion-body__txt px-4 p-sm-2 py-lg-0">
+											Skróty Emmet pozwalają tworzyć struktury witryny internetowej w rozsądnym czasie, a także przyspieszają proces stylizowania elementów w CSS. Korzystanie z nich znacznie poprawia wydajność pracy z kodem.
+										</p>
+										<div
+											class="accordion-body__btns d-flex flex-wrap justify-content-end align-items-baseline pe-2 fs-5">
+											<div class="accordion-body__btn d-none d-xl-flex align-items-baseline m-2 mx-lg-3 txt-2">
+												<p>Platforma:</p>
+												<a
+													href="https://www.udemy.com/"
+													target="_blank"
+													rel="noopener"
+													class="btn btn-outline-light fs-5 mx-1 border-0"
+													>Udemy</a
+												>
+											</div>
+											<div class="accordion-body__btn d-none d-lg-flex align-items-baseline m-2 mx-lg-3 txt-2">
+												<p>Instruktor:</p>
+												<a
+													href="https://www.udemy.com/user/majek-2/"
+													target="_blank"
+													rel="noopener"
+													class="btn btn-outline-light fs-5 mx-1 border-0"
+													>Mateusz Maj</a
+												>
+											</div>
+											<div class="accordion-body__btn d-flex align-items-baseline m-2 mx-lg-3 txt-2">
+												<p>Certyfikat:</p>
+												<a
+													href="https://www.udemy.com/course/pisz-szybszy-i-wydajniejszy-kod-html-i-css/"
+													target="_blank"
+													rel="noopener"
+													class="btn btn-outline-light fs-5 mx-1 border-0"
+													>Kurs bez certyfikatu</a
+												>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="accordion-item">
+					<h2 class="accordion-header">
+						<button
+							class="accordion-button collapsed p-4 fs-4 bg-1 text-light"
+							type="button"
+							data-bs-toggle="collapse"
+							data-bs-target="#flush-collapsePlusTwo"
+							aria-expanded="false"
+							aria-controls="flush-collapsePlusTwo">
+							Szybki kurs AI - ChatGPT, DeepL, LanguageTool i inne!
+						</button>
+					</h2>
+					<div
+						id="flush-collapsePlusTwo"
+						class="accordion-collapse collapse fs-5 bg-3 text-light"
+						data-bs-parent="#accordionFlushPlus">
+						<div class="accordion-body">
+							<div class="container">
+								<div class="row">
+									<div class="col-12 col-sm-4 p-4 pb-0 p-sm-0">
+										<div class="accordion-body__img accordion-body__img--two-plus"></div>
+									</div>
+									<div
+										class="col-12 col-sm-8 accordion-body__info d-flex flex-column justify-content-between px-2 pt-5 pb-5 p-sm-4 p-lg-5 pe-lg-3 pb-lg-3 text-start">
+										<p class="accordion-body__txt px-4 p-sm-2 py-lg-0">
+											Sztuczna inteligencja (AI) to dziedzina nauki, która zajmuje się tworzeniem maszyn i systemów, które mogą wykonywać zadania wymagające ludzkiego rozumu i percepcji.
+										</p>
+										<div
+											class="accordion-body__btns d-flex flex-wrap justify-content-end align-items-baseline pe-2 fs-5">
+											<div class="accordion-body__btn d-none d-xl-flex align-items-baseline m-2 mx-lg-3 txt-2">
+												<p>Platforma:</p>
+												<a
+													href="https://www.udemy.com/"
+													target="_blank"
+													rel="noopener"
+													class="btn btn-outline-light fs-5 mx-1 border-0"
+													>Udemy</a
+												>
+											</div>
+											<div class="accordion-body__btn d-none d-lg-flex align-items-baseline m-2 mx-lg-3 txt-2">
+												<p>Instruktor:</p>
+												<a
+													href="https://www.udemy.com/user/majek-2/"
+													target="_blank"
+													rel="noopener"
+													class="btn btn-outline-light fs-5 mx-1 border-0"
+													>Mateusz Maj</a
+												>
+											</div>
+											<div class="accordion-body__btn d-flex align-items-baseline m-2 mx-lg-3 txt-2">
+												<p>Certyfikat:</p>
+												<a
+													href="https://www.udemy.com/course/szybki-kurs-ai/"
+													target="_blank"
+													rel="noopener"
+													class="btn btn-outline-light fs-5 mx-1 border-0"
+													>Kurs bez certyfikatu</a
+												>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+
+		<h2 class="pb-5 d-flex justify-content-center align-items-center">Kursy do realizacji</h2>
+		<div class="container pt-3 pb-5 mb-5 fs-4">
+
+			<div class="accordion accordion-flush" id="accordionFlushLearn">
+				<div class="accordion-item">
+					<h2 class="accordion-header">
+						<button
+							class="accordion-button collapsed p-4 fs-4 bg-1 text-light"
+							type="button"
+							data-bs-toggle="collapse"
+							data-bs-target="#flush-collapseLearnOne"
+							aria-expanded="false"
+							aria-controls="flush-collapseLearnOne">
+							Tailwind CSS
+						</button>
+					</h2>
+					<div
+						id="flush-collapseLearnOne"
+						class="accordion-collapse collapse fs-5 bg-3 text-light"
+						data-bs-parent="#accordionFlushLearn">
+						<div class="accordion-body">
+							<div class="container">
+								<div class="row">
+									<div class="col-12 col-sm-4 p-4 pb-0 p-sm-0">
+										<div class="accordion-body__img accordion-body__img--one-learn"></div>
+									</div>
+									<div
+										class="col-12 col-sm-8 accordion-body__info d-flex flex-column justify-content-between px-2 pt-5 pb-5 p-sm-4 p-lg-5 pe-lg-3 pb-lg-3 text-start">
+										<p class="accordion-body__txt px-4 p-sm-2 py-lg-0">
+											Tailwind CSS to narzędzie do tworzenia niestandardowych interfejsów użytkownika za pomocą klas CSS. Umożliwia ono szybkie i elastyczne projektowanie stron internetowych bez pisania zbyt dużo kodu CSS. Tailwind CSS oferuje wiele gotowych komponentów.
+										</p>
+										<div
+											class="accordion-body__btns d-flex flex-wrap justify-content-end align-items-baseline pe-2 fs-5">
+											<div class="accordion-body__btn d-none d-xl-flex align-items-baseline m-2 mx-lg-3 txt-2">
+												<p>Platforma:</p>
+												<a
+													href="https://teachable.com/"
+													target="_blank"
+													rel="noopener"
+													class="btn btn-outline-light fs-5 mx-1 border-0"
+													>teach:able</a
+												>
+											</div>
+											<div class="accordion-body__btn d-none d-lg-flex align-items-baseline m-2 mx-lg-3 txt-2">
+												<p>Instruktor:</p>
+												<a
+													href="https://mmcschool.teachable.com/"
+													target="_blank"
+													rel="noopener"
+													class="btn btn-outline-light fs-5 mx-1 border-0"
+													>Mateusz Maj</a
+												>
+											</div>
+											<div class="accordion-body__btn d-flex align-items-baseline m-2 mx-lg-3 txt-2">
+												<p>Certyfikat:</p>
+												<a
+													href="https://mmcschool.teachable.com/p/tailwind-css"
+													target="_blank"
+													rel="noopener"
+													class="btn btn-outline-light fs-5 mx-1 border-0"
+													>Do realizacji</a
+												>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="accordion-item">
+					<h2 class="accordion-header">
+						<button
+							class="accordion-button collapsed p-4 fs-4 bg-1 text-light"
+							type="button"
+							data-bs-toggle="collapse"
+							data-bs-target="#flush-collapseLearnTwo"
+							aria-expanded="false"
+							aria-controls="flush-collapseLearnTwo">
+							React - The Complete Guide 2023 (incl. React Router & Redux)
+						</button>
+					</h2>
+					<div
+						id="flush-collapseLearnTwo"
+						class="accordion-collapse collapse fs-5 bg-3 text-light"
+						data-bs-parent="#accordionFlushLearn">
+						<div class="accordion-body">
+							<div class="container">
+								<div class="row">
+									<div class="col-12 col-sm-4 p-4 pb-0 p-sm-0">
+										<div class="accordion-body__img accordion-body__img--two-learn"></div>
+									</div>
+									<div
+										class="col-12 col-sm-8 accordion-body__info d-flex flex-column justify-content-between px-2 pt-5 pb-5 p-sm-4 p-lg-5 pe-lg-3 pb-lg-3 text-start">
+										<p class="accordion-body__txt px-4 p-sm-2 py-lg-0">
+											React.js od podstaw: React, Hooks, Redux, React Router, Next.js, najlepsze praktyki pisania kodu.
+										</p>
+										<div
+											class="accordion-body__btns d-flex flex-wrap justify-content-end align-items-baseline pe-2 fs-5">
+											<div class="accordion-body__btn d-none d-xl-flex align-items-baseline m-2 mx-lg-3 txt-2">
+												<p>Platforma:</p>
+												<a
+													href="https://www.udemy.com/"
+													target="_blank"
+													rel="noopener"
+													class="btn btn-outline-light fs-5 mx-1 border-0"
+													>Udemy</a
+												>
+											</div>
+											<div class="accordion-body__btn d-none d-lg-flex align-items-baseline m-2 mx-lg-3 txt-2">
+												<p>Instruktor:</p>
+												<a
+													href="https://www.udemy.com/user/maximilian-schwarzmuller/"
+													target="_blank"
+													rel="noopener"
+													class="btn btn-outline-light fs-5 mx-1 border-0"
+													>Maximilian Schwarzmüller</a
+												>
+											</div>
+											<div class="accordion-body__btn d-flex align-items-baseline m-2 mx-lg-3 txt-2">
+												<p>Certyfikat:</p>
+												<a
+													href="https://www.udemy.com/course/react-the-complete-guide-incl-redux/"
+													target="_blank"
+													rel="noopener"
+													class="btn btn-outline-light fs-5 mx-1 border-0"
+													>Do realizacji</a
+												>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+
+		<h2 class="pb-5 d-flex justify-content-center align-items-center">Języki obce</h2>
+		<div class="container pt-3 pb-5 mb-5 fs-4">
+
+			<div class="accordion accordion-flush" id="accordionFlushLang">
+				<div class="accordion-item">
+					<h2 class="accordion-header">
+						<button
+							class="accordion-button collapsed p-4 fs-4 bg-1 text-light"
+							type="button"
+							data-bs-toggle="collapse"
+							data-bs-target="#flush-collapseLangOne"
+							aria-expanded="false"
+							aria-controls="flush-collapseLangOne">
+							Język angielski - certyfikat ACERT B2
+						</button>
+					</h2>
+					<div
+						id="flush-collapseLangOne"
+						class="accordion-collapse collapse fs-5 bg-3 text-light"
+						data-bs-parent="#accordionFlushLang">
+						<div class="accordion-body">
+							<div class="container">
+								<div class="row">
+									<div class="col-12 col-sm-4 p-4 pb-0 p-sm-0">
+										<div class="accordion-body__img accordion-body__img--one-lang"></div>
+									</div>
+									<div
+										class="col-12 col-sm-8 accordion-body__info d-flex flex-column justify-content-between px-2 pt-5 pb-5 p-sm-4 p-lg-5 pe-lg-3 pb-lg-3 text-start">
+										<p class="accordion-body__txt px-4 p-sm-2 py-lg-0">
+											Akademicki certyfikat Politechniki Wrocławskiej znajomości języka angielskiego ACERT na poziomie B2.
+										</p>
+										<div
+											class="accordion-body__btns d-flex flex-wrap justify-content-end align-items-baseline pe-2 fs-5">
+											<div class="accordion-body__btn d-none d-lg-flex align-items-baseline m-2 mx-lg-3 txt-2">
+												<p>Uczelnia:</p>
+												<a
+													href="https://sjo.pwr.edu.pl"
+													target="_blank"
+													rel="noopener"
+													class="btn btn-outline-light fs-5 mx-1 border-0"
+													>Politechnika Wrocławska</a
+												>
+											</div>
+											<div class="accordion-body__btn d-flex align-items-baseline m-2 mx-lg-3 txt-2">
+												<p>Certyfikat:</p>
+												<a
+													href="./download/ACERT-B2E.pdf"
+													target="_blank"
+													rel="noopener"
+													class="btn btn-outline-light fs-5 mx-1 border-0"
+													>03.07.2013</a
+												>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+
+	</div>
+</section>
+
+			<section id="projects" class="projects text-light text-center bg-1 pb-5">
+	<div class="container pt-5">
+		<h1 class="section-header mt-sm-5 d-flex justify-content-center align-items-center p-5 fw-bold display-4 mb-5">
+			Projekty
+		</h1>
+	</div>
+	<div class="container pt-3 pb-5 mb-5 fs-4">
+		<div class="animated animated__cards mx-2">
+			<div class="animated__card mb-5">
+				<div class="front front-rotate p-5">
+					<h2 class="mb-5 fw-bold fs-1">Forest Group</h2>
+					<p>
+						Projekt zrealizowany w ramach IV cz. kursu Tworzenia Stron Internetowych od MMCSchool.pl na podstawie
+						otrzymanej makiety.
+					</p>
+					<div class="d-xxl-none btn btn-outline-light mt-4 position-relative">
+						<div class="btn btn-outline-light h-100 w-100 position-absolute top-0 start-0 p-0 m-0 ping"></div>
+						<p class="m-0 p-2 fs-5">Sprawdź więcej</p>
+					</div>
+				</div>
+				<div class="back back-rotate back--forest">
+					<div class="d-flex justify-content-center display-3 back-links">
+						<a href="https://sd91pl.github.io/menuFG/" target="_blank" rel="noopener">
+							<div class="d-flex flex-column m-5">
+								<i class="icon-timeline"></i>
+								<p class="fs-4 mt-3">Steps</p>
+							</div>
+						</a>
+						<a href="https://sd91pl.github.io/ForestGroup-DefaultBEM/" target="_blank" rel="noopener">
+							<div class="d-flex flex-column m-5">
+								<i class="icon-share-nodes-solid"></i>
+								<p class="fs-4 mt-3">Odwiedź stronę</p>
+							</div>
+						</a>
+						<a href="https://github.com/SD91PL/ForestGroup-DefaultBEM/" target="_blank" rel="noopener">
+							<div class="d-flex flex-column m-5">
+								<i class="icon-github"></i>
+								<p class="fs-4 mt-3">Repo</p>
+							</div>
+						</a>
+					</div>
+					<h3 class="m-3 m-xl-4 mb-xl-5 fw-bold fs-1">Forest Group</h3>
+					<p>
+						Projekt zrealizowany w ramach IV cz. kursu Tworzenia Stron Internetowych od MMCSchool.pl na podstawie
+						otrzymanej makiety.
+					</p>
+				</div>
+			</div>
+
+			<div class="animated__card">
+				<div class="front front-rotate p-5">
+					<h2 class="mb-5 fw-bold fs-1">Info</h2>
+					<p>
+						Strona na której obecnie się znajdujesz. Stanowi wizytówkę moich dotychczasowych umiejętności.
+					</p>
+					<div class="d-xxl-none btn btn-outline-light mt-4 position-relative">
+						<div class="btn btn-outline-light h-100 w-100 position-absolute top-0 start-0 p-0 m-0 ping"></div>
+						<p class="m-0 p-2 fs-5">Sprawdź więcej</p>
+					</div>
+				</div>
+				<div class="back back-rotate back--info">
+					<div class="d-flex justify-content-center display-3 back-links">
+						<a href="https://github.com/SD91PL/info" target="_blank" rel="noopener">
+							<div class="d-flex flex-column m-5">
+								<i class="icon-github"></i>
+								<p class="fs-4 mt-3">Repo</p>
+							</div>
+						</a>
+					</div>
+					<h3 class="m-3 m-xl-4 mb-xl-5 fw-bold fs-1">Info</h3>
+					<p>
+						Strona na której obecnie się znajdujesz. Stanowi wizytówkę moich dotychczasowych umiejętności.
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+			<section id="contact" class="contact text-light text-center bg-2 pb-5">
+	<div class="container pt-5">
+		<h1 class="section-header mt-sm-5 d-flex justify-content-center align-items-center p-5 fw-bold display-4 mb-5">
+			Kontakt
+		</h1>
+	</div>
+	<div class="container pt-3 pb-5 mb-5 display-3">
+		<div
+			class="d-flex flex-column justify-content-center align-items-center flex-sm-row justify-content-sm-between justify-content-lg-evenly">
+			<div class="d-flex flex-column justify-content-center my-4 mt-0 m-sm-0 contact__card">
+				<a href="https://www.messenger.com/t/sd91pl" target="_blank" rel="noopener">
+					<p class="d-flex justify-content-center align-items-center">
+						<span class="icon icon-facebook-messenger p-4"></span>
+					</p>
+					<p class="fs-3">Messenger</p>
+					<p class="fs-4 mt-sm-1 fw-bold op">SD91PL</p>
+				</a>
+			</div>
+			<div class="d-flex flex-column justify-content-center my-4 m-sm-0 contact__card">
+				<a href="tel:+48731386526">
+					<p class="d-flex justify-content-center align-items-center">
+						<span class="icon icon-mobile-screen-solid p-4"></span>
+					</p>
+					<p class="fs-3">Telefon</p>
+					<p class="fs-4 mt-sm-1 fw-bold op">731 386 526</p>
+				</a>
+			</div>
+			<div class="d-flex flex-column justify-content-center my-4 mb-0 m-sm-0 contact__card">
+				<a href="mailto:sd91pl@gmail.com">
+					<p class="d-flex justify-content-center align-items-center">
+						<span class="icon icon-envelope-solid p-4"></span>
+					</p>
+					<p class="fs-3">E-mail</p>
+					<p class="fs-4 mt-sm-1 fw-bold op">sd91pl@gmail.com</p>
+				</a>
+			</div>
+		</div>
+	</div>
+</section>
+
+		</main>
+		<footer class="footer bg-3">
+	<div class="container p-5 d-flex justify-content-center align-items-center">
+		<p class="fw-bold m-0">
+			&copy;
+			<span class="footer__year ps-1"></span>
+			<span class="footer__logo px-2">SD91PL</span>
+			<span>Front-End Web Developer</span>
+		</p>
+	</div>
+</footer>
+
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src='./dist/js/main.min.js'></script>
+	</body>
+</html>
