@@ -1,0 +1,27 @@
+$main-color: #0b2545;
+$bg-1: #13315c;
+$bg-2: #134074;
+$bg-3: #0b2545;
+
+$txt-1: #eef4ed;
+$txt-2: #8da9c4;
+
+$nav-box-shadow: #1340748e;
+$nav-bg: #00152a;  // add later onscroll on sections
+$nav-border: #495057;
+$scrollbar: #b5b5b5;
+
+$spacer: 100px;
+
+.custom-tooltip {
+	--bs-tooltip-bg: #134074;
+	--bs-tooltip-color: #eef4ed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	padding: 0.5rem 2rem;
+	background-color: #134074;
+    border-radius: 0.5rem;
+	font-size: 1.4rem;
+    font-family: 'Montserrat', sans-serif;
+}

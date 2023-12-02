@@ -1,0 +1,573 @@
+@use 'utilities' as *;
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+	scroll-padding-top: 79px;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	background-color: $bg-1;
+}
+
+section {
+	overflow: hidden;
+}
+
+.bg-1 {
+	background-color: $bg-1;
+}
+.bg-2 {
+	background-color: $bg-2;
+}
+.bg-3 {
+	background-color: $bg-3;
+}
+.txt-1 {
+	color: $txt-1;
+}
+.txt-2 {
+	color: $txt-2;
+}
+
+.hero-shadow {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+}
+
+.top-hero {
+	position: relative;
+	height: 200px;
+	background-size: cover;
+	z-index: 0;
+}
+
+.top-hero-text {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	font-size: 3.6rem;
+	text-transform: uppercase;
+}
+
+.section-header {
+	position: relative;
+	top: 0;
+	left: 0;
+}
+.section-header::after {
+	content: '';
+	position: absolute;
+	bottom: 20%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 30%;
+	height: 0.1rem;
+	background-image: linear-gradient(319deg, #00000000 0%, $txt-2 37%, #00000000 100%);
+}
+
+//HEADER
+header {
+	font-size: 2rem;
+	.carousel-item {
+		position: relative;
+		height: 160px;
+		background-position: center;
+		background-size: cover;
+		z-index: 0;
+		box-shadow: inset 0em -2.5em 2em -2em $nav-box-shadow;
+	}
+	.carousel-img-one {
+		background-color: $bg-2;
+		background-image: linear-gradient(60deg, $bg-1 25%, $bg-2 74%);
+	}
+	.carousel-img-two {
+		background-color: $bg-1;
+		background-image: linear-gradient(60deg, $bg-2 25%, $bg-3 74%);
+	}
+	.carousel-img-three {
+		background-color: $bg-1;
+		background-image: linear-gradient(60deg, $bg-3 25%, $bg-1 74%);
+	}
+	.icon-code-solid {
+		display: block;
+		font-size: 6rem;
+		text-shadow: 0px 0px 5px $txt-2;
+	}
+	.sd-logotype-underline {
+		width: 50%;
+		height: 0.2rem;
+		background-image: linear-gradient(319deg, #00000000 0%, $txt-2 37%, #00000000 100%);
+	}
+}
+
+//NAV
+.nav-box {
+	height: 80px; // Fixes a bug of bouncing scroll caused by sticky-top class on nav-box
+	box-shadow: 0em -1em 2em 0.5em rgba(0, 0, 0, 0.2);
+	z-index: 10000; //tooltips z-index is 1080
+}
+.navbar {
+	border-bottom: 1px solid $nav-border;
+	transition: background-color 0.67s; //bgc changing in main.js
+	&__logotype {
+		display: inline-block;
+		transform-origin: bottom left;
+		transition: transform 0.33s;
+		&--small {
+			transition: color 0.67s;
+		}
+	}
+	&__logotype:hover {
+		transform: scale(1.05);
+	}
+}
+.navbar-toggler {
+	padding: 1rem 0 1rem 1rem;
+	border: transparent;
+	border-radius: 0px;
+	border-left: 0.1rem solid #00000000;
+	transition: border 0.33s;
+}
+.navbar-toggler:hover,
+.navbar-toggler:focus {
+	box-shadow: none;
+	border-left: 0.1rem solid $txt-2;
+}
+.navbar-toggler-icon {
+	height: 3rem;
+	width: 3rem;
+}
+.nav-bg {
+	background-color: $nav-bg;
+} // navbarChange in main.js
+
+.nav-link {
+	transition: color 0.67s !important;
+}
+
+//SCROLL-BAR
+.scroll-bar {
+	height: 0.1rem;
+	width: var(--scroll-width);
+	background-image: linear-gradient(90deg, #00000000 0%, $scrollbar 40%, $scrollbar 60%, #00000000 100%);
+}
+
+//HOME
+.home {
+	position: relative;
+	top: 0;
+	height: calc(100vh - 240px);
+	background-color: $bg-1;
+	background-image: url('../../dist/img/avatar.webp');
+	background-size: cover;
+	background-position: center;
+	z-index: 0;
+	.hero-shadow {
+		background-color: $bg-1;
+		background-image: linear-gradient(60deg, $bg-3 25%, $bg-2 75%);
+		opacity: 0.8;
+	}
+	.btn {
+		padding: 1em 2em;
+		font-size: 1.4rem;
+		text-transform: uppercase;
+	}
+}
+
+//ABOUT
+// in //PROJECTS - animated__card
+
+//TECH-STACK
+//STACK-EDU
+.accordion-button:not(.collapsed) {
+	color: $txt-2;
+	background-color: $bg-1;
+	box-shadow: none;
+}
+.accordion-button:not(.collapsed)::after,
+.accordion-button::after {
+	background-image: url('../../dist/img/chevron-down-solid.svg');
+}
+.accordion-button:focus {
+	border-color: #ffffff8e;
+	background-color: $bg-2;
+	box-shadow: none;
+}
+
+.accordion {
+	border-radius: 8px;
+	box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.4);
+	overflow: hidden;
+}
+.accordion-item {
+	background: none;
+	border: none;
+}
+.accordion-body {
+	padding: 0;
+	margin: 0;
+	background-color: $bg-3;
+	background-image: linear-gradient(200deg, $bg-1 0%, $bg-3 74%, $bg-1 100%);
+}
+
+.accordion-body__img {
+	height: 100%;
+	width: 100%;
+	min-height: 200px;
+	min-width: 100%;
+	background-position: center;
+	background-size: cover;
+	border-radius: 4px;
+	&--one {
+		background-image: url('https://img-c.udemycdn.com/course/480x270/2355682_dee0_4.jpg');
+	}
+	&--two {
+		background-image: url('https://img-c.udemycdn.com/course/480x270/2428430_1b96_7.jpg');
+	}
+	&--three {
+		background-image: url('https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://www.filepicker.io/api/file/zS0jlA8SaaSkgXEfWHEe');
+	}
+	&--four {
+		background-image: url('https://img-c.udemycdn.com/course/480x270/2532868_291d_3.jpg');
+	}
+	&--five {
+		background-image: url('https://img-c.udemycdn.com/course/480x270/2823135_2421_2.jpg');
+	}
+	&--six {
+		background-image: url('https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://www.filepicker.io/api/file/Zf75jraiQduFz2883ODx');
+	}
+	&--seven {
+		background-image: url('https://img-c.udemycdn.com/course/480x270/4546460_f1b0_2.jpg');
+	}
+	&--eight {
+		background-image: url('https://img-c.udemycdn.com/course/480x270/2755534_0573_2.jpg');
+	}
+	&--nine {
+		background-image: url('https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://cdn.filestackcontent.com/qzIVXDuQC6Kps20hOcw6');
+	}
+
+	&--one-plus {
+		background-image: url('https://img-c.udemycdn.com/course/480x270/2620050_c52d_3.jpg');
+	}
+	&--two-plus {
+		background-image: url('https://img-c.udemycdn.com/course/480x270/5399296_4699_3.jpg');
+	}
+
+	&--one-learn {
+		background-image: url('https://img-c.udemycdn.com/course/480x270/1362070_b9a1_2.jpg');
+	}
+
+	&--one-lang {
+		background-image: url('https://cdn.pixabay.com/photo/2014/07/11/17/12/dictionary-390055_640.jpg');
+	}
+}
+
+//PROJECTS
+.animated {
+	&__card {
+		position: relative;
+		margin: 20px 0px;
+		width: 100%;
+		height: 350px;
+		perspective: 1400px;
+	}
+	.front {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		height: 100%;
+		background-position: center;
+		background-size: cover;
+		border-radius: 8px;
+		box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.4);
+		overflow: hidden;
+		transition: 0.67s;
+	}
+	.front-rotate {
+		background-image: linear-gradient(315deg, $bg-2 0%, $bg-3 74%);
+		&--about {
+			position: relative;
+			background-image: url('../../dist/img/avatar-bg-tablet.webp');
+			background-position: 50% 20%;
+			z-index: 0;
+			.hero-shadow {
+				background-color: $bg-1;
+				background-image: linear-gradient(60deg, $bg-3 25%, $bg-2 75%);
+				opacity: 0.8;
+			}
+		}
+	}
+	.back {
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		padding: 30px;
+		background-position: center;
+		background-size: cover;
+		border-radius: 8px;
+		text-align: center;
+		opacity: 0; // 0
+		box-shadow: 0px 12px 16px rgba(0, 0, 0, 0.2);
+		overflow: hidden;
+		transition: 0.67s;
+		&--about {
+			background-color: $bg-2;
+		}
+		&--forest {
+			background-image: linear-gradient(60deg, #000000d5 0%, #00000081 100%),
+				linear-gradient(319deg, #dcf26e81 0%, #61fa7386 37%, #1cfdd786 100%),
+				url('https://cdn.pixabay.com/photo/2014/10/10/10/49/forest-483207_640.jpg');
+		}
+		&--info {
+			background-image: linear-gradient(315deg, #000000e0 0%, $bg-2 74%),
+				url('https://cdn.pixabay.com/photo/2016/11/29/11/39/computer-1869236_640.jpg');
+		}
+		a {
+			text-decoration: none;
+			color: $txt-1;
+			transition: transform 0.33s;
+			&:hover {
+				transform: scale(1.04);
+			}
+		}
+	}
+	.back-links {
+		position: relative;
+		top: -500px;
+		left: 0%;
+		transition: top 0.67s;
+	} // click protection from the front
+	.back-rotate {
+		transform: rotateX(-180deg); // -180
+	}
+	&__card:hover {
+		.back {
+			transform: rotate(0deg);
+			opacity: 1;
+		}
+		.front-rotate {
+			transform: rotateX(180deg);
+			opacity: 0;
+		}
+		.back-links {
+			top: 0px;
+		}
+	}
+}
+
+//CONTACT
+.contact {
+	&__card {
+		width: 150px;
+		transition: text-shadow 0.33s;
+		.op {
+			opacity: 1;
+			transition: opacity 0.33s, transform 0.67s;
+		}
+		&:hover {
+			text-shadow: 0px 0px 10px $bg-3;
+			.op {
+				text-shadow: none;
+			}
+		}
+	}
+	a {
+		text-decoration: none;
+		color: $txt-1;
+		outline: none;
+	}
+	a:focus {
+		text-shadow: 0px 0px 10px $bg-3;
+		.op {
+			opacity: 1;
+			transform: scale(1.2);
+		}
+	}
+}
+
+//FOOTER
+.footer {
+	font-size: 1rem;
+	color: $txt-2;
+}
+
+/* MEDIA QUERIES  */
+
+@media (min-width: 576px) {
+	header {
+		.carousel-item {
+			height: 240px;
+		}
+	}
+
+	.navbar {
+		&__logotype {
+			display: inline-block;
+			transform-origin: center;
+		}
+	}
+	.bg-sm-dark {
+		background-color: #212529;
+	}
+
+	.home {
+		height: calc(100vh - 311px);
+	}
+
+	.accordion-body__img {
+		border-radius: 0px;
+	}
+
+	.footer {
+		font-size: 1.1rem;
+	}
+}
+
+@media (min-width: 768px) {
+	header {
+		.carousel-item {
+			height: 240px;
+		}
+	}
+	.home {
+		background-image: url('../../dist/img/avatar-bg-tablet.webp');
+	}
+}
+
+@media (min-width: 992px) {
+	:root {
+		scroll-padding-top: 65px;
+	}
+	header {
+		.carousel-item {
+			height: 370px;
+		}
+	}
+	.nav-box {
+		height: 63px; // Fixes a bug of bouncing scroll caused by sticky-top class on nav-box
+	}
+
+	.nav-link {
+		position: relative;
+	}
+	.nav-link,
+	.nav-link::after,
+	.nav-link::before {
+		transition: transform 0.33s;
+	}
+	.nav-link::after {
+		content: '';
+		position: absolute;
+		right: 15%;
+		bottom: 0;
+		width: 70%;
+		height: 0.1rem;
+		background-image: linear-gradient(319deg, #00000000 0%, $txt-2 37%, #00000000 100%);
+		transform: scale(0);
+	}
+	.nav-link:hover::after {
+		transform: scale(1);
+	}
+
+	.home {
+		height: calc(100vh - 427px);
+	}
+
+	.contact {
+		&__card {
+			.op {
+				opacity: 0;
+			}
+			&:hover {
+				.op {
+					transform: scale(1.2);
+					opacity: 1;
+				}
+			}
+		}
+	}
+
+	.animated {
+		.back {
+			&--forest {
+				background-image: linear-gradient(60deg, #000000d5 0%, #00000081 100%),
+					linear-gradient(319deg, #dcf26e81 0%, #61fa7386 37%, #1cfdd786 100%),
+					url('https://cdn.pixabay.com/photo/2014/10/10/10/49/forest-483207_1280.jpg');
+			}
+			&--info {
+				background-image: linear-gradient(315deg, #000000e0 0%, $bg-2 74%),
+					url('https://cdn.pixabay.com/photo/2016/11/29/11/39/computer-1869236_1280.jpg');
+			}
+		}
+	}
+
+	.footer {
+		font-size: 1.2rem;
+	}
+}
+
+@media (min-width: 1200px) {
+	:root {
+		scroll-padding-top: 62px;
+	}
+	.section-header::after {
+		width: 15%;
+	}
+
+	header {
+		.sd-logotype {
+			font-size: 7rem;
+		}
+		.carousel-item {
+			.display-3 {
+				font-size: 5rem;
+			}
+			.carousel-caption {
+				.fs-3 {
+					font-size: 2rem !important;
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 1400px) {
+	header {
+		.carousel-img-one {
+			background-color: $bg-2;
+			background-image: linear-gradient(45deg, $bg-1 25%, $bg-2 74%);
+		}
+		.carousel-img-two {
+			background-color: $bg-1;
+			background-image: linear-gradient(45deg, $bg-2 25%, $bg-3 74%);
+		}
+		.carousel-img-three {
+			background-color: $bg-1;
+			background-image: linear-gradient(45deg, $bg-3 25%, $bg-1 74%);
+		}
+		.maxwidth-header-btns {
+			position: relative;
+			top: -185px; //half of .carousel-item height from 992px breakpoint
+		}
+	}
+}
