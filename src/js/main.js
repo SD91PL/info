@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', function () {
 				navLogoSm.classList.add('txt-2')
 			}
 		} else if (viewportWidth >= 992) {
-			if (scrollY > viewportHeight * 0.35) {
+			if (scrollY > viewportHeight * 0.25) {
 				navbar.classList.add('nav-bg')
 				navLogoSm.classList.remove('txt-2')
 			} else {
