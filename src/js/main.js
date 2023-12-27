@@ -77,6 +77,31 @@ document.addEventListener('DOMContentLoaded', function () {
 	const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
 	const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
 
+	// projects - menu tabs
+	const projectsCards = document.querySelectorAll('.projects-card')
+	const pCardForest = document.querySelector('.p-card-forest')
+	const pCardInfo = document.querySelector('.p-card-info')
+	const pCardPragmaton = document.querySelector('.p-card-pragmaton')
+
+	const projectsBtns = document.querySelectorAll('.projects-btn')
+	const pBtnForest = document.querySelector('.p-btn-forest')
+	const pBtnInfo = document.querySelector('.p-btn-info')
+	const pBtnPragmaton = document.querySelector('.p-btn-pragmaton')
+
+	const resetTab = () => {
+		projectsCards.forEach(card => card.classList.add('d-none'))
+		projectsBtns.forEach(btn => btn.classList.remove('btn-active'))
+	}
+	const showTab = (btn, card) => {
+		btn.classList.add('btn-active')
+		card.classList.remove('d-none')
+	}
+	
+	projectsBtns.forEach(btn => btn.addEventListener('click', resetTab))
+	pBtnForest.addEventListener('click', () => showTab(pBtnForest, pCardForest))
+	pBtnInfo.addEventListener('click', () => showTab(pBtnInfo, pCardInfo))
+	pBtnPragmaton.addEventListener('click', () => showTab(pBtnPragmaton, pCardPragmaton))
+
 	//footer
 	const footerYear = document.querySelector('.footer__year')
 	const handleCurrentYear = () => {
