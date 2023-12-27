@@ -460,7 +460,7 @@ header {
 	}
 	header {
 		.carousel-item {
-			height: 370px;
+			height: 280px;
 		}
 	}
 	.nav-box {
@@ -490,7 +490,7 @@ header {
 	}
 
 	.home {
-		height: calc(100vh - 427px);
+		height: calc(100vh - 280px);
 	}
 
 	.contact {
@@ -567,7 +567,7 @@ header {
 		}
 		.maxwidth-header-btns {
 			position: relative;
-			top: -185px; //half of .carousel-item height from 992px breakpoint
+			top: -150px; // about half of .carousel-item height from 992px breakpoint
 		}
 	}
 }

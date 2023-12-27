@@ -39,18 +39,18 @@ document.addEventListener('DOMContentLoaded', function () {
 			}
 		} else if (viewportWidth > 576 && viewportWidth < 992) {
 			if (scrollY > viewportHeight * 0.15) {
-				navbar.classList.add('bg-sm-dark')
+				navbar.classList.add('nav-bg')
 				navLogoSm.classList.remove('txt-2')
 			} else {
-				navbar.classList.remove('bg-sm-dark')
+				navbar.classList.remove('nav-bg')
 				navLogoSm.classList.add('txt-2')
 			}
 		} else if (viewportWidth >= 992) {
 			if (scrollY > viewportHeight * 0.35) {
-				navbar.classList.add('bg-sm-dark')
+				navbar.classList.add('nav-bg')
 				navLogoSm.classList.remove('txt-2')
 			} else {
-				navbar.classList.remove('bg-sm-dark')
+				navbar.classList.remove('nav-bg')
 				navLogoSm.classList.add('txt-2')
 			}
 		}
