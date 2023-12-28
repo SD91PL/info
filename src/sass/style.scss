@@ -12,6 +12,10 @@
 	font-size: 62.5%;
 	scroll-behavior: smooth;
 	scroll-padding-top: 79px;
+	// --avatar-bg-tablet: url('../../dist/img/avatar-bg-tablet.webp');
+	// --avatar-bg: url('../../dist/img/avatar.webp');
+	--avatar-bg-tablet: url('https://cdn.pixabay.com/photo/2019/07/14/16/27/pen-4337521_1280.jpg');
+	--avatar-bg: url('https://cdn.pixabay.com/photo/2019/07/14/16/27/pen-4337521_640.jpg');
 }
 
 body {
@@ -179,7 +183,7 @@ header {
 	top: 0;
 	height: calc(100vh - 240px);
 	background-color: $bg-1;
-	background-image: url('../../dist/img/avatar.webp');
+	background-image: var(--avatar-bg);
 	background-size: cover;
 	background-position: center;
 	z-index: 0;
@@ -317,8 +321,8 @@ header {
 		background-image: linear-gradient(315deg, $bg-2 0%, $bg-3 74%);
 		&--about {
 			position: relative;
-			background-image: url('../../dist/img/avatar-bg-tablet.webp');
-			background-position: 50% 20%;
+			background-image: var(--avatar-bg-tablet);
+			background-position: 50% 33%;
 			z-index: 0;
 			.hero-shadow {
 				background-color: $bg-1;
@@ -466,7 +470,7 @@ header {
 		}
 	}
 	.home {
-		background-image: url('../../dist/img/avatar-bg-tablet.webp');
+		background-image: var(--avatar-bg-tablet);
 	}
 }
 
