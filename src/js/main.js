@@ -77,6 +77,32 @@ document.addEventListener('DOMContentLoaded', function () {
 	const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
 	const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
 
+	// stack-edu - button - display
+	const stackEduSection = document.querySelector('.stack-edu')
+	const stackEduBtn = document.querySelector('.stack-edu-btn')
+	stackEduBtn.innerHTML =
+		'<h2 class="d-flex justify-content-center align-items-center m-0">Moja Edukacja <i class="bi bi-chevron-down ms-3 fs-1"></i></h2>'
+	const btnContentChange = () => {
+		stackEduBtn.innerHTML =
+			stackEduBtn.innerHTML ===
+			'<h2 class="d-flex justify-content-center align-items-center m-0">Moja Edukacja <i class="bi bi-chevron-down ms-3 fs-1"></i></h2>'
+				? '<a href="#stack"><h2 class="d-flex justify-content-center align-items-center m-0">Zwiń <i class="bi bi-chevron-up ms-3 fs-1"></i></h2></a>'
+				: '<h2 class="d-flex justify-content-center align-items-center m-0">Moja Edukacja <i class="bi bi-chevron-down ms-3 fs-1"></i></h2>'
+	}
+	const showStackEdu = () => {
+		if (
+			stackEduBtn.innerHTML ===
+			'<h2 class="d-flex justify-content-center align-items-center m-0">Moja Edukacja <i class="bi bi-chevron-down ms-3 fs-1"></i></h2>'
+		) {
+			stackEduSection.classList.remove('d-none')
+			btnContentChange()
+		} else {
+			stackEduSection.classList.add('d-none')
+			btnContentChange()
+		}
+	}
+	stackEduBtn.addEventListener('click', showStackEdu)
+
 	// projects - menu tabs
 	const projectsCards = document.querySelectorAll('.projects-card')
 	const pCardForest = document.querySelector('.p-card-forest')
@@ -96,7 +122,7 @@ document.addEventListener('DOMContentLoaded', function () {
 		btn.classList.add('btn-active')
 		card.classList.remove('d-none')
 	}
-	
+
 	projectsBtns.forEach(btn => btn.addEventListener('click', resetTab))
 	pBtnForest.addEventListener('click', () => showTab(pBtnForest, pCardForest))
 	pBtnInfo.addEventListener('click', () => showTab(pBtnInfo, pCardInfo))

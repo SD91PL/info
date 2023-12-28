@@ -23,6 +23,11 @@ section {
 	overflow: hidden;
 }
 
+a {
+	color: $txt-1;
+	text-decoration: none;
+}
+
 .bg-1 {
 	background-color: $bg-1;
 }
@@ -194,6 +199,10 @@ header {
 // in //PROJECTS - animated__card
 
 //TECH-STACK
+.transition-height {
+	transition: height 2s;
+}
+
 //STACK-EDU
 .accordion-button:not(.collapsed) {
 	color: $txt-2;

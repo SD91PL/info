@@ -8,6 +8,7 @@
 		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
 <link rel="stylesheet" href="./dist/css/style.min.css">
 	</head>
 	<body data-bs-spy="scroll" data-bs-target="#navId">
@@ -102,7 +103,7 @@
                 <div class="navbar-nav ms-auto">
                     <a class="nav-link px-lg-4 py-3 py-lg-2 pt-4 active" href="#about">O mnie</a>
                     <a class="nav-link px-lg-4 py-3 py-lg-2" href="#stack">TechStack</a>
-                    <a class="nav-link px-lg-4 py-3 py-lg-2" href="#stack-edu">Praktyka</a>
+                    <!-- <a class="nav-link px-lg-4 py-3 py-lg-2" href="#stack-edu">Praktyka</a> -->
                     <a class="nav-link px-lg-4 py-3 py-lg-2" href="#projects">Projekty</a>
                     <a class="nav-link px-lg-4 py-3 py-lg-2" href="#contact">Kontakt</a>
                 </div>
@@ -186,8 +187,8 @@
 	</div>
 </section>
 
-			<section id="stack" class="text-light text-center bg-3 pb-5">
-	<div class="container pt-5 pb-4 mb-5">
+			<section id="stack" class="text-light text-center bg-3 pb-5 transition-height">
+	<div class="container pt-5 ">
 		<h1 class="section-header mt-sm-5 d-flex justify-content-center align-items-center p-5 fw-bold display-4 mb-5">
 			TechStack
 		</h1>
@@ -268,12 +269,8 @@
 			<div class="col-xl-2"></div>
 		</div>
 	</div>
-</section>
-			<section id="stack-edu" class="text-light text-center bg-3 pb-5">
-	<div class="container pt-5 pb-4 mb-5">
-		<h1 class="section-header mt-sm-5 d-flex justify-content-center align-items-center p-5 fw-bold display-4 mb-5">
-			Praktyka
-		</h1>
+	<section class="stack-edu d-none text-light text-center bg-3 py-0 transition-height">
+	<div class="container pt-5 pb-0">
 		<h2 class="pb-5 d-flex justify-content-center align-items-center">Ukończone kursy</h2>
 		<div class="container pt-3 pb-5 mb-5 fs-4">
 			<div class="accordion accordion-flush" id="accordionFlushExample">
@@ -302,7 +299,8 @@
 									<div
 										class="col-12 col-sm-8 accordion-body__info d-flex flex-column justify-content-between px-2 pt-5 pb-5 p-sm-4 p-lg-5 pe-lg-3 pb-lg-3 text-start">
 										<p class="accordion-body__txt px-4 p-sm-2 py-lg-0">
-											Podstawy HTML, CSS, semantyka, dobre praktyki pisania kodu i RWD, czyli responsywne strony internetowe.
+											Podstawy HTML, CSS, semantyka, dobre praktyki pisania kodu i RWD, czyli responsywne strony
+											internetowe.
 										</p>
 										<div
 											class="accordion-body__btns d-flex flex-wrap justify-content-end align-items-baseline pe-2 fs-5">
@@ -369,7 +367,8 @@
 									<div
 										class="col-12 col-sm-8 accordion-body__info d-flex flex-column justify-content-between px-2 pt-5 pb-5 p-sm-4 p-lg-5 pe-lg-3 pb-lg-3 text-start">
 										<p class="accordion-body__txt px-4 p-sm-2 py-lg-0">
-											Preprocesor SASS, pseudoklasy, pseudoelementy i atrybuty, animacje, Flexbox, podstawy JavaScript, Bootstrap.
+											Preprocesor SASS, pseudoklasy, pseudoelementy i atrybuty, animacje, Flexbox, podstawy JavaScript,
+											Bootstrap.
 										</p>
 										<div
 											class="accordion-body__btns d-flex flex-wrap justify-content-end align-items-baseline pe-2 fs-5">
@@ -436,7 +435,8 @@
 									<div
 										class="col-12 col-sm-8 accordion-body__info d-flex flex-column justify-content-between px-2 pt-5 pb-5 p-sm-4 p-lg-5 pe-lg-3 pb-lg-3 text-start">
 										<p class="accordion-body__txt px-4 p-sm-2 py-lg-0">
-											Animowane karty, linki, przyciski, menu, tooltipy, inputy, Git & GitHub, BEM & SASS, UI/UX Design, Flexbox, CSS Grid.
+											Animowane karty, linki, przyciski, menu, tooltipy, inputy, Git & GitHub, BEM & SASS, UI/UX Design,
+											Flexbox, CSS Grid.
 										</p>
 										<div
 											class="accordion-body__btns d-flex flex-wrap justify-content-end align-items-baseline pe-2 fs-5">
@@ -503,7 +503,8 @@
 									<div
 										class="col-12 col-sm-8 accordion-body__info d-flex flex-column justify-content-between px-2 pt-5 pb-5 p-sm-4 p-lg-5 pe-lg-3 pb-lg-3 text-start">
 										<p class="accordion-body__txt px-4 p-sm-2 py-lg-0">
-											Typy danych, operatory, instrukcje warunkowe, pętle, tablice, funkcje, metody, atrybuty, DOM, obiekty, JSON, AJAX, API.
+											Typy danych, operatory, instrukcje warunkowe, pętle, tablice, funkcje, metody, atrybuty, DOM,
+											obiekty, JSON, AJAX, API.
 										</p>
 										<div
 											class="accordion-body__btns d-flex flex-wrap justify-content-end align-items-baseline pe-2 fs-5">
@@ -771,8 +772,9 @@
 									<div
 										class="col-12 col-sm-8 accordion-body__info d-flex flex-column justify-content-between px-2 pt-5 pb-5 p-sm-4 p-lg-5 pe-lg-3 pb-lg-3 text-start">
 										<p class="accordion-body__txt px-4 p-sm-2 py-lg-0">
-											Bootstrap to framework do szybkiego tworzenia responsywnych stron internetowych. Oferuje wiele gotowych rozwiązań, takich jak predefiniowane style, klasy pomocnicze, moduły Sass i skrypty JavaScript.
-
+											Bootstrap to framework do szybkiego tworzenia responsywnych stron internetowych. Oferuje wiele
+											gotowych rozwiązań, takich jak predefiniowane style, klasy pomocnicze, moduły Sass i skrypty
+											JavaScript.
 										</p>
 										<div
 											class="accordion-body__btns d-flex flex-wrap justify-content-end align-items-baseline pe-2 fs-5">
@@ -839,7 +841,9 @@
 									<div
 										class="col-12 col-sm-8 accordion-body__info d-flex flex-column justify-content-between px-2 pt-5 pb-5 p-sm-4 p-lg-5 pe-lg-3 pb-lg-3 text-start">
 										<p class="accordion-body__txt px-4 p-sm-2 py-lg-0">
-											Tailwind CSS to narzędzie do tworzenia niestandardowych interfejsów użytkownika za pomocą klas CSS. Umożliwia ono szybkie i elastyczne projektowanie stron internetowych bez pisania zbyt dużo kodu CSS. Tailwind CSS oferuje wiele gotowych komponentów.
+											Tailwind CSS to narzędzie do tworzenia niestandardowych interfejsów użytkownika za pomocą klas
+											CSS. Umożliwia ono szybkie i elastyczne projektowanie stron internetowych bez pisania zbyt dużo
+											kodu CSS. Tailwind CSS oferuje wiele gotowych komponentów.
 										</p>
 										<div
 											class="accordion-body__btns d-flex flex-wrap justify-content-end align-items-baseline pe-2 fs-5">
@@ -911,7 +915,9 @@
 									<div
 										class="col-12 col-sm-8 accordion-body__info d-flex flex-column justify-content-between px-2 pt-5 pb-5 p-sm-4 p-lg-5 pe-lg-3 pb-lg-3 text-start">
 										<p class="accordion-body__txt px-4 p-sm-2 py-lg-0">
-											Skróty Emmet pozwalają tworzyć struktury witryny internetowej w rozsądnym czasie, a także przyspieszają proces stylizowania elementów w CSS. Korzystanie z nich znacznie poprawia wydajność pracy z kodem.
+											Skróty Emmet pozwalają tworzyć struktury witryny internetowej w rozsądnym czasie, a także
+											przyspieszają proces stylizowania elementów w CSS. Korzystanie z nich znacznie poprawia wydajność
+											pracy z kodem.
 										</p>
 										<div
 											class="accordion-body__btns d-flex flex-wrap justify-content-end align-items-baseline pe-2 fs-5">
@@ -978,7 +984,8 @@
 									<div
 										class="col-12 col-sm-8 accordion-body__info d-flex flex-column justify-content-between px-2 pt-5 pb-5 p-sm-4 p-lg-5 pe-lg-3 pb-lg-3 text-start">
 										<p class="accordion-body__txt px-4 p-sm-2 py-lg-0">
-											Sztuczna inteligencja (AI) to dziedzina nauki, która zajmuje się tworzeniem maszyn i systemów, które mogą wykonywać zadania wymagające ludzkiego rozumu i percepcji.
+											Sztuczna inteligencja (AI) to dziedzina nauki, która zajmuje się tworzeniem maszyn i systemów,
+											które mogą wykonywać zadania wymagające ludzkiego rozumu i percepcji.
 										</p>
 										<div
 											class="accordion-body__btns d-flex flex-wrap justify-content-end align-items-baseline pe-2 fs-5">
@@ -1025,7 +1032,6 @@
 		<h2 class="pb-5 d-flex justify-content-center align-items-center">Kursy do realizacji</h2>
 		<div class="container pt-3 pb-5 mb-5 fs-4">
 			<div class="accordion accordion-flush" id="accordionFlushLearn">
-
 				<div class="accordion-item">
 					<h2 class="accordion-header">
 						<button
@@ -1123,7 +1129,8 @@
 									<div
 										class="col-12 col-sm-8 accordion-body__info d-flex flex-column justify-content-between px-2 pt-5 pb-5 p-sm-4 p-lg-5 pe-lg-3 pb-lg-3 text-start">
 										<p class="accordion-body__txt px-4 p-sm-2 py-lg-0">
-											Akademicki certyfikat Politechniki Wrocławskiej znajomości języka angielskiego ACERT na poziomie B2.
+											Akademicki certyfikat Politechniki Wrocławskiej znajomości języka angielskiego ACERT na poziomie
+											B2.
 										</p>
 										<div
 											class="accordion-body__btns d-flex flex-wrap justify-content-end align-items-baseline pe-2 fs-5">
@@ -1156,10 +1163,11 @@
 				</div>
 			</div>
 		</div>
-
 	</div>
 </section>
-
+<button class="stack-edu-btn btn border-0 text-light mb-5 mx-3 mx-sm-4 py-3 pt-5 px-4">
+</button>
+</section>
 			<section id="projects" class="projects text-light text-center bg-1 pb-5">
 	<div class="container pt-5">
 		<h1 class="section-header mt-sm-5 d-flex justify-content-center align-items-center p-5 fw-bold display-4 mb-5">
