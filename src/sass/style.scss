@@ -1,4 +1,5 @@
 @use 'utilities' as *;
+$spacer: 100px;
 
 *,
 *::before,
@@ -12,8 +13,6 @@
 	font-size: 62.5%;
 	scroll-behavior: smooth;
 	scroll-padding-top: 79px;
-	// --avatar-bg-tablet: url('../../dist/img/avatar-bg-tablet.webp');
-	// --avatar-bg: url('../../dist/img/avatar.webp');
 	--avatar-bg-tablet: url('https://cdn.pixabay.com/photo/2019/07/14/16/27/pen-4337521_1280.jpg');
 	--avatar-bg: url('https://cdn.pixabay.com/photo/2019/07/14/16/27/pen-4337521_640.jpg');
 }
@@ -205,6 +204,16 @@ header {
 //TECH-STACK
 .transition-height {
 	transition: height 2s;
+}
+.custom-tooltip {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	padding: 0.5rem 2rem;
+	background-color: $bg-2;
+    border-radius: 0.5rem;
+	font-size: 1.4rem;
+    font-family: 'Montserrat', sans-serif;
 }
 
 //STACK-EDU
