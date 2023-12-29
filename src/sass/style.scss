@@ -438,6 +438,9 @@ header {
 		.carousel-item {
 			height: 240px;
 		}
+		.trans-down {
+			transform: translate(0px, 3px);
+		}
 	}
 
 	.navbar {
