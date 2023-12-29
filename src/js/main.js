@@ -25,33 +25,35 @@ document.addEventListener('DOMContentLoaded', function () {
 	// navbar changing background-color by scrollY
 	const navbar = document.querySelector('.navbar')
 	const navLogoSm = document.querySelector('.navbar__logotype--small')
+	const addNavBg = () => {
+		navbar.classList.add('nav-bg')
+		navLogoSm.classList.remove('txt-2')
+	}
+	const removeNavBg = () => {
+		navbar.classList.remove('nav-bg')
+		navLogoSm.classList.add('txt-2')
+	}
 	const navbarChange = () => {
 		let viewportWidth = window.innerWidth
 		let viewportHeight = window.innerHeight
 		let scrollY = window.scrollY
 		if (viewportWidth <= 576) {
 			if (scrollY > viewportHeight * 0.4) {
-				navbar.classList.add('nav-bg')
-				navLogoSm.classList.remove('txt-2')
+				addNavBg()
 			} else {
-				navbar.classList.remove('nav-bg')
-				navLogoSm.classList.add('txt-2')
+				removeNavBg()
 			}
 		} else if (viewportWidth > 576 && viewportWidth < 992) {
 			if (scrollY > viewportHeight * 0.15) {
-				navbar.classList.add('nav-bg')
-				navLogoSm.classList.remove('txt-2')
+				addNavBg()
 			} else {
-				navbar.classList.remove('nav-bg')
-				navLogoSm.classList.add('txt-2')
+				removeNavBg()
 			}
 		} else if (viewportWidth >= 992) {
 			if (scrollY > viewportHeight * 0.25) {
-				navbar.classList.add('nav-bg')
-				navLogoSm.classList.remove('txt-2')
+				addNavBg()
 			} else {
-				navbar.classList.remove('nav-bg')
-				navLogoSm.classList.add('txt-2')
+				removeNavBg()
 			}
 		}
 	}
