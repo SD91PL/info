@@ -1,5 +1,4 @@
 @use 'utilities' as *;
-$spacer: 100px;
 
 *,
 *::before,
@@ -134,7 +133,6 @@ header {
 	z-index: 10000; //tooltips z-index is 1080
 }
 .navbar {
-	border: 1px solid $nav-border;
 	transition: background-color 0.67s; //bgc changing in main.js
 	&__logotype {
 		display: inline-block;
@@ -400,7 +398,7 @@ header {
 		&--lifestyle {
 			background-image: linear-gradient(60deg, #000000d5 0%, #00000081 100%),
 				linear-gradient(319deg, #00459473 0%, #0045947e 37%, #00336ec7 100%),
-				url('https://cdn.pixabay.com/photo/2017/06/15/11/43/model-2405173_640.jpg');
+				url('https://cdn.pixabay.com/photo/2018/01/01/01/56/yoga-3053488_640.jpg');
 		}
 
 		a {
@@ -589,7 +587,7 @@ header {
 			&--lifestyle {
 				background-image: linear-gradient(60deg, #000000b0 0%, #00000081 100%),
 					linear-gradient(319deg, #00459473 0%, #0045947e 37%, #00336ead 100%),
-					url('https://cdn.pixabay.com/photo/2017/06/15/11/43/model-2405173_1280.jpg');
+					url('https://cdn.pixabay.com/photo/2018/01/01/01/56/yoga-3053488_1280.jpg');
 			}
 		}
 	}
