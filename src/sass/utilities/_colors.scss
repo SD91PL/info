@@ -9,10 +9,13 @@ $txt-2: #8da9c4;
 
 $nav-box-shadow: #1340748e;
 $nav-bg: #00152a;  // add later onscroll on sections
-$nav-border: #495057;
+$nav-border: $bg-3;
 $scrollbar: #b5b5b5;
 
 .custom-tooltip {
 	--bs-tooltip-bg: #134074;
 	--bs-tooltip-color: #eef4ed;
 }
+
+// USED BEFORE
+// $nav-border: #495057;
