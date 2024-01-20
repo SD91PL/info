@@ -34,6 +34,9 @@ a {
 .bg-1 {
 	background-color: $bg-1;
 }
+.bg-1e {
+	background-color: $bg-1e;
+}
 .bg-2 {
 	background-color: $bg-2;
 }
@@ -206,14 +209,14 @@ header {
 	transition: height 2s;
 }
 .custom-tooltip {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	padding: 0.5rem 2rem;
 	background-color: $bg-2;
-    border-radius: 0.5rem;
+	border-radius: 0.5rem;
 	font-size: 1.4rem;
-    font-family: 'Montserrat', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 
 //STACK-EDU
@@ -239,6 +242,25 @@ header {
 .accordion-item {
 	background: none;
 	border: none;
+}
+
+.accordion-item:nth-child(odd) {
+	.accordion-header {
+		.accordion-button, .bg-1 {
+			background-color: $bg-1e;
+			background-image: linear-gradient(120deg, $bg-1e 0%, $bg-1 50%);
+		}
+	}
+}
+.accordion-item {
+	.accordion-header {
+		.accordion-button:focus {
+			border-color: #ffffff8e;
+			background-color: $bg-2;
+			box-shadow: none;
+			background-image: none;
+		}
+	}
 }
 .accordion-body {
 	padding: 0;
@@ -281,6 +303,9 @@ header {
 	}
 	&--nine {
 		background-image: url('https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://cdn.filestackcontent.com/qzIVXDuQC6Kps20hOcw6');
+	}
+	&--ten {
+		background-image: url('https://img-c.udemycdn.com/course/480x270/5198548_ca58_19.jpg');
 	}
 
 	&--one-plus {
