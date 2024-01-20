@@ -134,7 +134,7 @@ header {
 	z-index: 10000; //tooltips z-index is 1080
 }
 .navbar {
-	border-bottom: 1px solid $nav-border;
+	border: 1px solid $nav-border;
 	transition: background-color 0.67s; //bgc changing in main.js
 	&__logotype {
 		display: inline-block;
