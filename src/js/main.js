@@ -110,11 +110,13 @@ document.addEventListener('DOMContentLoaded', function () {
 	const pCardForest = document.querySelector('.p-card-forest')
 	const pCardInfo = document.querySelector('.p-card-info')
 	const pCardPragmaton = document.querySelector('.p-card-pragmaton')
+	const pCardLifestyle = document.querySelector('.p-card-lifestyle')
 
 	const projectsBtns = document.querySelectorAll('.projects-btn')
 	const pBtnForest = document.querySelector('.p-btn-forest')
 	const pBtnInfo = document.querySelector('.p-btn-info')
 	const pBtnPragmaton = document.querySelector('.p-btn-pragmaton')
+	const pBtnLifestyle = document.querySelector('.p-btn-lifestyle')
 
 	const resetTab = () => {
 		projectsCards.forEach(card => card.classList.add('d-none'))
@@ -129,6 +131,7 @@ document.addEventListener('DOMContentLoaded', function () {
 	pBtnForest.addEventListener('click', () => showTab(pBtnForest, pCardForest))
 	pBtnInfo.addEventListener('click', () => showTab(pBtnInfo, pCardInfo))
 	pBtnPragmaton.addEventListener('click', () => showTab(pBtnPragmaton, pCardPragmaton))
+	pBtnLifestyle.addEventListener('click', () => showTab(pBtnLifestyle, pCardLifestyle))
 
 	//footer
 	const footerYear = document.querySelector('.footer__year')

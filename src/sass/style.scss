@@ -246,7 +246,8 @@ header {
 
 .accordion-item:nth-child(odd) {
 	.accordion-header {
-		.accordion-button, .bg-1 {
+		.accordion-button,
+		.bg-1 {
 			background-color: $bg-1e;
 			background-image: linear-gradient(120deg, $bg-1e 0%, $bg-1 50%);
 		}
@@ -393,9 +394,15 @@ header {
 				url('https://cdn.pixabay.com/photo/2016/11/29/11/39/computer-1869236_640.jpg');
 		}
 		&--pragmaton {
-			background-image: linear-gradient(240deg, #000000e0 0%, #353535 80%),
+			background-image: linear-gradient(240deg, #000000f6 0%, #353535bd 80%),
 				url('https://cdn.pixabay.com/photo/2015/10/26/13/45/microphone-1007154_640.jpg');
 		}
+		&--lifestyle {
+			background-image: linear-gradient(60deg, #000000d5 0%, #00000081 100%),
+				linear-gradient(319deg, #00459473 0%, #0045947e 37%, #00336ec7 100%),
+				url('https://cdn.pixabay.com/photo/2017/06/15/11/43/model-2405173_640.jpg');
+		}
+
 		a {
 			text-decoration: none;
 			color: $txt-1;
@@ -576,8 +583,13 @@ header {
 					url('https://cdn.pixabay.com/photo/2016/11/29/11/39/computer-1869236_1280.jpg');
 			}
 			&--pragmaton {
-				background-image: linear-gradient(240deg, #000000e0 0%, #353535 80%),
+				background-image: linear-gradient(240deg, #000000ec 0%, #353535bd 80%),
 					url('https://cdn.pixabay.com/photo/2015/10/26/13/45/microphone-1007154_1280.jpg');
+			}
+			&--lifestyle {
+				background-image: linear-gradient(60deg, #000000b0 0%, #00000081 100%),
+					linear-gradient(319deg, #00459473 0%, #0045947e 37%, #00336ead 100%),
+					url('https://cdn.pixabay.com/photo/2017/06/15/11/43/model-2405173_1280.jpg');
 			}
 		}
 	}
