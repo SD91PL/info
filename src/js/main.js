@@ -83,18 +83,18 @@ document.addEventListener('DOMContentLoaded', function () {
 	const stackEduSection = document.querySelector('.stack-edu')
 	const stackEduBtn = document.querySelector('.stack-edu-btn')
 	stackEduBtn.innerHTML =
-		'<h2 class="d-flex justify-content-center align-items-center m-0">Moja Edukacja <i class="bi bi-chevron-down ms-3 fs-1 chevron-btn"></i></h2>'
+		'<h2 class="d-flex justify-content-center align-items-center m-0">Moja Edukacja <i class="bi bi-chevron-down ms-3 fs-1"></i></h2>'
 	const btnContentChange = () => {
 		stackEduBtn.innerHTML =
 			stackEduBtn.innerHTML ===
-			'<h2 class="d-flex justify-content-center align-items-center m-0">Moja Edukacja <i class="bi bi-chevron-down ms-3 fs-1 chevron-btn"></i></h2>'
-				? '<a href="#stack"><h2 class="d-flex justify-content-center align-items-center m-0">Zwiń <i class="bi bi-chevron-up ms-3 fs-1 chevron-btn"></i></h2></a>'
-				: '<h2 class="d-flex justify-content-center align-items-center m-0">Moja Edukacja <i class="bi bi-chevron-down ms-3 fs-1 chevron-btn"></i></h2>'
+			'<h2 class="d-flex justify-content-center align-items-center m-0">Moja Edukacja <i class="bi bi-chevron-down ms-3 fs-1"></i></h2>'
+				? '<a href="#stack"><h2 class="d-flex justify-content-center align-items-center m-0">Zwiń <i class="bi bi-chevron-up ms-3 fs-1"></i></h2></a>'
+				: '<h2 class="d-flex justify-content-center align-items-center m-0">Moja Edukacja <i class="bi bi-chevron-down ms-3 fs-1"></i></h2>'
 	}
 	const showStackEdu = () => {
 		if (
 			stackEduBtn.innerHTML ===
-			'<h2 class="d-flex justify-content-center align-items-center m-0">Moja Edukacja <i class="bi bi-chevron-down ms-3 fs-1 chevron-btn"></i></h2>'
+			'<h2 class="d-flex justify-content-center align-items-center m-0">Moja Edukacja <i class="bi bi-chevron-down ms-3 fs-1"></i></h2>'
 		) {
 			stackEduSection.classList.remove('d-none')
 			btnContentChange()
