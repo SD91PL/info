@@ -400,6 +400,11 @@ header {
 				linear-gradient(319deg, #00459473 0%, #0045947e 37%, #00336ec7 100%),
 				url('https://cdn.pixabay.com/photo/2018/01/01/01/56/yoga-3053488_640.jpg');
 		}
+		&--psvita {
+			background-image: linear-gradient(60deg, #000000d5 0%, #00000081 100%),
+				linear-gradient(319deg, #00459473 0%, #0045947e 37%, #00336ec7 100%),
+				url('https://cdn.pixabay.com/photo/2017/04/04/18/12/video-game-console-2202616_640.jpg');
+		}
 
 		a {
 			text-decoration: none;
@@ -588,6 +593,11 @@ header {
 				background-image: linear-gradient(60deg, #000000b0 0%, #00000081 100%),
 					linear-gradient(319deg, #00459473 0%, #0045947e 37%, #00336ead 100%),
 					url('https://cdn.pixabay.com/photo/2018/01/01/01/56/yoga-3053488_1280.jpg');
+			}
+			&--psvita {
+				background-image: linear-gradient(60deg, #000000d5 0%, #00000081 100%),
+					linear-gradient(319deg, #00459473 0%, #0045947e 37%, #00336ec7 100%),
+					url('https://cdn.pixabay.com/photo/2017/04/04/18/12/video-game-console-2202616_1280.jpg');
 			}
 		}
 	}
