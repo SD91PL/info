@@ -323,6 +323,37 @@ header {
 	}
 }
 
+.stack-edu-btn {
+	position: relative;
+	background-image: linear-gradient(0deg, $bg-1 0%, $bg-3 33%);
+	overflow: hidden;
+	z-index: 0;
+	&::before {
+		position: absolute;
+		top: 0;
+		left: 0;
+		content: '';
+		width: 100%;
+		height: 100%;
+		background-image: linear-gradient(0deg, $bg-1 0%, $bg-3 66%);
+		opacity:0;
+		transition: opacity .5s;
+		z-index: 0;
+	}
+	&:focus::before {
+		opacity:.25;
+	}
+	&:hover::before {
+		opacity:1;
+	}
+	h2 {
+		position: relative;
+		top: 0;
+		left: 0;
+		z-index: 10;
+	}
+}
+
 //PROJECTS
 .btn-active {
 	background-color: #ffffff2f;
