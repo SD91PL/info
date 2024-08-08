@@ -12,13 +12,14 @@
 	font-size: 62.5%;
 	scroll-behavior: smooth;
 	scroll-padding-top: 79px;
-	--avatar-bg-tablet: url('https://cdn.pixabay.com/photo/2019/07/14/16/27/pen-4337521_1280.jpg');
 	--avatar-bg: url('https://cdn.pixabay.com/photo/2019/07/14/16/27/pen-4337521_640.jpg');
+	--avatar-bg-tablet: url('https://cdn.pixabay.com/photo/2019/07/14/16/27/pen-4337521_1280.jpg');
+	--avatar-bg-desktop: url('https://pixabay.com/get/g551ab7f4a41f6e6049241e7205cb4ca085a0c3e250fb19971adfe5f9ff787a0e5936d35ecd8b727f9080742215be7d0011c993bcbde2686df070be6713b14229_1920.jpg');
 }
 
 body {
 	font-family: 'Montserrat', sans-serif;
-	background-color: $bg-1;
+	background-color: $bg-3;
 }
 
 section {
@@ -129,7 +130,7 @@ header {
 //NAV
 .nav-box {
 	height: 80px; // Fixes a bug of bouncing scroll caused by sticky-top class on nav-box
-	box-shadow: 0em -1em 2em 0.5em rgba(0, 0, 0, 0.2);
+	// box-shadow: 0em -1em 2em 0.5em rgba(0, 0, 0, 0.2);
 	z-index: 10000; //tooltips z-index is 1080
 }
 .navbar {
@@ -385,7 +386,7 @@ header {
 		background-image: linear-gradient(315deg, $bg-2 0%, $bg-3 74%);
 		&--about {
 			position: relative;
-			background-image: var(--avatar-bg-tablet);
+			background-image: url('https://cdn.pixabay.com/photo/2019/07/14/16/29/pen-4337524_1280.jpg');
 			background-position: 50% 33%;
 			z-index: 0;
 			.hero-shadow {
@@ -681,5 +682,9 @@ header {
 			position: relative;
 			top: -150px; // about half of .carousel-item height from 992px breakpoint
 		}
+	}
+
+	.home {
+		background-image: var(--avatar-bg-desktop);
 	}
 }
