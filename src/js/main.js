@@ -107,18 +107,20 @@ document.addEventListener('DOMContentLoaded', function () {
 
 	// projects - menu tabs
 	const projectsCards = document.querySelectorAll('.projects-card')
-	const pCardForest = document.querySelector('.p-card-forest')
+	// const pCardForest = document.querySelector('.p-card-forest')
 	const pCardInfo = document.querySelector('.p-card-info')
 	const pCardPragmaton = document.querySelector('.p-card-pragmaton')
-	const pCardLifestyle = document.querySelector('.p-card-lifestyle')
+	// const pCardLifestyle = document.querySelector('.p-card-lifestyle')
 	const pCardPSVita = document.querySelector('.p-card-psvita')
+	const pCardToDo = document.querySelector('.p-card-todo')
 
 	const projectsBtns = document.querySelectorAll('.projects-btn')
-	const pBtnForest = document.querySelector('.p-btn-forest')
+	// const pBtnForest = document.querySelector('.p-btn-forest')
 	const pBtnInfo = document.querySelector('.p-btn-info')
 	const pBtnPragmaton = document.querySelector('.p-btn-pragmaton')
-	const pBtnLifestyle = document.querySelector('.p-btn-lifestyle')
+	// const pBtnLifestyle = document.querySelector('.p-btn-lifestyle')
 	const pBtnPSVita = document.querySelector('.p-btn-psvita')
+	const pBtnToDo = document.querySelector('.p-btn-todo')
 
 	const resetTab = () => {
 		projectsCards.forEach(card => card.classList.add('d-none'))
@@ -130,11 +132,12 @@ document.addEventListener('DOMContentLoaded', function () {
 	}
 
 	projectsBtns.forEach(btn => btn.addEventListener('click', resetTab))
-	pBtnForest.addEventListener('click', () => showTab(pBtnForest, pCardForest))
+	// pBtnForest.addEventListener('click', () => showTab(pBtnForest, pCardForest))
 	pBtnInfo.addEventListener('click', () => showTab(pBtnInfo, pCardInfo))
 	pBtnPragmaton.addEventListener('click', () => showTab(pBtnPragmaton, pCardPragmaton))
-	pBtnLifestyle.addEventListener('click', () => showTab(pBtnLifestyle, pCardLifestyle))
+	// pBtnLifestyle.addEventListener('click', () => showTab(pBtnLifestyle, pCardLifestyle))
 	pBtnPSVita.addEventListener('click', () => showTab(pBtnPSVita, pCardPSVita))
+	pBtnToDo.addEventListener('click', () => showTab(pBtnToDo, pCardToDo))
 
 	//footer
 	const footerYear = document.querySelector('.footer__year')
