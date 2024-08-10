@@ -133,7 +133,6 @@ header {
 //NAV
 .nav-box {
 	height: 80px; // Fixes a bug of bouncing scroll caused by sticky-top class on nav-box
-	// box-shadow: 0em -1em 2em 0.5em rgba(0, 0, 0, 0.2);
 	z-index: 10000; //tooltips z-index is 1080
 }
 .navbar {
@@ -417,11 +416,6 @@ header {
 		&--about {
 			background-color: $bg-2;
 		}
-		// &--forest {
-		// 	background-image: linear-gradient(60deg, #000000d5 0%, #00000081 100%),
-		// 		linear-gradient(319deg, #dcf26e81 0%, #61fa7386 37%, #1cfdd786 100%),
-		// 		url('https://cdn.pixabay.com/photo/2014/10/10/10/49/forest-483207_640.jpg');
-		// }
 		&--info {
 			background-image: linear-gradient(315deg, #000000e0 0%, $bg-2 74%),
 				url('https://cdn.pixabay.com/photo/2016/11/29/11/39/computer-1869236_640.jpg');
@@ -430,11 +424,6 @@ header {
 			background-image: linear-gradient(240deg, #000000f6 0%, #353535bd 80%),
 				url('https://cdn.pixabay.com/photo/2015/10/26/13/45/microphone-1007154_640.jpg');
 		}
-		// &--lifestyle {
-		// 	background-image: linear-gradient(60deg, #000000d5 0%, #00000081 100%),
-		// 		linear-gradient(319deg, #00459473 0%, #0045947e 37%, #00336ec7 100%),
-		// 		url('https://cdn.pixabay.com/photo/2018/01/01/01/56/yoga-3053488_640.jpg');
-		// }
 		&--psvita {
 			background-image: linear-gradient(60deg, #000000d5 0%, #00000081 100%),
 				linear-gradient(319deg, #00459473 0%, #0045947e 37%, #00336ec7 100%),
@@ -616,11 +605,6 @@ header {
 
 	.animated {
 		.back {
-			// &--forest {
-			// 	background-image: linear-gradient(60deg, #000000d5 0%, #00000081 100%),
-			// 		linear-gradient(319deg, #dcf26e81 0%, #61fa7386 37%, #1cfdd786 100%),
-			// 		url('https://cdn.pixabay.com/photo/2014/10/10/10/49/forest-483207_1280.jpg');
-			// }
 			&--info {
 				background-image: linear-gradient(315deg, #000000e0 0%, $bg-2 74%),
 					url('https://cdn.pixabay.com/photo/2016/11/29/11/39/computer-1869236_1280.jpg');
@@ -629,11 +613,6 @@ header {
 				background-image: linear-gradient(240deg, #000000ec 0%, #353535bd 80%),
 					url('https://cdn.pixabay.com/photo/2015/10/26/13/45/microphone-1007154_1280.jpg');
 			}
-			// &--lifestyle {
-			// 	background-image: linear-gradient(60deg, #000000b0 0%, #00000081 100%),
-			// 		linear-gradient(319deg, #00459473 0%, #0045947e 37%, #00336ead 100%),
-			// 		url('https://cdn.pixabay.com/photo/2018/01/01/01/56/yoga-3053488_1280.jpg');
-			// }
 			&--psvita {
 				background-image: linear-gradient(60deg, #000000d5 0%, #00000081 100%),
 					linear-gradient(319deg, #00459473 0%, #0045947e 37%, #00336ec7 100%),
