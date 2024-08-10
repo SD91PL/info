@@ -23,6 +23,7 @@ document.addEventListener('DOMContentLoaded', function () {
 	})
 
 	// navbar changing background-color by scrollY
+	const headerElement = document.querySelector('header')
 	const navbar = document.querySelector('.navbar')
 	const navLogoSm = document.querySelector('.navbar__logotype--small')
 	const addNavBg = () => {
@@ -35,22 +36,16 @@ document.addEventListener('DOMContentLoaded', function () {
 	}
 	const navbarChange = () => {
 		let viewportWidth = window.innerWidth
-		let viewportHeight = window.innerHeight
+		let headerHeight = headerElement.clientHeight
 		let scrollY = window.scrollY
-		if (viewportWidth <= 576) {
-			if (scrollY > viewportHeight * 0.4) {
-				addNavBg()
-			} else {
-				removeNavBg()
-			}
-		} else if (viewportWidth > 576 && viewportWidth < 992) {
-			if (scrollY > viewportHeight * 0.15) {
+		if (viewportWidth < 992) {
+			if (scrollY >= headerHeight) {
 				addNavBg()
 			} else {
 				removeNavBg()
 			}
 		} else if (viewportWidth >= 992) {
-			if (scrollY > viewportHeight * 0.25) {
+			if (scrollY >= headerHeight * 0.8) {
 				addNavBg()
 			} else {
 				removeNavBg()
