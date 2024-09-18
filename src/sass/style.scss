@@ -170,7 +170,7 @@ header {
 } // navbarChange in main.js
 
 .nav-link {
-	transition: color 0.33s !important;
+	transition: color .167s !important;
 }
 
 //SCROLL-BAR
@@ -200,6 +200,19 @@ header {
 		font-size: 1.4rem;
 		text-transform: uppercase;
 	}
+}
+
+// HERO
+.hero {
+	&__avatar{
+		height: 220px;
+		width: 220px;
+		img {
+			height: 100%;
+			width: 100%;
+		}
+	}
+
 }
 
 //ABOUT
