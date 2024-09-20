@@ -1,5 +1,9 @@
 document.addEventListener('DOMContentLoaded', function () {
-	//hiding home section
+	// ================
+	// HOME SECTION
+	// ================
+
+	// hiding home section
 	const homeHiding = () => {
 		const home = document.querySelector('.home')
 		const header = document.querySelector('#header')
@@ -14,7 +18,11 @@ document.addEventListener('DOMContentLoaded', function () {
 	window.addEventListener('load', homeHiding)
 	window.addEventListener('resize', homeHiding)
 
-	//hiding nav
+	// ================
+	// NAVBAR
+	// ================
+
+	// hiding nav
 	const nav = document.querySelector('.navbar-collapse')
 	document.addEventListener('click', () => {
 		if (nav.classList.contains('show')) {
@@ -70,7 +78,11 @@ document.addEventListener('DOMContentLoaded', function () {
 	}
 	window.addEventListener('scroll', handleScrollbar)
 
-	//bootstrap tooltips
+	// =================
+	// TECHSTACK SECTION
+	// =================
+
+	// bootstrap tooltips
 	const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
 	const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
 
@@ -100,45 +112,54 @@ document.addEventListener('DOMContentLoaded', function () {
 	}
 	stackEduBtn.addEventListener('click', showStackEdu)
 
+	// ================
+	// PROJECTS SECTION
+	// ================
+
 	// projects - menu tabs
-
 	const projectsCards = document.querySelectorAll('.projects-card')
-	const projectsBtnsContainer = document.querySelector('.projects-btns') //  Common parent
+	const projectsBtnsContainer = document.querySelector('.projects-btns') // Common parent
 
+	// Function to reset all tabs
 	const resetTab = () => {
 		projectsCards.forEach(card => card.classList.add('d-none')) // Hide all cards
 		const activeButtons = projectsBtnsContainer.querySelectorAll('.projects-btn.btn-active')
 		activeButtons.forEach(btn => btn.classList.remove('btn-active')) // Remove 'active' class from all buttons
 	}
 
-	const showTab = (btn, card) => {
-		btn.classList.add('btn-active') // Set the clicked button as active
+	// Function to show tab and activate button
+	const showTab = (btnClass, card) => {
+		// Find all buttons with the same class (including clones)
+		const matchingButtons = document.querySelectorAll(`.${btnClass}`)
+		matchingButtons.forEach(btn => btn.classList.add('btn-active')) // Activate all matching buttons
 		card.classList.remove('d-none') // Show the corresponding card
 	}
 
+	// Handle button clicks
 	projectsBtnsContainer.addEventListener('click', event => {
-		// Find the nearest .projects-btn element
+		// Find the closest .projects-btn element
 		const btn = event.target.closest('.projects-btn')
 		if (!btn) return // If something else is clicked, ignore it
 
-		// Find the matching card
+		// Determine the type of project based on the button's class
 		const projectType = btn.classList.contains('p-btn-info')
-			? 'info'
+			? 'p-btn-info'
 			: btn.classList.contains('p-btn-pragmaton')
-			? 'pragmaton'
+			? 'p-btn-pragmaton'
 			: btn.classList.contains('p-btn-psvita')
-			? 'psvita'
+			? 'p-btn-psvita'
 			: btn.classList.contains('p-btn-todo')
-			? 'todo'
+			? 'p-btn-todo'
 			: null
 
 		if (!projectType) return
 
-		const card = document.querySelector(`.p-card-${projectType}`)
+		// Find the corresponding card
+		const card = document.querySelector(`.p-card-${projectType.split('-').pop()}`)
 
 		// Reset all tabs and show the new one
 		resetTab()
-		showTab(btn, card)
+		showTab(projectType, card)
 	})
 
 	// Initialize Slick slider after setting up event listeners
