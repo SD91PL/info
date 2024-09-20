@@ -170,7 +170,7 @@ header {
 } // navbarChange in main.js
 
 .nav-link {
-	transition: color .167s !important;
+	transition: color 0.167s !important;
 }
 
 //SCROLL-BAR
@@ -204,7 +204,7 @@ header {
 
 // HERO
 .hero {
-	&__avatar{
+	&__avatar {
 		height: 220px;
 		width: 220px;
 		img {
@@ -212,7 +212,9 @@ header {
 			width: 100%;
 		}
 	}
-
+	.btn {
+		min-width: 120px;
+	}
 }
 
 //ABOUT
@@ -352,15 +354,15 @@ header {
 		width: 100%;
 		height: 100%;
 		background-image: linear-gradient(0deg, $bg-1 0%, $bg-3 66%);
-		opacity:0;
-		transition: opacity .5s;
+		opacity: 0;
+		transition: opacity 0.5s;
 		z-index: 0;
 	}
 	&:focus::before {
-		opacity:.25;
+		opacity: 0.25;
 	}
 	&:hover::before {
-		opacity:1;
+		opacity: 1;
 	}
 	h2 {
 		position: relative;
