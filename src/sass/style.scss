@@ -373,6 +373,18 @@ header {
 }
 
 //PROJECTS
+
+.projects-btns {
+	// margin: 0 10px;
+	mask-image: linear-gradient(
+		to right,
+		transparent,
+		rgb(0 0 0 / 100%),
+		rgb(0 0 0 / 100%),
+		rgb(0 0 0 / 100%),
+		transparent
+	);
+}
 .btn-active {
 	background-color: #ffffff2f;
 }

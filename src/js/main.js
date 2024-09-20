@@ -101,44 +101,56 @@ document.addEventListener('DOMContentLoaded', function () {
 	stackEduBtn.addEventListener('click', showStackEdu)
 
 	// projects - menu tabs
-	const projectsCards = document.querySelectorAll('.projects-card')
-	// const pCardForest = document.querySelector('.p-card-forest')
-	const pCardInfo = document.querySelector('.p-card-info')
-	const pCardPragmaton = document.querySelector('.p-card-pragmaton')
-	// const pCardLifestyle = document.querySelector('.p-card-lifestyle')
-	const pCardPSVita = document.querySelector('.p-card-psvita')
-	const pCardToDo = document.querySelector('.p-card-todo')
 
-	const projectsBtns = document.querySelectorAll('.projects-btn')
-	// const pBtnForest = document.querySelector('.p-btn-forest')
-	const pBtnInfo = document.querySelector('.p-btn-info')
-	const pBtnPragmaton = document.querySelector('.p-btn-pragmaton')
-	// const pBtnLifestyle = document.querySelector('.p-btn-lifestyle')
-	const pBtnPSVita = document.querySelector('.p-btn-psvita')
-	const pBtnToDo = document.querySelector('.p-btn-todo')
+	const projectsCards = document.querySelectorAll('.projects-card')
+	const projectsBtnsContainer = document.querySelector('.projects-btns') //  Common parent
 
 	const resetTab = () => {
-		projectsCards.forEach(card => card.classList.add('d-none'))
-		projectsBtns.forEach(btn => btn.classList.remove('btn-active'))
+		projectsCards.forEach(card => card.classList.add('d-none')) // Hide all cards
+		const activeButtons = projectsBtnsContainer.querySelectorAll('.projects-btn.btn-active')
+		activeButtons.forEach(btn => btn.classList.remove('btn-active')) // Remove 'active' class from all buttons
 	}
+
 	const showTab = (btn, card) => {
-		btn.classList.add('btn-active')
-		card.classList.remove('d-none')
+		btn.classList.add('btn-active') // Set the clicked button as active
+		card.classList.remove('d-none') // Show the corresponding card
 	}
 
-	projectsBtns.forEach(btn => btn.addEventListener('click', resetTab))
-	// pBtnForest.addEventListener('click', () => showTab(pBtnForest, pCardForest))
-	pBtnInfo.addEventListener('click', () => showTab(pBtnInfo, pCardInfo))
-	pBtnPragmaton.addEventListener('click', () => showTab(pBtnPragmaton, pCardPragmaton))
-	// pBtnLifestyle.addEventListener('click', () => showTab(pBtnLifestyle, pCardLifestyle))
-	pBtnPSVita.addEventListener('click', () => showTab(pBtnPSVita, pCardPSVita))
-	pBtnToDo.addEventListener('click', () => showTab(pBtnToDo, pCardToDo))
+	projectsBtnsContainer.addEventListener('click', event => {
+		// Find the nearest .projects-btn element
+		const btn = event.target.closest('.projects-btn')
+		if (!btn) return // If something else is clicked, ignore it
 
-	//footer
-	const footerYear = document.querySelector('.footer__year')
-	const handleCurrentYear = () => {
-		const year = new Date().getFullYear()
-		footerYear.innerText = year
-	}
-	handleCurrentYear()
+		// Find the matching card
+		const projectType = btn.classList.contains('p-btn-info')
+			? 'info'
+			: btn.classList.contains('p-btn-pragmaton')
+			? 'pragmaton'
+			: btn.classList.contains('p-btn-psvita')
+			? 'psvita'
+			: btn.classList.contains('p-btn-todo')
+			? 'todo'
+			: null
+
+		if (!projectType) return
+
+		const card = document.querySelector(`.p-card-${projectType}`)
+
+		// Reset all tabs and show the new one
+		resetTab()
+		showTab(btn, card)
+	})
+
+	// Initialize Slick slider after setting up event listeners
+	$('.projects-btns').slick({
+		arrows: false,
+		autoplay: true,
+		speed: 1000,
+		centerMode: true,
+		autoplaySpeed: 3200,
+		mobileFirst: true,
+		variableWidth: true,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+	})
 })
