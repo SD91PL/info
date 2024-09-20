@@ -160,6 +160,9 @@ document.addEventListener('DOMContentLoaded', function () {
 		// Reset all tabs and show the new one
 		resetTab()
 		showTab(projectType, card)
+
+		// Resume autoplay after click
+		$('.projects-btns').slick('slickPlay') // This ensures autoplay continues after clicking
 	})
 
 	// Initialize Slick slider after setting up event listeners
