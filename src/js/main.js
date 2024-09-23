@@ -150,6 +150,8 @@ document.addEventListener('DOMContentLoaded', function () {
 			? 'p-btn-psvita'
 			: btn.classList.contains('p-btn-todo')
 			? 'p-btn-todo'
+			: btn.classList.contains('p-btn-carsspot')
+			? 'p-btn-carsspot'
 			: null
 
 		if (!projectType) return

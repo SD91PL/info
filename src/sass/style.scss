@@ -404,7 +404,7 @@ header {
 		background-color: #bebebe83; /* Dot color */
 		border: none; /* Remove button border */
 		cursor: pointer;
-		transition: background-color .3s;
+		transition: background-color 0.3s;
 	}
 
 	.slick-dots li button:hover {
@@ -491,6 +491,11 @@ header {
 			background-image: linear-gradient(60deg, #000000d5 0%, #00000081 100%),
 				linear-gradient(319deg, #00459473 0%, #0045947e 37%, #00336ec7 100%),
 				url('https://cdn.pixabay.com/photo/2017/07/04/10/02/checklist-2470507_640.jpg');
+		}
+		&--carsspot {
+			background-image: linear-gradient(60deg, #000000d5 0%, #00000081 100%),
+				linear-gradient(319deg, #00459473 0%, #0045947e 37%, #00336ec7 100%),
+				url('https://cdn.pixabay.com/photo/2020/02/02/19/55/cars-4814015_640.jpg');
 		}
 
 		a {
@@ -680,6 +685,11 @@ header {
 				background-image: linear-gradient(60deg, #000000d5 0%, #00000081 100%),
 					linear-gradient(319deg, #00459473 0%, #0045947e 37%, #00336ec7 100%),
 					url('https://cdn.pixabay.com/photo/2017/07/04/10/02/checklist-2470507_1280.jpg');
+			}
+			&--carsspot {
+				background-image: linear-gradient(60deg, #000000d5 0%, #00000081 100%),
+					linear-gradient(319deg, #00459473 0%, #0045947e 37%, #00336ec7 100%),
+					url('https://cdn.pixabay.com/photo/2020/02/02/19/55/cars-4814015_1280.jpg');
 			}
 		}
 	}
