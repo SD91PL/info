@@ -169,6 +169,7 @@ document.addEventListener('DOMContentLoaded', function () {
 	$('.projects-btns').slick({
 		arrows: false,
 		autoplay: true,
+		dots: true,
 		speed: 1000,
 		centerMode: true,
 		autoplaySpeed: 3200,

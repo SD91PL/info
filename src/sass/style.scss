@@ -384,7 +384,38 @@ header {
 		rgb(0 0 0 / 100%),
 		transparent
 	);
+	.slick-dots {
+		display: flex; /* For better alignment */
+		justify-content: center; /* Center the dots */
+		padding: 0;
+		margin: 10px 0;
+		list-style: none; /* Remove list style */
+	}
+
+	.slick-dots li {
+		margin: 8px 5px 0px; /* Space between dots */
+	}
+
+	.slick-dots li button {
+		font-size: 0; /* Hide the number inside the button */
+		width: 8px; /* Dot width */
+		height: 8px; /* Dot height */
+		border-radius: 50%; /* Make the button round (dot) */
+		background-color: #bebebe83; /* Dot color */
+		border: none; /* Remove button border */
+		cursor: pointer;
+		transition: background-color .3s;
+	}
+
+	.slick-dots li button:hover {
+		background-color: #a9a9a9cc;
+	}
+
+	.slick-dots li.slick-active button {
+		background-color: #fff; /* Color of the active dot */
+	}
 }
+
 .btn-active {
 	background-color: #ffffff2f;
 }
