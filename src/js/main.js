@@ -180,4 +180,14 @@ document.addEventListener('DOMContentLoaded', function () {
 		slidesToShow: 1,
 		slidesToScroll: 1,
 	})
+
+	// ==============
+	// Footer
+	// ==============
+	const footerYear = document.querySelector('.footer__year')
+	const handleCurrentYear = () => {
+		const year = new Date().getFullYear()
+		footerYear.innerText = year
+	}
+	handleCurrentYear()
 })
