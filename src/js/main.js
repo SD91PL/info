@@ -181,9 +181,9 @@ document.addEventListener('DOMContentLoaded', function () {
 		slidesToScroll: 1,
 	})
 
-	// ==============
-	// Footer
-	// ==============
+	// ================
+	// FOOTER
+	// ================
 	const footerYear = document.querySelector('.footer__year')
 	const handleCurrentYear = () => {
 		const year = new Date().getFullYear()
