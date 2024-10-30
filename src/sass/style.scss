@@ -89,7 +89,12 @@ a {
 	align-items: center;
 	width: 30%;
 	height: 0.1rem;
-	background-image: linear-gradient(319deg, #00000000 0%, $txt-2 37%, #00000000 100%);
+	background-image: linear-gradient(
+		319deg,
+		#00000000 0%,
+		$txt-2 37%,
+		#00000000 100%
+	);
 }
 
 //HEADER
@@ -123,7 +128,12 @@ header {
 	.sd-logotype-underline {
 		width: 50%;
 		height: 0.2rem;
-		background-image: linear-gradient(319deg, #00000000 0%, $txt-2 37%, #00000000 100%);
+		background-image: linear-gradient(
+			319deg,
+			#00000000 0%,
+			$txt-2 37%,
+			#00000000 100%
+		);
 	}
 	.carousel-indicators button {
 		cursor: default !important;
@@ -177,7 +187,13 @@ header {
 .scroll-bar {
 	height: 0.1rem;
 	width: var(--scroll-width);
-	background-image: linear-gradient(90deg, #00000000 0%, $scrollbar 40%, $scrollbar 60%, #00000000 100%);
+	background-image: linear-gradient(
+		90deg,
+		#00000000 0%,
+		$scrollbar 40%,
+		$scrollbar 60%,
+		#00000000 100%
+	);
 }
 
 //HOME
@@ -331,6 +347,9 @@ header {
 	&--two-plus {
 		background-image: url('https://img-c.udemycdn.com/course/480x270/5399296_4699_3.jpg');
 	}
+	&--three-plus {
+		background-image: url('https://i.ytimg.com/vi/hv4w8swtzg0/hqdefault.jpg');
+	}
 
 	&--one-learn {
 		background-image: url('https://img-c.udemycdn.com/course/480x270/1362070_b9a1_2.jpg');
@@ -475,7 +494,7 @@ header {
 			background-color: $bg-2;
 		}
 		--card-gradient: linear-gradient(60deg, #000000d5 0%, #00000081 100%),
-		linear-gradient(319deg, #00459473 0%, #0045947e 37%, #00336ec7 100%);
+			linear-gradient(319deg, #00459473 0%, #0045947e 37%, #00336ec7 100%);
 		&--info {
 			background-image: var(--card-gradient),
 				url('https://cdn.pixabay.com/photo/2016/11/29/11/39/computer-1869236_640.jpg');
@@ -640,7 +659,12 @@ header {
 		bottom: 0;
 		width: 70%;
 		height: 0.1rem;
-		background-image: linear-gradient(319deg, #00000000 0%, $txt-2 37%, #00000000 100%);
+		background-image: linear-gradient(
+			319deg,
+			#00000000 0%,
+			$txt-2 37%,
+			#00000000 100%
+		);
 		transform: scale(0);
 	}
 	.nav-link:hover::after {
