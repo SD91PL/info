@@ -152,6 +152,8 @@ document.addEventListener('DOMContentLoaded', function () {
 			? 'p-btn-todo'
 			: btn.classList.contains('p-btn-carsspot')
 			? 'p-btn-carsspot'
+			: btn.classList.contains('p-btn-drop')
+			? 'p-btn-drop'
 			: null
 
 		if (!projectType) return

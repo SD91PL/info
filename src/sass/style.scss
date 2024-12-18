@@ -521,6 +521,10 @@ header {
 			background-image: var(--card-gradient),
 				url('https://cdn.pixabay.com/photo/2020/02/02/19/55/cars-4814015_640.jpg');
 		}
+		&--drop {
+			background-image: var(--card-gradient),
+				url('https://cdn.pixabay.com/photo/2015/01/01/23/55/telephone-586266_640.jpg');
+		}
 
 		a {
 			text-decoration: none;
@@ -719,6 +723,10 @@ header {
 			&--carsspot {
 				background-image: var(--card-gradient),
 					url('https://cdn.pixabay.com/photo/2020/02/02/19/55/cars-4814015_1280.jpg');
+			}
+			&--drop {
+				background-image: var(--card-gradient),
+					url('https://cdn.pixabay.com/photo/2015/01/01/23/55/telephone-586266_1280.jpg');
 			}
 		}
 	}
