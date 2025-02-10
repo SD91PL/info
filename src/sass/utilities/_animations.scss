@@ -26,9 +26,26 @@
 		transform: scale(1.4);
 	}
 }
+@keyframes focus-in {
+	0% {
+		filter: blur(12px);
+		opacity: 0;
+	}
+	100% {
+		filter: blur(0px);
+		opacity: 1;
+	}
+}
 .ping {
 	animation: ping 1.67s ease-in-out infinite both;
 }
 .pulsate-fwd {
 	animation: pulsate-fwd 1.67s ease-in-out infinite both;
+}
+.projects-card {
+	h2,
+	p,
+	.d-xxl-none.btn {
+		animation: focus-in 0.33s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+	}
 }
