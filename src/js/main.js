@@ -83,8 +83,12 @@ document.addEventListener('DOMContentLoaded', function () {
 	// =================
 
 	// bootstrap tooltips
-	const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
-	const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+	const tooltipTriggerList = document.querySelectorAll(
+		'[data-bs-toggle="tooltip"]'
+	)
+	const tooltipList = [...tooltipTriggerList].map(
+		tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl)
+	)
 
 	// stack-edu - button - display
 	const stackEduSection = document.querySelector('.stack-edu')
@@ -95,7 +99,7 @@ document.addEventListener('DOMContentLoaded', function () {
 		stackEduBtn.innerHTML =
 			stackEduBtn.innerHTML ===
 			'<h2 class="d-flex justify-content-center align-items-center m-0">Ukończone kursy <i class="bi bi-chevron-down ms-3 fs-1"></i></h2>'
-				? '<a href="#stack"><h2 class="d-flex justify-content-center align-items-center m-0">Zwiń <i class="bi bi-chevron-up ms-3 fs-1"></i></h2></a>'
+				? '<h2 class="d-flex justify-content-center align-items-center m-0">Zwiń <i class="bi bi-chevron-up ms-3 fs-1"></i></h2>'
 				: '<h2 class="d-flex justify-content-center align-items-center m-0">Ukończone kursy <i class="bi bi-chevron-down ms-3 fs-1"></i></h2>'
 	}
 	const showStackEdu = () => {
@@ -123,7 +127,9 @@ document.addEventListener('DOMContentLoaded', function () {
 	// Function to reset all tabs
 	const resetTab = () => {
 		projectsCards.forEach(card => card.classList.add('d-none')) // Hide all cards
-		const activeButtons = projectsBtnsContainer.querySelectorAll('.projects-btn.btn-active')
+		const activeButtons = projectsBtnsContainer.querySelectorAll(
+			'.projects-btn.btn-active'
+		)
 		activeButtons.forEach(btn => btn.classList.remove('btn-active')) // Remove 'active' class from all buttons
 	}
 
@@ -159,7 +165,9 @@ document.addEventListener('DOMContentLoaded', function () {
 		if (!projectType) return
 
 		// Find the corresponding card
-		const card = document.querySelector(`.p-card-${projectType.split('-').pop()}`)
+		const card = document.querySelector(
+			`.p-card-${projectType.split('-').pop()}`
+		)
 
 		// Reset all tabs and show the new one
 		resetTab()

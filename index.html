@@ -44,7 +44,7 @@
 		id="carouselExampleCaptions"
 		class="carousel slide"
 		data-bs-ride="carousel">
-		<div class="carousel-indicators">
+		<div class="carousel-indicators" data-aos="zoom-out">
 			<button
 				type="button"
 				data-bs-target="#carouselExampleCaptions"
@@ -70,7 +70,7 @@
 		<div class="carousel-inner text-light text-center">
 			<div class="carousel-item carousel-img-one active">
 				<div
-					class="carousel-caption h-100 pb-5 pb-sm-3 d-flex flex-column justify-content-end justify-content-sm-center align-items-center">
+					class="carousel-caption h-100 pb-5 pb-sm-3 d-flex flex-column justify-content-end justify-content-sm-center align-items-center" data-aos="zoom-out">
 					<p class="display-1 mb-3 fw-bold m-sm-0 sd-logotype trans-down">
 						<span class="icon-code-solid d-sm-none"></span>
 						<span class="d-none d-sm-inline">SD91PL</span>
@@ -84,7 +84,7 @@
 			</div>
 			<div class="carousel-item carousel-img-two">
 				<div
-					class="carousel-caption h-100 pb-5 p-sm-3 d-flex flex-column justify-content-end justify-content-sm-center align-items-center">
+					class="carousel-caption h-100 pb-5 p-sm-3 d-flex flex-column justify-content-end justify-content-sm-center align-items-center" data-aos="zoom-out">
 					<p class="display-3 m-sm-0 m-md-3">Front-End</p>
 					<div
 						class="sd-logotype-underline d-md-none mt-1 mt-sm-2 mb-3 mb-sm-1"></div>
@@ -95,7 +95,7 @@
 			</div>
 			<div class="carousel-item carousel-img-three">
 				<div
-					class="carousel-caption h-100 pb-5 p-sm-3 d-flex flex-column justify-content-end justify-content-sm-center align-items-center">
+					class="carousel-caption h-100 pb-5 p-sm-3 d-flex flex-column justify-content-end justify-content-sm-center align-items-center" data-aos="zoom-out">
 					<p class="display-3 m-sm-0 m-md-3">Web Developer</p>
 					<div
 						class="sd-logotype-underline d-md-none mt-1 mt-sm-2 mb-3 mb-sm-1"></div>
@@ -106,7 +106,7 @@
 			</div>
 		</div>
 
-		<div class="container maxwidth-header-btns">
+		<div class="container maxwidth-header-btns" data-aos="zoom-in">
 			<button
 				class="carousel-control-prev d-none d-sm-inline-block"
 				type="button"
@@ -133,7 +133,7 @@
 
 		<div id="navBox" class="nav-box w-100 sticky-top d-flex flex-column justify-content-lg-center">
     <nav id="navId" class="navbar navbar-expand-lg bg-3 p-4 fs-4" data-bs-theme="dark">
-        <div class="container">
+        <div class="container slide-in-bck-center">
             <a class="navbar-brand m-0 fs-3 fw-bold d-flex flex-column flex-sm-row justify-content-center align-items-baseline px-lg-4" href="#"><p class="navbar__logotype m-0 pe-3">SD91PL</p><p class="navbar__logotype--small m-0 fs-5 txt-2">Front-End Web Developer</p></a>
             <button
                 class="navbar-toggler"
@@ -162,18 +162,22 @@
 		<main>
 			<section id="home" class="home d-xl-none">
 	<div class="container h-100 d-flex flex-column justify-content-center align-items-center text-light text-center">
-		<p class="my-5"></p>
-		<p class="my-4"></p>
-		<h2 class="mb-5 fs-1 lh-base">
-			Tworzę strony internetowe <br />
-			z&nbsp;wysokimi&nbsp;wynikami PageSpeed&nbsp;Insights
-		</h2>
-		<a href="#hero" class="btn btn-outline-light mt-4 position-relative" aria-label="Przejdź dalej">
-			<div class="btn btn-outline-light h-100 w-100 position-absolute top-0 start-0 p-0 m-0 ping"></div>
-			<p class="d-flex m-0">
-				<i class="bi bi-chevron-down mx-4 my-0 fs-3 d-block pulsate-fwd"></i>
-			</p>
-		</a>
+		<div class="my-5"></div>
+		<div class="my-4"></div>
+		<div data-aos="fade-up">
+
+			<h2 class="mb-5 fs-1 lh-base">
+				Tworzę strony internetowe <br />
+				z&nbsp;wysokimi&nbsp;wynikami PageSpeed&nbsp;Insights
+			</h2>
+			<a href="#hero" class="btn btn-outline-light mt-4 position-relative slide-in-bck-center" aria-label="Przejdź dalej">
+				<div class="btn btn-outline-light h-100 w-100 position-absolute top-0 start-0 p-0 m-0 ping"></div>
+				<p class="d-flex m-0">
+					<i class="bi bi-chevron-down mx-4 my-0 fs-3 d-block pulsate-fwd"></i>
+				</p>
+			</a>
+
+		</div>
 		<div class="hero-shadow"></div>
 	</div>
 </section>
@@ -182,15 +186,15 @@
 	id="hero"
 	class="hero text-light my-5 py-5 mx-1">
 	<div class="container my-5 my-xl-2 py-5">
-		<div class="d-flex gap-5 flex-column justify-content-center align-items-center mt-5 mt-xl-0">
-			<div class="hero__avatar">
+		<div class="d-flex gap-5 flex-column justify-content-center align-items-center mt-5 mt-xl-0" data-aos="fade-up">
+			<div class="hero__avatar" data-aos="zoom-out">
 				<img
 					src="./src/img/hero-avatar.png"
 					alt="" />
 			</div>
 			<div class="hero__text d-flex flex-column flex-column justify-content-center align-items-center">
-				<h1 class="display-2 text-center">Stanisław Dziuba</h1>
-				<div class="hero__btns d-flex gap-4 mt-4">
+				<h1 class="display-2 text-center" data-aos="zoom-out">Stanisław Dziuba</h1>
+				<div class="hero__btns d-flex gap-4 mt-4" data-aos="zoom-out">
 					<a
 						class="btn btn-outline-light mt-4 mx-sm-3"
 						href="./download/Stanisław_Dziuba_CV_REACT_FRONTEND_DEVELOPER.pdf"
@@ -217,112 +221,112 @@
 	class="text-light text-center bg-3 pb-5 transition-height">
 	<div class="container pt-5">
 		<h1
-			class="section-header mt-sm-5 d-flex justify-content-center align-items-center p-5 fw-bold display-4 mb-5">
+			class="section-header mt-sm-5 d-flex justify-content-center align-items-center p-5 fw-bold display-4 mb-5" data-aos="fade-up">
 			TechStack
 		</h1>
 
 		<h2
-			class="mt-5 pt-5 pt-xl-4 pb-2 d-flex justify-content-center align-items-center">
+			class="mt-5 pt-5 pt-xl-4 pb-2 d-flex justify-content-center align-items-center" data-aos="fade-up">
 			Advanced Web Development
 		</h2>
 		<p
-			class="d-flex flex-wrap justify-content-center align-items-center display-1 py-5">
+			class="d-flex flex-wrap justify-content-center align-items-center display-1 py-5" data-aos="fade-up">
 			<span
 				class="px-4 px-sm-5 py-4 py-sm-3 icon-react"
 				data-bs-toggle="tooltip"
 				data-bs-placement="bottom"
-				data-bs-custom-class="custom-tooltip"
+				data-bs-custom-class="custom-tooltip" data-aos="zoom-in" 
 				data-bs-title="React.js"></span>
 			<span
 				class="px-4 px-sm-5 py-4 py-sm-3 iconz-vite"
 				data-bs-toggle="tooltip"
 				data-bs-placement="bottom"
-				data-bs-custom-class="custom-tooltip"
+				data-bs-custom-class="custom-tooltip" data-aos="zoom-in" 
 				data-bs-title="Vite.js"></span>
 			<span
 				class="px-4 px-sm-5 py-4 py-sm-3 iconz-redux"
 				data-bs-toggle="tooltip"
 				data-bs-placement="bottom"
-				data-bs-custom-class="custom-tooltip"
+				data-bs-custom-class="custom-tooltip" data-aos="zoom-in" 
 				data-bs-title="Redux.js / Redux Toolkit"></span>
 			<span
 				class="px-4 px-sm-5 py-4 py-sm-3 iconz-typescript"
 				data-bs-toggle="tooltip"
 				data-bs-placement="bottom"
-				data-bs-custom-class="custom-tooltip"
+				data-bs-custom-class="custom-tooltip" data-aos="zoom-in" 
 				data-bs-title="TypeScript"></span>
 			<span
 				class="px-4 px-sm-5 py-4 py-sm-3 iconz-nextjs"
 				data-bs-toggle="tooltip"
 				data-bs-placement="bottom"
-				data-bs-custom-class="custom-tooltip"
+				data-bs-custom-class="custom-tooltip" data-aos="zoom-in" 
 				data-bs-title="Next.js"></span>
 			<!-- <span
 				class="px-4 px-sm-5 py-4 py-sm-3 iconz-vue ico-op"
 				data-bs-toggle="tooltip"
 				data-bs-placement="bottom"
-				data-bs-custom-class="custom-tooltip"
+				data-bs-custom-class="custom-tooltip" data-aos="zoom-in" 
 				data-bs-title="Vue.js - w planach"></span>
 			<span
 				class="px-4 px-sm-5 py-4 py-sm-3 iconz-nuxtjs ico-op"
 				data-bs-toggle="tooltip"
 				data-bs-placement="bottom"
-				data-bs-custom-class="custom-tooltip"
+				data-bs-custom-class="custom-tooltip" data-aos="zoom-in" 
 				data-bs-title="Nuxt.js - w planach"></span> -->
 		</p>
 
-		<h2 class="mt-5 d-flex justify-content-center align-items-center pt-3">
+		<h2 class="mt-5 d-flex justify-content-center align-items-center pt-3" data-aos="fade-up">
 			Fundamental Web Development
 		</h2>
 		<p
-			class="d-flex flex-wrap justify-content-center align-items-center display-1 py-5 px-5 px-sm-0">
+			class="d-flex flex-wrap justify-content-center align-items-center display-1 py-5 px-5 px-sm-0" data-aos="fade-up">
 			<span
 				class="px-4 px-sm-5 py-4 py-sm-3 icon-html5"
 				data-bs-toggle="tooltip"
 				data-bs-placement="bottom"
-				data-bs-custom-class="custom-tooltip"
+				data-bs-custom-class="custom-tooltip" data-aos="zoom-in" 
 				data-bs-title="HTML"></span>
 			<span
 				class="px-4 px-sm-5 py-4 py-sm-3 icon-css3-alt"
 				data-bs-toggle="tooltip"
 				data-bs-placement="bottom"
-				data-bs-custom-class="custom-tooltip"
+				data-bs-custom-class="custom-tooltip" data-aos="zoom-in" 
 				data-bs-title="CSS"></span>
 			<span
 				class="px-4 px-sm-5 py-4 py-sm-3 icon-sass"
 				data-bs-toggle="tooltip"
 				data-bs-placement="bottom"
-				data-bs-custom-class="custom-tooltip"
+				data-bs-custom-class="custom-tooltip" data-aos="zoom-in" 
 				data-bs-title="SASS / SCSS"></span>
 			<span
 				class="px-4 px-sm-5 py-4 py-sm-3 icon-js"
 				data-bs-toggle="tooltip"
 				data-bs-placement="bottom"
-				data-bs-custom-class="custom-tooltip"
+				data-bs-custom-class="custom-tooltip" data-aos="zoom-in" 
 				data-bs-title="JavaScript ES6+"></span>
 			<span
 				class="px-4 px-sm-5 py-4 py-sm-3 icon-bootstrap"
 				data-bs-toggle="tooltip"
 				data-bs-placement="bottom"
-				data-bs-custom-class="custom-tooltip"
+				data-bs-custom-class="custom-tooltip" data-aos="zoom-in" 
 				data-bs-title="Bootstrap"></span>
 			<span
 				class="px-4 px-sm-5 py-4 py-sm-3 icon-tailwind"
 				data-bs-toggle="tooltip"
 				data-bs-placement="bottom"
-				data-bs-custom-class="custom-tooltip"
+				data-bs-custom-class="custom-tooltip" data-aos="zoom-in" 
 				data-bs-title="Tailwind CSS"></span>
 			<span
 				class="px-4 px-sm-5 py-4 py-sm-3 icon-gulp"
 				data-bs-toggle="tooltip"
 				data-bs-placement="bottom"
-				data-bs-custom-class="custom-tooltip"
+				data-bs-custom-class="custom-tooltip" data-aos="zoom-in" 
 				data-bs-title="Gulp.js"></span>
 			<span
 				class="px-4 px-sm-5 py-4 py-sm-3 icon-github"
 				data-bs-toggle="tooltip"
 				data-bs-placement="bottom"
-				data-bs-custom-class="custom-tooltip"
+				data-bs-custom-class="custom-tooltip" data-aos="zoom-in" 
 				data-bs-title="GitHub"></span>
 		</p>
 
@@ -330,73 +334,77 @@
 			class="d-flex flex-wrap justify-content-center align-items-center mt-xl-5">
 			<div class="mt-5 mt-xl-0 mx-5 px-4 px-xl-5">
 				<h2
-					class="d-flex justify-content-center align-items-center pt-3 min-width-stack">
+					class="d-flex justify-content-center align-items-center pt-3 min-width-stack" data-aos="fade-up">
 					Software
 				</h2>
 				<p
-					class="d-flex flex-wrap justify-content-center align-items-center display-1 py-5">
+					class="d-flex flex-wrap justify-content-center align-items-center display-1 py-5" data-aos="fade-up">
 					<span
 						class="px-4 px-sm-5 py-4 py-sm-3 icon-visual-studio-code"
 						data-bs-toggle="tooltip"
 						data-bs-placement="bottom"
-						data-bs-custom-class="custom-tooltip"
+						data-bs-custom-class="custom-tooltip" data-aos="zoom-in" 
 						data-bs-title="Visual Studio Code"></span>
 					<span
 						class="px-4 px-sm-5 py-4 py-sm-3 icon-npm"
 						data-bs-toggle="tooltip"
 						data-bs-placement="bottom"
-						data-bs-custom-class="custom-tooltip"
+						data-bs-custom-class="custom-tooltip" data-aos="zoom-in" 
 						data-bs-title="npm"></span>
 				</p>
 			</div>
 			<div class="mt-5 mt-xl-0 mx-5 px-4 px-xl-5">
 				<h2
-					class="d-flex justify-content-center align-items-center pt-3 min-width-stack">
+					class="d-flex justify-content-center align-items-center pt-3 min-width-stack" data-aos="fade-up">
 					WordPress
 				</h2>
 				<p
-					class="d-flex flex-wrap justify-content-center align-items-center display-1 py-5">
+					class="d-flex flex-wrap justify-content-center align-items-center display-1 py-5" data-aos="fade-up">
 					<span
 						class="px-4 px-sm-5 py-4 py-sm-3 iconz-wordpress2"
 						data-bs-toggle="tooltip"
 						data-bs-placement="bottom"
-						data-bs-custom-class="custom-tooltip"
+						data-bs-custom-class="custom-tooltip" data-aos="zoom-in" 
 						data-bs-title="WordPress"></span>
 					<span
 						class="px-4 px-sm-5 py-4 py-sm-3 iconz-woo"
 						data-bs-toggle="tooltip"
 						data-bs-placement="bottom"
-						data-bs-custom-class="custom-tooltip"
+						data-bs-custom-class="custom-tooltip" data-aos="zoom-in" 
 						data-bs-title="WooCommerce"></span>
 				</p>
 			</div>
 			<div class="mt-5 mt-xl-0 mx-5 px-4 px-xl-5">
 				<h2
-					class="d-flex justify-content-center align-items-center pt-3 min-width-stack">
+					class="d-flex justify-content-center align-items-center pt-3 min-width-stack" data-aos="fade-up">
 					UX/UI Design
 				</h2>
 				<p
-					class="d-flex flex-wrap justify-content-center align-items-center display-1 py-5">
+					class="d-flex flex-wrap justify-content-center align-items-center display-1 py-5" data-aos="fade-up">
 					<span
 						class="px-4 px-sm-5 py-4 py-sm-3 icon-figma"
 						data-bs-toggle="tooltip"
 						data-bs-placement="bottom"
-						data-bs-custom-class="custom-tooltip"
+						data-bs-custom-class="custom-tooltip" data-aos="zoom-in" 
 						data-bs-title="Figma"></span>
 					<span
 						class="px-4 px-sm-5 py-4 py-sm-3 icon-photoshop"
 						data-bs-toggle="tooltip"
 						data-bs-placement="bottom"
-						data-bs-custom-class="custom-tooltip"
+						data-bs-custom-class="custom-tooltip" data-aos="zoom-in" 
 						data-bs-title="Adobe Photoshop"></span>
 				</p>
 			</div>
 		</div>
 	</div>
-	<div class="my-5">
+	<div class="d-flex flex-column my-5" data-aos="fade-up">
 		<div class="py-5"></div>
-		<section
-	class="stack-edu d-none text-light text-center bg-3 py-0 transition-height">
+		<div data-aos="zoom-out">
+	<button
+		class="stack-edu-btn btn text-light mb-5 mx-3 mx-sm-4 py-3 px-5"></button>
+</div>
+<section
+	class="stack-edu d-none text-light text-center bg-3 mt-5 py-0 transition-height">
 	<div class="container pt-5 pb-0 px-xl-5">
 		<h2 class="pb-5 d-flex justify-content-center align-items-center">
 			Ukończone certyfikowane kursy
@@ -1531,9 +1539,6 @@
 		</div>
 	</div>
 </section>
-<button
-	class="stack-edu-btn btn text-light mb-5 mx-3 mx-sm-4 py-3 px-5"></button>
-
 	</div>
 </section>
 
@@ -1542,12 +1547,12 @@
 	class="projects text-light text-center bg-1 pb-5">
 	<div class="container pt-5">
 		<h1
-			class="section-header mt-sm-5 d-flex justify-content-center align-items-center p-5 fw-bold display-4 mb-3 mb-xl-5">
+			class="section-header mt-sm-5 d-flex justify-content-center align-items-center p-5 fw-bold display-4 mb-3 mb-xl-5" data-aos="fade-up">
 			Projekty
 		</h1>
 	</div>
 	<div class="container d-flex flex-column pb-5 mb-5 fs-4">
-		<div class="animated animated__cards mt-xl-2 mx-2 mb-xl-5 px-xxl-5">
+		<div class="animated animated__cards mt-xl-2 mx-2 mb-xl-5 px-xxl-5" data-aos="fade-up">
 			<div class="p-card-info projects-card animated__card d-none">
 				<div class="front front-rotate p-5">
 					<h2 class="mb-5 fw-bold fs-1">Info</h2>
@@ -1774,7 +1779,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="projects-btns pb-3 pb-sm-5 mx-2 mx-sm-3 mx-xxl-5">
+		<div class="projects-btns pb-3 pb-sm-5 mx-2 mx-sm-3 mx-xxl-5" data-aos="fade-up">
 			<button
 				class="p-btn-info projects-btn btn btn-outline-light mt-4 mx-2 mx-sm-3">
 				<p class="m-0 p-2 fs-4">Info - Bootstrap, Sass, ES6+</p>
@@ -1805,44 +1810,44 @@
 
 			<section id="contact" class="contact text-light text-center bg-2 pb-5">
 	<div class="container pt-5">
-		<h1 class="section-header mt-sm-5 d-flex justify-content-center align-items-center p-5 fw-bold display-4 mb-5">
+		<h1 class="section-header mt-sm-5 d-flex justify-content-center align-items-center p-5 fw-bold display-4 mb-5" data-aos="fade-up">
 			Kontakt
 		</h1>
 	</div>
 	<div class="container my-5 pt-3 pb-5 display-3">
 		<div
 			class="d-flex flex-column justify-content-center align-items-center flex-md-row justify-content-sm-between justify-content-lg-evenly gap-0 gap-sm-5">
-			<div class="d-flex flex-column justify-content-center my-4 mt-0 m-sm-0 contact__card">
-				<a href="https://www.messenger.com/t/sd91pl" target="_blank" rel="noopener">
+			<div class="d-flex flex-column justify-content-center my-4 mt-0 m-sm-0 contact__card" data-aos="fade-up">
+				<a href="https://www.messenger.com/t/sd91pl" target="_blank" rel="noopener" data-aos="zoom-out">
 					<p class="d-flex justify-content-center align-items-center">
-						<span class="icon icon-facebook-messenger p-4"></span>
+						<span class="icon icon-facebook-messenger p-4" data-aos="zoom-in"></span>
 					</p>
 					<p class="fs-3">Messenger</p>
 					<p class="fs-4 mt-sm-1 fw-bold op">Stanisław Dziuba</p>
 				</a>
 			</div>
-			<div class="d-flex flex-column justify-content-center my-4 m-sm-0 contact__card">
-				<a href="tel:+48731386526">
+			<div class="d-flex flex-column justify-content-center my-4 m-sm-0 contact__card" data-aos="fade-up">
+				<a href="tel:+48731386526" data-aos="zoom-out">
 					<p class="d-flex justify-content-center align-items-center">
-						<span class="icon icon-mobile-screen-solid p-4"></span>
+						<span class="icon icon-mobile-screen-solid p-4" data-aos="zoom-in"></span>
 					</p>
 					<p class="fs-3">Telefon</p>
 					<p class="fs-4 mt-sm-1 fw-bold op">731 386 526</p>
 				</a>
 			</div>
-			<div class="d-flex flex-column justify-content-center my-4 m-sm-0 contact__card">
-				<a href="mailto:sd91pl@gmail.com">
+			<div class="d-flex flex-column justify-content-center my-4 m-sm-0 contact__card" data-aos="fade-up">
+				<a href="mailto:sd91pl@gmail.com" data-aos="zoom-out">
 					<p class="d-flex justify-content-center align-items-center">
-						<span class="icon icon-envelope-solid p-4"></span>
+						<span class="icon icon-envelope-solid p-4" data-aos="zoom-in"></span>
 					</p>
 					<p class="fs-3">E-mail</p>
 					<p class="fs-4 mt-sm-1 fw-bold op">sd91pl@gmail.com</p>
 				</a>
 			</div>
-			<div class="d-flex flex-column justify-content-center my-4 mb-0 m-sm-0 contact__card">
-				<a href="https://discord.com/users/1063454745639010394" target="_blank" rel="noopener">
+			<div class="d-flex flex-column justify-content-center my-4 mb-0 m-sm-0 contact__card" data-aos="fade-up">
+				<a href="https://discord.com/users/1063454745639010394" target="_blank" rel="noopener" data-aos="zoom-out">
 					<p class="d-flex justify-content-center align-items-center display-2">
-						<span class="icon iconz-discord-alt p-4"></span>
+						<span class="icon iconz-discord-alt p-4" data-aos="zoom-in"></span>
 					</p>
 					<p class="fs-3">Discord</p>
 					<p class="fs-4 mt-sm-1 fw-bold op">SD91PL</p>
@@ -1853,9 +1858,9 @@
 </section>
 
 		</main>
-		<footer class="footer bg-3">
-	<div class="container p-5 d-flex justify-content-center align-items-center">
-		<p class="fw-bold m-0 fs-5">
+		<footer class="footer bg-3 overflow-hidden">
+	<div class="container p-5 d-flex justify-content-center align-items-center overflow-hidden">
+		<p class="fw-bold m-0 fs-5" data-aos="zoom-out" data-aos-anchor-placement="top-bottom">
 			&copy;
 			<span class="footer__year ps-1"></span>
 			<span class="footer__logo px-2">SD91PL</span>
@@ -1877,14 +1882,15 @@
 <script
 	type="text/javascript"
 	src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
- <script>
-    AOS.init({
-      easing: 'linear',
-    });
-  </script>
-</script>
 <script src="./dist/js/main.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+	AOS.init({
+		easing: 'linear',
+		duration: 450,
+		once: true,
+	})
+</script>
 
 	</body>
 </html>

@@ -36,16 +36,51 @@
 		opacity: 1;
 	}
 }
+@keyframes fade-in-top {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-bck-center {
+	0% {
+		transform: scale(1.2);
+		opacity: 0;
+	}
+	100% {
+		transform: scale(1);
+		opacity: 1;
+	}
+}
+
 .ping {
 	animation: ping 1.67s ease-in-out infinite both;
 }
 .pulsate-fwd {
 	animation: pulsate-fwd 1.67s ease-in-out infinite both;
 }
+
 .projects-card {
 	h2,
 	p,
 	.d-xxl-none.btn {
 		animation: focus-in 0.33s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
 	}
+}
+
+.fade-in-top {
+	animation: fade-in-top 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+.stack-edu, .stack-edu-btn h2, .stack-edu-btn, .stack-edu-btn::before, .stack-edu-btn:focus::before {
+	animation: fade-in-top 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+.slide-in-bck-center {
+	animation: slide-in-bck-center 0.6s linear forwards;
 }
