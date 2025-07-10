@@ -619,8 +619,18 @@ header {
 .footer {
 	font-size: 1rem;
 	color: $txt-2;
-	p {
+	p, span, i {
 		outline: none;
+	}
+	a {
+		color: $txt-2;
+		outline: none;
+	}
+	.git {
+		transition: color .33s;
+	}
+	a:hover .git, a:focus .git {
+		color: $txt-1;
 	}
 }
 
