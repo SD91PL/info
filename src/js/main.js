@@ -148,11 +148,7 @@ document.addEventListener('DOMContentLoaded', function () {
 		if (!btn) return // If something else is clicked, ignore it
 
 		// Determine the type of project based on the button's class
-		const projectType = btn.classList.contains('p-btn-info')
-			? 'p-btn-info'
-			: btn.classList.contains('p-btn-pragmaton')
-			? 'p-btn-pragmaton'
-			: btn.classList.contains('p-btn-psvita')
+		const projectType = btn.classList.contains('p-btn-psvita')
 			? 'p-btn-psvita'
 			: btn.classList.contains('p-btn-todo')
 			? 'p-btn-todo'
