@@ -90,31 +90,31 @@ document.addEventListener('DOMContentLoaded', function () {
 		tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl)
 	)
 
-	// stack-edu - button - display
-	const stackEduSection = document.querySelector('.stack-edu')
-	const stackEduBtn = document.querySelector('.stack-edu-btn')
-	stackEduBtn.innerHTML =
-		'<h2 class="d-flex justify-content-center align-items-center m-0">Ukończone kursy <i class="bi bi-chevron-down ms-3 fs-1"></i></h2>'
-	const btnContentChange = () => {
-		stackEduBtn.innerHTML =
-			stackEduBtn.innerHTML ===
-			'<h2 class="d-flex justify-content-center align-items-center m-0">Ukończone kursy <i class="bi bi-chevron-down ms-3 fs-1"></i></h2>'
-				? '<h2 class="d-flex justify-content-center align-items-center m-0">Zwiń <i class="bi bi-chevron-up ms-3 fs-1"></i></h2>'
-				: '<h2 class="d-flex justify-content-center align-items-center m-0">Ukończone kursy <i class="bi bi-chevron-down ms-3 fs-1"></i></h2>'
-	}
-	const showStackEdu = () => {
-		if (
-			stackEduBtn.innerHTML ===
-			'<h2 class="d-flex justify-content-center align-items-center m-0">Ukończone kursy <i class="bi bi-chevron-down ms-3 fs-1"></i></h2>'
-		) {
-			stackEduSection.classList.remove('d-none')
-			btnContentChange()
-		} else {
-			stackEduSection.classList.add('d-none')
-			btnContentChange()
-		}
-	}
-	stackEduBtn.addEventListener('click', showStackEdu)
+	// // stack-edu - button - display
+	// const stackEduSection = document.querySelector('.stack-edu')
+	// const stackEduBtn = document.querySelector('.stack-edu-btn')
+	// stackEduBtn.innerHTML =
+	// 	'<h2 class="d-flex justify-content-center align-items-center m-0">Ukończone kursy <i class="bi bi-chevron-down ms-3 fs-1"></i></h2>'
+	// const btnContentChange = () => {
+	// 	stackEduBtn.innerHTML =
+	// 		stackEduBtn.innerHTML ===
+	// 		'<h2 class="d-flex justify-content-center align-items-center m-0">Ukończone kursy <i class="bi bi-chevron-down ms-3 fs-1"></i></h2>'
+	// 			? '<h2 class="d-flex justify-content-center align-items-center m-0">Zwiń <i class="bi bi-chevron-up ms-3 fs-1"></i></h2>'
+	// 			: '<h2 class="d-flex justify-content-center align-items-center m-0">Ukończone kursy <i class="bi bi-chevron-down ms-3 fs-1"></i></h2>'
+	// }
+	// const showStackEdu = () => {
+	// 	if (
+	// 		stackEduBtn.innerHTML ===
+	// 		'<h2 class="d-flex justify-content-center align-items-center m-0">Ukończone kursy <i class="bi bi-chevron-down ms-3 fs-1"></i></h2>'
+	// 	) {
+	// 		stackEduSection.classList.remove('d-none')
+	// 		btnContentChange()
+	// 	} else {
+	// 		stackEduSection.classList.add('d-none')
+	// 		btnContentChange()
+	// 	}
+	// }
+	// stackEduBtn.addEventListener('click', showStackEdu)
 
 	// ================
 	// PROJECTS SECTION
