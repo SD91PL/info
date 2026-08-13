@@ -117,75 +117,75 @@ document.addEventListener('DOMContentLoaded', function () {
 	// stackEduBtn.addEventListener('click', showStackEdu)
 
 	// ================
-	// PROJECTS SECTION
+	// PROJECTS SECTION (_portfolio.kit)
 	// ================
 
-	// projects - menu tabs
-	const projectsCards = document.querySelectorAll('.projects-card')
-	const projectsBtnsContainer = document.querySelector('.projects-btns') // Common parent
+	// // projects - menu tabs
+	// const projectsCards = document.querySelectorAll('.projects-card')
+	// const projectsBtnsContainer = document.querySelector('.projects-btns') // Common parent
 
-	// Function to reset all tabs
-	const resetTab = () => {
-		projectsCards.forEach(card => card.classList.add('d-none')) // Hide all cards
-		const activeButtons = projectsBtnsContainer.querySelectorAll(
-			'.projects-btn.btn-active'
-		)
-		activeButtons.forEach(btn => btn.classList.remove('btn-active')) // Remove 'active' class from all buttons
-	}
+	// // Function to reset all tabs
+	// const resetTab = () => {
+	// 	projectsCards.forEach(card => card.classList.add('d-none')) // Hide all cards
+	// 	const activeButtons = projectsBtnsContainer.querySelectorAll(
+	// 		'.projects-btn.btn-active'
+	// 	)
+	// 	activeButtons.forEach(btn => btn.classList.remove('btn-active')) // Remove 'active' class from all buttons
+	// }
 
-	// Function to show tab and activate button
-	const showTab = (btnClass, card) => {
-		// Find all buttons with the same class (including clones)
-		const matchingButtons = document.querySelectorAll(`.${btnClass}`)
-		matchingButtons.forEach(btn => btn.classList.add('btn-active')) // Activate all matching buttons
-		card.classList.remove('d-none') // Show the corresponding card
-	}
+	// // Function to show tab and activate button
+	// const showTab = (btnClass, card) => {
+	// 	// Find all buttons with the same class (including clones)
+	// 	const matchingButtons = document.querySelectorAll(`.${btnClass}`)
+	// 	matchingButtons.forEach(btn => btn.classList.add('btn-active')) // Activate all matching buttons
+	// 	card.classList.remove('d-none') // Show the corresponding card
+	// }
 
-	// Handle button clicks
-	projectsBtnsContainer.addEventListener('click', event => {
-		// Find the closest .projects-btn element
-		const btn = event.target.closest('.projects-btn')
-		if (!btn) return // If something else is clicked, ignore it
+	// // Handle button clicks
+	// projectsBtnsContainer.addEventListener('click', event => {
+	// 	// Find the closest .projects-btn element
+	// 	const btn = event.target.closest('.projects-btn')
+	// 	if (!btn) return // If something else is clicked, ignore it
 
-		// Determine the type of project based on the button's class
-		const projectType = btn.classList.contains('p-btn-psvita')
-			? 'p-btn-psvita'
-			: btn.classList.contains('p-btn-todo')
-			? 'p-btn-todo'
-			: btn.classList.contains('p-btn-carsspot')
-			? 'p-btn-carsspot'
-			: btn.classList.contains('p-btn-drop')
-			? 'p-btn-drop'
-			: null
+	// 	// Determine the type of project based on the button's class
+	// 	const projectType = btn.classList.contains('p-btn-psvita')
+	// 		? 'p-btn-psvita'
+	// 		: btn.classList.contains('p-btn-todo')
+	// 		? 'p-btn-todo'
+	// 		: btn.classList.contains('p-btn-carsspot')
+	// 		? 'p-btn-carsspot'
+	// 		: btn.classList.contains('p-btn-drop')
+	// 		? 'p-btn-drop'
+	// 		: null
 
-		if (!projectType) return
+	// 	if (!projectType) return
 
-		// Find the corresponding card
-		const card = document.querySelector(
-			`.p-card-${projectType.split('-').pop()}`
-		)
+	// 	// Find the corresponding card
+	// 	const card = document.querySelector(
+	// 		`.p-card-${projectType.split('-').pop()}`
+	// 	)
 
-		// Reset all tabs and show the new one
-		resetTab()
-		showTab(projectType, card)
+	// 	// Reset all tabs and show the new one
+	// 	resetTab()
+	// 	showTab(projectType, card)
 
-		// Resume autoplay after click
-		$('.projects-btns').slick('slickPlay') // This ensures autoplay continues after clicking
-	})
+	// 	// Resume autoplay after click
+	// 	$('.projects-btns').slick('slickPlay') // This ensures autoplay continues after clicking
+	// })
 
-	// Initialize Slick slider after setting up event listeners
-	$('.projects-btns').slick({
-		arrows: false,
-		autoplay: true,
-		dots: true,
-		speed: 1000,
-		centerMode: true,
-		autoplaySpeed: 3200,
-		mobileFirst: true,
-		variableWidth: true,
-		slidesToShow: 1,
-		slidesToScroll: 1,
-	})
+	// // Initialize Slick slider after setting up event listeners
+	// $('.projects-btns').slick({
+	// 	arrows: false,
+	// 	autoplay: true,
+	// 	dots: true,
+	// 	speed: 1000,
+	// 	centerMode: true,
+	// 	autoplaySpeed: 3200,
+	// 	mobileFirst: true,
+	// 	variableWidth: true,
+	// 	slidesToShow: 1,
+	// 	slidesToScroll: 1,
+	// })
 
 	// ================
 	// FOOTER
