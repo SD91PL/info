@@ -238,9 +238,13 @@ header {
 	&__avatar {
 		height: 220px;
 		width: 220px;
+		border-radius: 50%;
+		box-shadow: inset 2rem 2rem 2rem $bg-1;
 		img {
 			height: 100%;
 			width: 100%;
+			filter: grayscale(0.2);
+			rotate: 1deg;
 		}
 	}
 	.btn {
